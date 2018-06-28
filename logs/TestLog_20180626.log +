@@ -1,0 +1,286 @@
+20180626 10:52:04.868 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 10:52:04.873 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 10:52:04.873 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 10:52:04.874 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 10:52:04.874 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 10:52:04.874 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 10:52:04.875 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 10:52:04.875 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 10:52:04.876 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 10:52:04.876 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 10:52:04.876 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 10:52:15.328 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 10:52:15.328 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 10:52:15.328 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 10:52:15.328 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 10:52:15.329 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 10:52:15.329 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 10:52:15.330 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 10:52:15.330 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 10:52:15.330 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 10:52:15.330 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 10:52:15.331 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:06:35.171 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:06:35.175 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:06:35.175 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:06:35.176 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:06:35.176 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:06:35.176 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:06:35.176 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:06:35.177 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:06:35.177 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:06:35.177 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:06:35.178 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:07:00.273 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:07:00.274 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:07:00.275 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:07:00.275 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:07:00.277 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:07:00.277 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:07:00.277 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:07:00.277 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:07:00.278 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:07:00.278 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:07:00.278 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:09:16.251 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:09:16.255 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:09:16.255 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:09:16.256 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:09:16.256 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:09:16.256 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:09:16.256 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:09:16.257 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:09:16.257 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:09:16.257 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:09:16.257 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:09:26.403 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:09:26.404 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:09:26.404 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:09:26.405 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:09:26.406 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:09:26.407 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:09:26.408 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:09:26.408 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:09:26.409 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:09:26.409 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:09:26.410 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:10:41.013 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:10:41.018 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:10:41.019 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:10:41.019 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:10:41.019 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:10:41.019 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:10:41.020 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:10:41.020 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:10:41.020 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:10:41.020 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:10:41.020 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:10:52.697 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:10:52.698 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:10:52.699 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:10:52.699 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:10:52.700 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:10:52.702 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:10:52.702 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:10:52.702 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:10:52.703 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:10:52.703 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:10:52.704 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:11:45.312 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:11:45.316 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:11:45.316 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:11:45.317 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:11:45.317 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:11:45.317 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:11:45.317 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:11:45.318 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:11:45.318 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:11:45.318 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:11:45.318 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:11:59.535 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:11:59.536 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:11:59.537 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:11:59.538 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:11:59.539 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:11:59.540 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:11:59.540 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:11:59.540 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:11:59.541 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:11:59.541 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:11:59.541 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:12:59.957 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:12:59.960 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:12:59.961 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:12:59.961 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:12:59.961 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:12:59.961 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:12:59.962 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:12:59.962 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:12:59.963 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:12:59.963 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:12:59.963 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:13:14.444 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:13:14.445 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:13:14.445 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:13:14.445 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:13:14.446 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:13:14.446 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:13:14.446 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:13:14.446 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:13:14.447 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:13:14.447 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:13:14.447 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:14:27.901 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:14:27.904 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:14:27.904 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:14:27.905 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:14:27.905 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:14:27.905 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:14:27.905 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:14:27.906 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:14:27.906 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:14:27.906 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:14:27.907 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:14:38.174 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:14:38.175 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:14:38.175 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:14:38.175 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:14:38.176 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:14:38.177 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:14:38.177 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:14:38.177 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:14:38.177 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:14:38.178 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:14:38.178 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:36:08.005 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:36:08.008 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:36:08.008 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:36:08.009 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:36:08.009 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:36:08.009 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:36:08.009 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:36:08.010 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:36:08.011 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:36:08.011 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:36:08.011 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:36:18.410 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:36:18.411 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:36:18.411 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:36:18.412 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:36:18.413 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:36:18.414 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:36:18.414 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:36:18.414 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:36:18.414 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:36:18.414 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:36:18.415 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:36:41.053 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:36:41.056 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:36:41.057 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:36:41.058 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:36:41.058 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:36:41.058 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:36:41.058 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:36:41.059 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:36:41.059 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:36:41.060 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:36:41.060 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:36:51.154 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:36:51.155 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:36:51.156 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:36:51.157 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:36:51.158 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:36:51.209 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:36:51.211 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:36:51.211 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:36:51.211 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:36:51.211 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:36:51.212 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:39:10.199 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:39:10.203 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:39:10.203 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:39:10.204 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:39:10.204 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:39:10.204 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:39:10.205 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:39:10.205 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:39:10.206 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:39:10.206 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:39:10.206 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:39:20.480 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:39:20.481 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:39:20.482 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:39:20.482 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:39:20.484 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:39:20.485 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:39:20.485 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:39:20.485 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:39:20.486 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:39:20.486 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:39:20.487 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:43:09.022 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 11:43:09.026 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:43:09.026 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:43:09.026 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:43:09.027 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:43:09.027 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:43:09.027 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:43:09.027 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:43:09.027 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:43:09.028 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:43:09.028 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 11:43:19.071 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 11:43:19.072 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 11:43:19.072 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 11:43:19.073 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 11:43:19.075 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 11:43:19.076 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 11:43:19.076 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 11:43:19.077 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 11:43:19.077 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 11:43:19.078 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 11:43:19.078 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 14:18:24.551 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 14:18:24.556 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 14:18:24.556 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 14:18:24.557 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 14:18:24.557 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 14:18:24.557 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 14:18:24.557 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 14:18:24.558 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 14:18:24.558 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 14:18:24.558 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 14:18:24.559 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 14:18:35.059 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 14:18:35.059 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 14:18:35.059 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 14:18:35.060 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 14:18:35.062 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 14:18:35.062 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 14:18:35.063 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 14:18:35.063 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 14:18:35.063 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 14:18:35.063 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 14:18:35.063 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 16:29:14.512 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180626 16:29:14.516 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 16:29:14.516 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 16:29:14.517 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 16:29:14.517 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 16:29:14.517 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 16:29:14.517 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 16:29:14.518 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 16:29:14.518 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 16:29:14.518 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 16:29:14.519 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180626 16:29:24.410 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180626 16:29:24.411 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180626 16:29:24.411 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180626 16:29:24.411 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180626 16:29:24.414 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180626 16:29:24.414 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180626 16:29:24.414 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180626 16:29:24.414 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180626 16:29:24.415 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180626 16:29:24.415 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180626 16:29:24.415 |INFO | [TestNG] [ProLogger.java:176] - Actual Results

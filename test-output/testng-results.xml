@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[My Spaces page is displayed correctly]]>
+    </line>
+    <line>
+      <![CDATA[Driver safety page is displayed correctly]]>
+    </line>
+    <line>
+      <![CDATA[Exective Console Page is displayed correctly]]>
+    </line>
+  </reporter-output>
+  <suite name="Functional Testing" duration-ms="65149" started-at="2018-06-28T11:28:34Z" finished-at="2018-06-28T11:29:39Z">
+    <groups>
+    </groups>
+    <test name="Login Test Birst" duration-ms="65149" started-at="2018-06-28T11:28:34Z" finished-at="2018-06-28T11:29:39Z">
+      <class name="com.trimble.birst.tests.ExecutiveConsoleTests">
+        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40]" name="extentReport" is-config="true" duration-ms="7" started-at="2018-06-28T16:58:34Z" finished-at="2018-06-28T16:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReport -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40]" name="SetUp" is-config="true" duration-ms="0" started-at="2018-06-28T16:58:34Z" finished-at="2018-06-28T16:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="GoToHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40]" name="GoToHomePage" is-config="true" duration-ms="6578" started-at="2018-06-28T16:58:34Z" finished-at="2018-06-28T16:58:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LOCAL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoToHomePage -->
+        <test-method status="PASS" signature="verifyExecutiveconsoleOverallscoreinASC()[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40]" name="verifyExecutiveconsoleOverallscoreinASC" duration-ms="57462" started-at="2018-06-28T16:58:40Z" finished-at="2018-06-28T16:59:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[My Spaces page is displayed correctly]]>
+            </line>
+            <line>
+              <![CDATA[Driver safety page is displayed correctly]]>
+            </line>
+            <line>
+              <![CDATA[Exective Console Page is displayed correctly]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyExecutiveconsoleOverallscoreinASC -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult, java.lang.String, java.lang.String)[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40]" name="generateReport" is-config="true" duration-ms="1079" started-at="2018-06-28T16:59:38Z" finished-at="2018-06-28T16:59:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyExecutiveconsoleOverallscoreinASC status=SUCCESS method=ExecutiveConsoleTests.verifyExecutiveconsoleOverallscoreinASC()[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40] output=My Spaces page is displayed correctly]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.trimble.birst.tests.ExecutiveConsoleTests@74fe5c40]" name="endReport" is-config="true" duration-ms="0" started-at="2018-06-28T16:59:39Z" finished-at="2018-06-28T16:59:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.trimble.birst.tests.ExecutiveConsoleTests -->
+    </test> <!-- Login Test Birst -->
+  </suite> <!-- Functional Testing -->
+</testng-results>

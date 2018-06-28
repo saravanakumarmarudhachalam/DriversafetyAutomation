@@ -1,0 +1,297 @@
+20180628 11:12:13.840 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:12:13.844 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:12:13.845 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:12:13.845 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:12:13.846 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:12:13.846 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:12:13.846 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:12:13.847 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:12:13.847 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:12:13.847 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:12:13.847 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:12:13.848 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:12:13.848 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:12:13.848 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:12:13.848 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:12:13.849 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:12:13.850 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:20:34.394 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:20:34.398 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:20:34.398 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:20:34.398 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:20:34.399 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:20:34.399 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:20:34.399 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:20:34.400 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:20:34.400 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:20:34.400 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:20:34.400 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:20:34.400 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:20:34.401 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:20:34.401 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:20:34.401 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:20:34.402 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:20:34.402 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:21:28.794 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:21:28.798 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:21:28.798 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:21:28.799 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:21:28.799 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:21:28.799 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:21:28.799 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:21:28.800 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:21:28.800 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:21:28.800 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:21:28.801 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:21:28.801 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:21:28.801 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:21:28.801 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:21:28.801 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:21:28.802 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:21:28.802 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:24:22.108 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:24:22.111 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:24:22.112 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:24:22.112 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:24:22.112 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:24:22.113 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:24:22.113 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:24:22.114 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:24:22.114 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:22.114 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:24:22.114 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:22.114 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:24:22.115 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:22.115 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:24:22.115 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:22.116 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:24:22.117 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:24:59.785 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:24:59.789 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:24:59.789 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:24:59.790 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:24:59.790 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:24:59.790 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:24:59.790 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:24:59.791 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:24:59.791 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:59.791 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:24:59.791 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:59.791 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:24:59.791 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:59.792 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:24:59.792 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:24:59.792 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:24:59.792 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:25:32.030 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:25:32.034 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:25:32.035 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:25:32.035 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:25:32.036 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:25:32.036 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:25:32.036 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:25:32.037 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:25:32.037 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:25:32.037 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:25:32.037 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:25:32.037 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:25:32.037 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:25:32.038 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:25:32.038 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:25:32.038 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:25:32.039 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:32:52.942 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:32:52.947 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:32:52.947 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:32:52.949 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:32:52.949 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:32:52.949 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:32:52.949 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:32:52.951 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:32:52.951 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:32:52.952 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:32:52.952 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:32:52.952 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:32:52.952 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:32:52.952 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:32:52.952 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:32:52.954 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:32:52.955 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 11:33:35.461 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 11:33:35.464 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 11:33:35.464 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 11:33:35.465 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 11:33:35.465 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 11:33:35.465 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 11:33:35.465 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder Icon and click Individual Scorecard | Individual score card home page is displayed
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 9. Click Folder Icon and click Scorecard Report - combined groups | Scorecard Report - combined groups home page is displayed
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 10. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:33:35.466 |INFO | [TestNG] [ProLogger.java:176] - 11. Click Folder Icon and click Scorecard Report - separated groups | Scorecard Report - separated groups home page is displayed
+20180628 11:33:35.467 |INFO | [TestNG] [ProLogger.java:176] - 12. Verify Trimble Pulse logo and Banner is displayed| Trimble pulse logo and banner is displayed correctly in the Date filter 
+20180628 11:33:35.467 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 11:33:35.467 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 13:55:22.019 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 13:55:22.024 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 13:55:22.025 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 13:55:22.025 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 13:55:22.025 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 13:55:22.025 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 13:55:22.026 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 13:55:22.026 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 13:55:22.027 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 13:55:22.027 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 13:55:22.027 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 13:55:22.027 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 13:55:22.027 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:05:56.118 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:05:56.121 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:05:56.121 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:05:56.122 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:05:56.122 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:05:56.122 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:05:56.123 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:05:56.124 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:05:56.124 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:05:56.124 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:05:56.124 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:05:56.124 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:05:56.124 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:08:20.253 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:08:20.258 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:08:20.258 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:08:20.259 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:08:20.259 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:08:20.259 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:08:20.259 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:08:20.260 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:08:20.260 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:08:20.261 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:08:20.261 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:08:20.261 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:08:20.261 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:16:08.474 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:16:08.478 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:16:08.478 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:16:08.478 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:16:08.478 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:16:08.478 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:16:08.479 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:16:08.479 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:16:08.479 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:16:08.479 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:16:08.480 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:16:08.480 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:16:08.480 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:19:18.161 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:19:18.166 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:19:18.167 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:19:18.167 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:19:18.167 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:19:18.168 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:19:18.168 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:19:18.169 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:19:18.169 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:19:18.169 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:19:18.169 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:19:18.169 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:19:18.169 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:22:47.195 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:22:47.199 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:22:47.199 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:22:47.200 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:22:47.200 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:22:47.200 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:22:47.200 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:22:47.201 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:22:47.201 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:22:47.201 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:22:47.202 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:22:47.202 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:22:47.202 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:28:27.635 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:28:27.639 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:28:27.639 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:28:27.640 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:28:27.640 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:28:27.641 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:28:27.641 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:28:27.642 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:28:27.642 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:28:27.642 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:28:27.642 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:28:27.642 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:28:27.643 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:29:07.875 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:29:07.878 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:29:07.878 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:29:07.879 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:29:07.879 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:29:07.879 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:29:07.880 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:29:07.880 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:29:07.881 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:29:07.881 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:29:07.881 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:29:07.881 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:29:07.881 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 14:29:34.362 |INFO | [TestNG] [ProLogger.java:176] - Verify dashboards are set to display data for 'Last 30 Days' by default (where applicable)
+20180628 14:29:34.367 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 14:29:34.367 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 14:29:34.368 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 14:29:34.368 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 14:29:34.368 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 14:29:34.369 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 14:29:34.369 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 14:29:34.370 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify Last 30days, Start Date & End Date filter is displayed| Last 30days, Start Date & End Date is displayed correctly in the Date filter 
+20180628 14:29:34.370 |INFO | [TestNG] [ProLogger.java:176] - 7. Click Folder icon and click Individual Scorecard | Individual scorecard page is displayed correctly
+20180628 14:29:34.370 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify the data should be matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboard | The data is matched of Last 30days ,Startdate and End date after switching one dashboard to another dashboar
+20180628 14:29:34.370 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 14:29:34.370 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 16:54:37.358 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180628 16:54:37.362 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 16:54:37.362 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 16:54:37.363 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 16:54:37.363 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 16:54:37.363 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 16:54:37.363 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 16:54:37.364 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 16:54:37.364 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180628 16:54:37.365 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 16:54:37.365 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 16:55:20.802 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180628 16:55:20.807 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 16:55:20.807 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 16:55:20.808 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 16:55:20.808 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 16:55:20.808 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 16:55:20.809 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 16:55:20.809 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 16:55:20.810 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180628 16:55:20.810 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 16:55:20.810 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 16:56:28.103 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180628 16:56:28.106 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 16:56:28.106 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 16:56:28.107 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 16:56:28.107 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 16:56:28.107 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 16:56:28.107 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 16:56:28.108 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 16:56:28.108 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180628 16:56:28.108 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 16:56:28.109 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180628 16:58:40.765 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180628 16:58:40.769 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180628 16:58:40.769 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180628 16:58:40.770 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180628 16:58:40.770 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180628 16:58:40.770 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180628 16:58:40.770 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180628 16:58:40.771 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180628 16:58:40.771 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180628 16:58:40.771 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180628 16:58:40.771 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
