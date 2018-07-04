@@ -7,8 +7,8 @@
 	<packaging>jar</packaging>
 	<name>TestAutomationFramework</name>
 	<properties>
-		<selenium.version>2.51.0</selenium.version>
-		<testng.version>6.8.8</testng.version>
+		<selenium.version>3.13.0</selenium.version>
+		<testng.version>6.14.3</testng.version>
 		<maven.surefire.plugin.version>2.18</maven.surefire.plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -91,25 +91,25 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
 			</plugin>
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.codehaus.mojo</groupId> -->
-<!-- 				<artifactId>emma-maven-plugin</artifactId> -->
-<!-- 				<version>1.0-alpha-3</version> -->
-<!-- 				<inherited>true</inherited> -->
-<!-- 				<executions> -->
-<!--                     <execution> -->
-<!--                         <id>instrument</id> -->
-<!--                         <phase>process-test-classes</phase> -->
-<!--                         <goals> -->
-<!--                             <goal>instrument</goal> -->
-<!--                         </goals> -->
-<!--                     </execution> -->
-<!--                 </executions>				 -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.codehaus.mojo</groupId> -->
+			<!-- <artifactId>emma-maven-plugin</artifactId> -->
+			<!-- <version>1.0-alpha-3</version> -->
+			<!-- <inherited>true</inherited> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <id>instrument</id> -->
+			<!-- <phase>process-test-classes</phase> -->
+			<!-- <goals> -->
+			<!-- <goal>instrument</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- </plugin> -->
 		</plugins>
 	</reporting>
 
-	<dependencies>		
+	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -117,16 +117,16 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>com.relevantcodes</groupId>
-		    <artifactId>extentreports</artifactId>
-		    <version>2.41.2</version>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
 		</dependency>
-		 <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>${extentreports.version}</version>
-            <scope>provided</scope>
-        </dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -168,14 +168,61 @@
 			<version>4.3</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.apache.poi</groupId>
-		    <artifactId>poi-ooxml</artifactId>
-		    <version>3.9</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.5</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm</artifactId>
+			<version>1.2.5</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-html</artifactId>
+			<version>0.2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.5</version>
+		</dependency>
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>2.12.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>1.2.5</version>
 		</dependency>
 	</dependencies>
 

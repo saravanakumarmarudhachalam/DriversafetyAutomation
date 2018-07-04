@@ -2,7 +2,7 @@ package com.trimble.taf.exception;
 
 /**
  * Represents the any framework related errors.. 
- * @author smahalingam@prokarma.com
+ * @author smarudh
  * @version 1.0
  */
 public class FrameworkException extends RuntimeException {

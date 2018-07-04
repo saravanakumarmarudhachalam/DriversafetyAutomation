@@ -2,7 +2,7 @@ package com.trimble.taf.exception;
 
 /**
  * Thrown incase of page refresh failures and element refresh errors.
- * @author Mahali
+ * @author smarudh
  *
  */
 public class PageRefreshException extends FrameworkException {

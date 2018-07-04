@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [Functional Testing]" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Functional Testing]" parallel="tests">
   <parameter name="system.info" value="com.trimble.taf.listeners.MySystemInfo"/>
-  <parameter name="browser" value="CHROME"/>
   <parameter name="report.config" value="src/test/resources/extent-config.xml"/>
-  <parameter name="platform" value="windows"/>
-  <parameter name="runMode" value="LOCAL"/>
   <listeners>
     <listener class-name="com.trimble.taf.listeners.ExtentTestNgFormatter"/>
   </listeners>
-  <test name="Login Test Birst(failed)" parallel="tests">
-    <parameter name="browser" value="CHROME"/>
-    <parameter name="platform" value="windows"/>
-    <parameter name="runMode" value="LOCAL"/>
+  <test thread-count="2" name="Login Test Birst(failed)" parallel="tests">
     <classes>
-      <class name="com.trimble.birst.tests.ExecutiveConsoleTests">
+      <class name="com.trimble.taf.suite.tests.base.TestRunner">
         <methods>
-          <include name="verifyExecutiveconsoleOverallscoreinASC"/>
-          <include name="GoToHomePage"/>
-          <include name="endReport"/>
-          <include name="SetUp"/>
-          <include name="extentReport"/>
-          <include name="generateReport"/>
+          <include name="feature"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.trimble.birst.tests.ExecutiveConsoleTests -->
+      </class> <!-- com.trimble.taf.suite.tests.base.TestRunner -->
     </classes>
   </test> <!-- Login Test Birst(failed) -->
 </suite> <!-- Failed suite [Functional Testing] -->

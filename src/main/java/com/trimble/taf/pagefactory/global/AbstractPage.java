@@ -23,7 +23,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import com.trimble.taf.exception.FrameworkException;
 import com.trimble.taf.utils.ProLogger;
@@ -1249,8 +1248,7 @@ public class AbstractPage
 	    catch (Exception ex)
 	    {
 		ProLogger.error("caught exception while loading page{}",
-			ex.getMessage());
-		Assert.fail(ex.getMessage());
+			ex.getMessage());		
 		throw new FrameworkException(
 			"caught exception while loading page{}", ex);
 	    }
