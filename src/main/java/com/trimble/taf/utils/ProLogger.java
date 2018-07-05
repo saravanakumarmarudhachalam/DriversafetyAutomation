@@ -18,6 +18,7 @@ import ch.qos.logback.core.util.StatusPrinter;
 public class ProLogger
 {
     
+    
     private static Logger logger = null;
     
     private static Logger getLogger ()
@@ -167,12 +168,14 @@ public class ProLogger
     {
 	getLogger().info(tag, args);
     }
-
+    
     /**
      * Log info Message to the Log file
+     * 
      * @param tag
      */
-    public static void info(String tag){
+    public static void info (String tag)
+    {
 	getLogger().info(tag);
     }
 }

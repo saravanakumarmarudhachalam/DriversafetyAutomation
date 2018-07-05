@@ -9,47 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Functional Testing</th></tr>
-<tr><td><a href="#t0">Login Test Birst</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">47</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Login Test Birst</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">273,286</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test Birst &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1530706393832</td><td rowspan="1">19</td></tr><tr class="failedeven"><td><a href="#m1">tearDownClass</a></td><td rowspan="1">1530706393867</td><td rowspan="1">0</td></tr><tr><th colspan="4">Login Test Birst &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m2">feature</a></td><td rowspan="1">1530706393864</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test Birst &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1530771556277</td><td rowspan="1">272560</td></tr></tbody>
 </table>
-<h2>Login Test Birst</h2><h3 id="m0">com.trimble.taf.suite.tests.base.TestRunner#setUpClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: Couldn&apos;t load plugin class: com.cucumber.listener.ExtentCucumberFormatter
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:175)
-	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
-	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
-	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
-	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:90)
-	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
-	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
-	at cucumber.api.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:37)
-	at com.trimble.taf.suite.tests.base.TestRunner.setUpClass(TestRunner.java:59)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.ClassNotFoundException: com.cucumber.listener.ExtentCucumberFormatter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:173)
-	... 29 more
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.trimble.taf.suite.tests.base.TestRunner#tearDownClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.trimble.taf.suite.tests.base.TestRunner.tearDownClass(TestRunner.java:74)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.trimble.taf.suite.tests.base.TestRunner#feature</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException
-	at com.trimble.taf.suite.tests.base.TestRunner.features(TestRunner.java:69)
-	... 17 more
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Test Birst</h2><h3 id="m0">com.trimble.taf.suite.tests.base.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Common Tests</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Last 30Days Text filter is matched correctly<br/>My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly<br/>Exective Console Page is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Start Date filter is displayed correctly<br/>End Date filter is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Start Date filter is displayed correctly<br/>End Date filter is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Start Date filter is displayed correctly<br/>End Date filter is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Start Date filter is displayed correctly<br/>End Date filter is displayed correctly<br/>My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly<br/>Exective Console Page is displayed correctly<br/>Trimble logo & Banner is displayed correctly<br/>Trimble logo & Banner is displayed correctly<br/>My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly<br/>Exective Console Page is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Start Date filter is displayed correctly<br/>End Date filter is displayed correctly<br/>Last 30Days Text filter is matched correctly<br/>Start Date text is displayed correctly<br/>END Date text is displayed correctly</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

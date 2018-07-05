@@ -11,7 +11,9 @@ import com.trimble.taf.utils.InputFileReader;
 public abstract class AbstractDataProvider
 {
     
-    protected static InputFileReader readerDAO = new InputFileReader("\\src\\test\\resources\\testdata\\excel\\Checkout.xls");
+    
+    protected static InputFileReader readerDAO = new InputFileReader(
+	    "\\src\\test\\resources\\testdata\\excel\\Checkout.xls");
     
     protected static final String theWorkingDir = System
 	    .getProperty("user.dir");

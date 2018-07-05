@@ -5,7 +5,6 @@ package com.trimble.taf.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 import java.util.Set;
 
@@ -18,6 +17,7 @@ import org.slf4j.LoggerFactory;
 public class PropertyUtils
 {
     
+    
     private static final Logger logger = LoggerFactory
 	    .getLogger(PropertyUtils.class);
     
@@ -26,11 +26,13 @@ public class PropertyUtils
     private PropertyUtils(final String aPropFile)
     {
 	
-	//InputStream systemResource = ClassLoader.getSystemResourceAsStream(aPropFile);
+	// InputStream systemResource =
+	// ClassLoader.getSystemResourceAsStream(aPropFile);
 	
 	try
 	{
-	    myConfigProperties.load(PropertyUtils.class.getClassLoader().getResourceAsStream(aPropFile));
+	    myConfigProperties.load(PropertyUtils.class.getClassLoader()
+		    .getResourceAsStream(aPropFile));
 	}
 	catch (FileNotFoundException fex)
 	{

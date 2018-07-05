@@ -16,12 +16,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-
 /**
  * @author Saravanakumar
  */
 public class InputFileReader
 {
+    
     
     private FileInputStream fis = null;
     
@@ -33,22 +33,27 @@ public class InputFileReader
     
     private Cell cell = null;
     
-    public InputFileReader(String path) {
-
-		try {
-			ProLogger.debug("{}"," Reading the Excel file");
-			fis = new FileInputStream(path);
-			this.workbook = WorkbookFactory.create(fis);
-			fis.close();
-		} catch (Exception e) {
-			ProLogger.error("{}",e.getMessage());
-		}
-
+    public InputFileReader(String path)
+    {
+	
+	try
+	{
+	    ProLogger.debug("{}", " Reading the Excel file");
+	    fis = new FileInputStream(path);
+	    this.workbook = WorkbookFactory.create(fis);
+	    fis.close();
 	}
+	catch (Exception e)
+	{
+	    ProLogger.error("{}", e.getMessage());
+	}
+	
+    }
     
     private static volatile InputFileReader instance = null;
     
-    protected static synchronized InputFileReader getInstance (String excelFilePath)
+    protected static synchronized InputFileReader
+	    getInstance (String excelFilePath)
     {
 	if (instance == null)
 	{
@@ -455,7 +460,8 @@ public class InputFileReader
 	    }
 	    else
 	    {
-		ProLogger.error("{}", "row " + rowNum + " does not exist  in file");
+		ProLogger.error("{}",
+			"row " + rowNum + " does not exist  in file");
 	    }
 	    return hashMap;
 	}

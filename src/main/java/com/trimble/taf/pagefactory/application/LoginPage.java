@@ -1,6 +1,5 @@
 package com.trimble.taf.pagefactory.application;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,13 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.trimble.taf.pagefactory.global.AbstractPage;
-import com.trimble.taf.utils.ProLogger;
 
 /**
  * @author Saravanakumar
  */
 public class LoginPage extends AbstractPage
 {
+    
     
     @CacheLookup
     @FindBy(id = "LoginForm2_UserName")
@@ -26,8 +25,7 @@ public class LoginPage extends AbstractPage
     
     @CacheLookup
     @FindBy(id = "LoginForm2_LoginButton")
-    private WebElement loginButton;    
-    
+    private WebElement loginButton;
     
     public LoginPage(WebDriver driver)
     {
@@ -38,8 +36,8 @@ public class LoginPage extends AbstractPage
     public void waitForPageToLoad (WebDriver driver)
     {
 	waitForPageLoad(driver);
-    }    
-   
+    }
+    
     /**
      * Method to get Page Title
      * 
@@ -53,30 +51,36 @@ public class LoginPage extends AbstractPage
     
     /**
      * Method to enter Username
+     * 
      * @param userName
      * @return
-     * @throws Exception 
+     * @throws Exception
      */
-    public void enterUsername(String userName) throws Exception{
+    public void enterUsername (String userName) throws Exception
+    {
 	waitForElementPresent(userNametxtBox);
 	userNametxtBox.sendKeys(userName);
     }
     
     /**
      * Method to enter password
+     * 
      * @param password
-     * @throws Exception 
+     * @throws Exception
      */
-    public void enterPassword(String password) throws Exception{
+    public void enterPassword (String password) throws Exception
+    {
 	waitForElementPresent(passwordTxtbox);
 	passwordTxtbox.sendKeys(password);
     }
     
     /**
      * Method to Click Login button
-     * @throws Exception 
+     * 
+     * @throws Exception
      */
-    public void clickLogin() throws Exception{
+    public void clickLogin () throws Exception
+    {
 	waitForElementPresent(loginButton);
 	loginButton.click();
 	checkPageIsReady();

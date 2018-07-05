@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.trimble.taf.pagefactory.application;
 
 import org.openqa.selenium.WebDriver;
@@ -28,24 +25,24 @@ public class DriverSafetyPage extends AbstractPage
     public WebElement executiveConsolehomePage;
     
     @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(5) > span")
-    public WebElement last30daysFilter;    
+    public WebElement last30daysFilter;
     
     @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(6) > span")
     public WebElement startDatefilter;
-
-    @FindBy(css ="#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(7) > span")
-    public WebElement endDatefilter;    
+    
+    @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(7) > span")
+    public WebElement endDatefilter;
     
     @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(6) > span")
-    public WebElement last30daysFilterIndiviudalscorecard;    
+    public WebElement last30daysFilterIndiviudalscorecard;
     
     @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(7) > span")
     public WebElement startDatefilterIndiviudalscorecard;
-
-    @FindBy(css ="#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(8) > span")
-    public WebElement endDatefilterIndiviudalscorecard;   
     
-    @FindBy(css="#global-header > header > ng-include > div > div > ul > li.nav-item-open > button")
+    @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(8) > span")
+    public WebElement endDatefilterIndiviudalscorecard;
+    
+    @FindBy(css = "#global-header > header > ng-include > div > div > ul > li.nav-item-open > button")
     public WebElement folderIcon;
     
     @FindBy(xpath = "//span[text() = \"Individual Scorecard\"]")
@@ -57,12 +54,11 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//span[text() = \"Scorecard Report - separated groups\"]")
     public WebElement separatedScorecard;
     
-    @FindAll({@FindBy(css="#xpath-dashboard-canvas > div > dashlet:nth-child(6) > div.dashlet-wrapper.ng-scope > report > image-report > img"),
-	@FindBy(css="#xpath-dashboard-canvas > div > dashlet:nth-child(11) > div.dashlet-wrapper.ng-scope > report > image-report")	
-    })       
+    @FindAll({
+	    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(6) > div.dashlet-wrapper.ng-scope > report > image-report > img"),
+	    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(11) > div.dashlet-wrapper.ng-scope > report > image-report")
+    })
     public WebElement trimbleLogo;
-    
-    
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -119,141 +115,171 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Get text from 30days Days filter
+     * 
      * @return
-     * @throws Exception 
+     * @throws Exception
      */
-    public String getTextthirtyDayfilter() throws Exception{
+    public String getTextthirtyDayfilter () throws Exception
+    {
 	waitForElementPresent(last30daysFilter);
 	return last30daysFilter.getText();
     }
     
     /**
      * verify Start Date filter is dusplayed
+     * 
      * @return
      * @throws Exception
      */
-    public boolean verifyStartdateDisplayed() throws Exception{
+    public boolean verifyStartdateDisplayed () throws Exception
+    {
 	waitForElementPresent(startDatefilter);
-	return isElementDisplayed(startDatefilter);	
+	return isElementDisplayed(startDatefilter);
     }
     
     /**
      * verify End Date filter is dusplayed
+     * 
      * @return
      * @throws Exception
      */
-    public boolean verifyEnddateDisplayed() throws Exception{
+    public boolean verifyEnddateDisplayed () throws Exception
+    {
 	waitForElementPresent(endDatefilter);
-	return isElementDisplayed(endDatefilter);	
+	return isElementDisplayed(endDatefilter);
     }
     
     /**
      * verify End Date filter is dusplayed
+     * 
      * @return
      * @throws Exception
      */
-    public boolean verifyThritydaysFilterdisplayed() throws Exception{
+    public boolean verifyThritydaysFilterdisplayed () throws Exception
+    {
 	waitForElementPresent(last30daysFilter);
-	return isElementDisplayed(last30daysFilter);	
+	return isElementDisplayed(last30daysFilter);
     }
     
     /**
      * Click Folder Icon
+     * 
      * @throws Exception
      */
-    public void clickFoldericon() throws Exception{	
+    public void clickFoldericon () throws Exception
+    {
 	folderIcon.click();
 	checkPageIsReady();
     }
     
     /**
      * Click Individual scorecard
+     * 
      * @throws Exception
      */
-    public void clickIndividualscoreCard() throws Exception{	
+    public void clickIndividualscoreCard () throws Exception
+    {
 	individualScorecard.click();
 	checkPageIsReady();
     }
     
     /**
      * Click Scorecard Report - Combined Groups
+     * 
      * @throws Exception
      */
-    public void clickCombinedscoreCard() throws Exception{	
+    public void clickCombinedscoreCard () throws Exception
+    {
 	combinedScorecard.click();
 	checkPageIsReady();
     }
     
     /**
      * Click Scorecard Report - Separated Groups
+     * 
      * @throws Exception
      */
-    public void clickSeparatedscoreCard() throws Exception{	
+    public void clickSeparatedscoreCard () throws Exception
+    {
 	separatedScorecard.click();
 	checkPageIsReady();
     }
     
     /**
      * verify Trimble logo is displayed
+     * 
      * @throws Exception
      */
-    public boolean verifyTrimblelogo() throws Exception{
+    public boolean verifyTrimblelogo () throws Exception
+    {
 	waitForElementPresent(trimbleLogo);
 	return isElementDisplayed(trimbleLogo);
     }
     
     /**
      * Get text last 30days date filter
-     * @return 
+     * 
+     * @return
      * @throws Exception
      */
-    public String getTextlastThirtydays() throws Exception{
+    public String getTextlastThirtydays () throws Exception
+    {
 	waitForElementPresent(last30daysFilter);
 	return getText(last30daysFilter);
     }
     
     /**
      * Get Text of Start Date
+     * 
      * @throws Exception
      */
-    public String getTextstartDate() throws Exception{
+    public String getTextstartDate () throws Exception
+    {
 	waitForElementPresent(startDatefilter);
 	return getText(startDatefilter);
     }
     
     /**
      * Get Text of End Date
+     * 
      * @throws Exception
      */
-    public String getTextendDate() throws Exception{
+    public String getTextendDate () throws Exception
+    {
 	waitForElementPresent(endDatefilter);
 	return getText(endDatefilter);
     }
     
     /**
      * Get text last 30days date filter for individual scorecard
-     * @return 
+     * 
+     * @return
      * @throws Exception
      */
-    public String getTextlastThirtydays_Indvscorecard() throws Exception{
+    public String getTextlastThirtydays_Indvscorecard () throws Exception
+    {
 	waitForElementPresent(last30daysFilterIndiviudalscorecard);
 	return getText(last30daysFilterIndiviudalscorecard);
     }
     
     /**
      * Get Text of Start Date for individual scorecard
+     * 
      * @throws Exception
      */
-    public String getTextstartDate_Indvscorecard() throws Exception{
+    public String getTextstartDate_Indvscorecard () throws Exception
+    {
 	waitForElementPresent(startDatefilterIndiviudalscorecard);
 	return getText(startDatefilterIndiviudalscorecard);
     }
     
     /**
      * Get Text of End Date for individual scorecard
+     * 
      * @throws Exception
      */
-    public String getTextendDate_Indvscorecard() throws Exception{
+    public String getTextendDate_Indvscorecard () throws Exception
+    {
 	waitForElementPresent(endDatefilterIndiviudalscorecard);
 	return getText(endDatefilterIndiviudalscorecard);
     }

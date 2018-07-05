@@ -3,16 +3,12 @@
  */
 package com.trimble.taf.pagefactory.application;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.trimble.taf.pagefactory.global.AbstractPage;
-
-import junit.framework.Assert;
 
 /**
  * @author smarudh
@@ -30,9 +26,9 @@ public class MyspacesPage extends AbstractPage
     @FindBy(xpath = "//div[text()='NA Production']")
     public WebElement space_NAProduction;
     
-    @FindBy(css = "#gridview-1014 > table > tbody > tr:nth-child(5) > td.x-grid-cell.x-grid-cell-gridcolumn-1012 > div")    
+    @FindBy(css = "#gridview-1014 > table > tbody > tr:nth-child(5) > td.x-grid-cell.x-grid-cell-gridcolumn-1012 > div")
     public WebElement space_Newuser;
-  
+    
     @FindBy(xpath = "//div[text()='Sprint 11 QA']")
     public WebElement space_Sprint11QA;
     
@@ -98,21 +94,12 @@ public class MyspacesPage extends AbstractPage
      * Check My Space label is displayed
      * 
      * @return
-     * @throws Exception 
+     * @throws Exception
      */
     public boolean verifyMyspacelbl () throws Exception
     {
 	waitForElementPresent(mySpacelbl);
 	return mySpacelbl.isDisplayed();
-    }
-    
-    /**
-     * Verify Home link is displayed
-     */
-    public void verifylnkHomeDisplayed3 ()
-    {
-	Assert.assertTrue(lblHome.isDisplayed());
-	System.out.println("Link for Home is dislayed@@@");
     }
     
     /**
@@ -138,11 +125,11 @@ public class MyspacesPage extends AbstractPage
 	    
 	    case "Sprint 18-21 PostgreSQL QA NEW_USERS":
 		checkPageIsReady();
-		space_Newuser.click();		
+		space_Newuser.click();
 		break;
-	    case "Sprint 18-23 PostgreSQL QA NEW_USERS":		
+	    case "Sprint 18-23 PostgreSQL QA NEW_USERS":
 		checkPageIsReady();
-		space_Sprint18QA.click();		
+		space_Sprint18QA.click();
 		break;
 	}
     }
@@ -158,15 +145,15 @@ public class MyspacesPage extends AbstractPage
     {
 	switch (option)
 	{
-	    case "optDashboards":		
+	    case "optDashboards":
 		checkPageIsReady();
-		optDashboards.click();		
+		optDashboards.click();
 		break;
-	    case "optVisualizer":		
-		optVisualizer.click();		
+	    case "optVisualizer":
+		optVisualizer.click();
 		break;
-	    case "optDesigner":		
-		optDesigner.click();		
+	    case "optDesigner":
+		optDesigner.click();
 		break;
 	}
     }

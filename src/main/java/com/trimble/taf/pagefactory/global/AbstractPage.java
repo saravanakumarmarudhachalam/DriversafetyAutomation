@@ -1248,7 +1248,7 @@ public class AbstractPage
 	    catch (Exception ex)
 	    {
 		ProLogger.error("caught exception while loading page{}",
-			ex.getMessage());		
+			ex.getMessage());
 		throw new FrameworkException(
 			"caught exception while loading page{}", ex);
 	    }

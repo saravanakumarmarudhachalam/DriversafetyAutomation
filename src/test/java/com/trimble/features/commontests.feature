@@ -9,7 +9,6 @@ Feature: Common Tests
     Then I validate home page displayed correctly
     And I clicked MySpaces & Dashboard
     When I clicked Executive Driversafety console
-    Then I validate the Executive Driversafety console page is displayed correctly
     Then I verified Last 30days is displayed in Date filter
 
   @Regression

@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Functional Testing" parallel="tests" thread-count="2"
-	preserve-order="true">
-
-	<listeners>
-		<listener class-name="com.trimble.taf.listeners.ExtentTestNgFormatter" />
-	</listeners>
-
-	<parameter name="system.info" value="com.trimble.taf.listeners.MySystemInfo" />
-	<parameter name="report.config" value="src/test/resources/extent-config.xml" />
+	preserve-order="true">	
 
 	<test name="Login Test Birst">	
 		<classes>

@@ -5,15 +5,11 @@ package com.trimble.birst.tests;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.GregorianCalendar;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.Optional;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -31,6 +27,7 @@ import cucumber.api.java.Before;
  */
 public class ServiceHooks
 {
+    
     
     public static WebDriver driver;
     
@@ -128,19 +125,8 @@ public class ServiceHooks
     }
     
     @After
-    public void generateReport () throws IOException
+    public void Aftersteps () throws IOException
     {
-	
-	/*
-	 * if (result.isSuccess()) { File imageFile = ((TakesScreenshot)
-	 * driver).getScreenshotAs(OutputType.FILE); String failureImageFileName
-	 * = result.getMethod().getMethodName() + new
-	 * SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new
-	 * GregorianCalendar().getTime()) + ".png"; File failureImageFile = new
-	 * File(System.getProperty("user.dir") + "//screenshots//" +
-	 * failureImageFileName); FileUtils.copyFile(imageFile,
-	 * failureImageFile); }
-	 */
 	tearDownDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("platform"));
     }
