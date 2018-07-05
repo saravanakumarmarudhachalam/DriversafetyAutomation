@@ -1,11 +1,12 @@
 package com.trimble.taf.pagefactory.application;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.trimble.taf.pagefactory.global.AbstractPage;
 
 /**
@@ -59,6 +60,24 @@ public class DriverSafetyPage extends AbstractPage
 	    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(11) > div.dashlet-wrapper.ng-scope > report > image-report")
     })
     public WebElement trimbleLogo;
+    
+    @FindBy(css = "i[class='table-sorting ASC']")
+    public WebElement overallScoreasc;
+    
+    @FindBy(css = "td[id = org-name]")
+    public WebElement defaultOrg;
+    
+    @FindBy(xpath = "//*[@id=\"global-header\"]/header/ng-include/div/div/ul/li[3]/a/i")
+    public WebElement exportIcon;
+    
+    @FindBy(xpath = "//span[text() = \"PDF\"]")
+    public WebElement exportPDF;
+    
+    @FindBy(xpath = "//span[text() = \"PDF (with Details)\"]")
+    public WebElement exportDetailPDF;
+    
+    @FindBy(xpath = "//*[@id=\"info-dashboardExportInProgress\"]/div/span/span[1]")
+    public WebElement exportInprogress;
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -282,5 +301,95 @@ public class DriverSafetyPage extends AbstractPage
     {
 	waitForElementPresent(endDatefilterIndiviudalscorecard);
 	return getText(endDatefilterIndiviudalscorecard);
+    }
+    
+    /**
+     * Verify Overallscore displayed in Ascending Order
+     * 
+     * @return
+     * @throws Exception
+     */
+    public boolean verifyOverallscoreAsc () throws Exception
+    {
+	waitForElementPresent(overallScoreasc);
+	return isElementDisplayed(overallScoreasc);
+	
+    }
+    
+    /**
+     * Get Text of Default Organization
+     * 
+     * @throws Exception
+     */
+    public String getTextdefaultOrg () throws Exception
+    {
+	waitForElementPresent(defaultOrg);
+	checkPageIsReady();
+	return getText(defaultOrg);
+    }
+    
+    /**
+     * Verify Report is able to export
+     * 
+     * @throws Exception
+     */
+    public void clickExporticon () throws Exception
+    {
+	waitForElementPresent(exportIcon);
+	exportIcon.click();
+    }
+    
+    /**
+     * Click the Export PDF dropdown.
+     * 
+     * @throws Exception
+     */
+    public void clickExportPDF () throws Exception
+    {
+	waitForElementPresent(exportPDF);
+	exportPDF.click();
+    }
+    
+    /**
+     * Verify Export is in Progress message.
+     * 
+     * @throws Exception
+     */
+    public String getTextexportInprogress () throws Exception
+    {
+	waitForElementPresent(exportInprogress);
+	return getText(exportInprogress);
+    }
+    
+    /**
+     * Click the Export PDF dropdown.
+     * 
+     * @throws Exception
+     */
+    public void clickExportdetailPDF () throws Exception
+    {
+	waitForElementPresent(exportDetailPDF);
+	exportDetailPDF.click();
+    }
+    
+    /**
+     * Verify PDF is exported correctly
+     * @param downloadPath
+     * @param fileName
+     * @return
+     */
+    public boolean isFileDownloaded (String downloadPath, String fileName)
+    {
+	boolean flag = false;
+	File dir = new File(downloadPath);
+	File[] dir_contents = dir.listFiles();
+	
+	for (int i = 0; i < dir_contents.length; i++)
+	{
+	    if (dir_contents[i].getName().equals(fileName))
+		return flag = true;
+	}
+	
+	return flag;
     }
 }
