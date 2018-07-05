@@ -17,7 +17,9 @@
 		<classes>
 			<class name="com.trimble.birst.tests.ExecutiveConsoleTests">
 			   <methods>
-					<include name="verifyExecutiveconsoleOverallscoreinASC" />					
+					<!--<include name="verifyExecutiveconsoleOverallscoreinASC" />-->
+					<!-- <include name="verifyDefaultorganization" /> -->	
+					<include name="verifyExportPDFmenu" /> 					
 				</methods>			   
 			</class>
 			

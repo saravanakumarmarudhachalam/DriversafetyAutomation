@@ -1,0 +1,204 @@
+20180703 11:24:57.362 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180703 11:24:57.366 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180703 11:24:57.366 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 11:24:57.367 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 11:24:57.368 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 11:24:57.368 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 11:24:57.368 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 11:24:57.370 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 11:24:57.372 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180703 11:24:57.372 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 11:24:57.372 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 11:25:44.499 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 11:25:44.500 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 11:25:44.500 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 11:25:44.500 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 11:25:44.501 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 11:25:44.502 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 11:25:44.502 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 11:25:44.502 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 11:25:44.502 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 11:25:44.502 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 11:25:44.503 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 11:34:32.542 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 11:34:32.547 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 11:34:32.548 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 11:34:32.549 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 11:34:32.549 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 11:34:32.549 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 11:34:32.549 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 11:34:32.550 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 11:34:32.550 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 11:34:32.550 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 11:34:32.550 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 11:39:31.157 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 11:39:31.161 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 11:39:31.161 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 11:39:31.161 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 11:39:31.162 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 11:39:31.162 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 11:39:31.162 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 11:39:31.162 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 11:39:31.163 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 11:39:31.163 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 11:39:31.163 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 11:47:37.950 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 11:47:37.955 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 11:47:37.955 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 11:47:37.956 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 11:47:37.956 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 11:47:37.956 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 11:47:37.956 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 11:47:37.957 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 11:47:37.957 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 11:47:37.957 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 11:47:37.957 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 11:58:34.807 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 11:58:34.812 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 11:58:34.812 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 11:58:34.813 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 11:58:34.813 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 11:58:34.813 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 11:58:34.814 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 11:58:34.814 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 11:58:34.815 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 11:58:34.815 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 11:58:34.815 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 12:03:28.348 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 12:03:28.353 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 12:03:28.353 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 12:03:28.354 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 12:03:28.354 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 12:03:28.354 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 12:03:28.354 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 12:03:28.355 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 12:03:28.355 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 12:03:28.355 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 12:03:28.356 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 15:31:08.726 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 15:31:08.740 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 15:31:08.740 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 15:31:08.741 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 15:31:08.741 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 15:31:08.741 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 15:31:08.742 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 15:31:08.743 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 15:31:08.743 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 15:31:08.743 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 15:31:08.743 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 15:31:45.204 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 15:31:45.210 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 15:31:45.210 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 15:31:45.212 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 15:31:45.212 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 15:31:45.212 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 15:31:45.212 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 15:31:45.214 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 15:31:45.215 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 15:31:45.215 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 15:31:45.216 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 15:41:50.408 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 15:41:50.411 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 15:41:50.412 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 15:41:50.413 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 15:41:50.414 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 15:41:50.415 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 15:41:50.419 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 15:41:50.420 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 15:41:50.420 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 15:41:50.421 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 15:41:50.421 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 15:48:40.920 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 15:48:40.924 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 15:48:40.924 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 15:48:40.925 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 15:48:40.925 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 15:48:40.926 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 15:48:40.926 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 15:48:40.927 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 15:48:40.927 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 15:48:40.927 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 15:48:40.927 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 15:53:28.141 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 15:53:28.145 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 15:53:28.146 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 15:53:28.147 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 15:53:28.147 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 15:53:28.147 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 15:53:28.147 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 15:53:28.148 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 15:53:28.149 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 15:53:28.149 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 15:53:28.149 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 16:02:08.831 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 16:02:08.834 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 16:02:08.834 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 16:02:08.835 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 16:02:08.835 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 16:02:08.835 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 16:02:08.835 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 16:02:08.837 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 16:02:08.838 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 16:02:08.838 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 16:02:08.838 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 16:13:32.991 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 16:13:32.995 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 16:13:32.995 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 16:13:32.996 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 16:13:32.996 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 16:13:32.996 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 16:13:32.997 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 16:13:32.999 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 16:13:32.999 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 16:13:32.999 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 16:13:32.999 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 16:45:10.110 |INFO | [TestNG] [ProLogger.java:176] - Verify default organization displayed is Allan Myers
+20180703 16:45:10.113 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify default organization Allan Myers
+20180703 16:45:10.113 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 16:45:10.114 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 16:45:10.114 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 16:45:10.114 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 16:45:10.115 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 16:45:10.116 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 16:45:10.116 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify default organization displayed is Allan Myers 
+20180703 16:45:10.116 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 16:45:10.116 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 17:21:14.161 |INFO | [TestNG] [ProLogger.java:176] - Verify entire report is able to export
+20180703 17:21:14.164 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify entire report is able to export
+20180703 17:21:14.164 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 17:21:14.165 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 17:21:14.165 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 17:21:14.166 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 17:21:14.166 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 17:21:14.167 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 17:21:14.167 |INFO | [TestNG] [ProLogger.java:176] - 6. Click the Export icon 
+20180703 17:21:14.167 |INFO | [TestNG] [ProLogger.java:176] - 7. Click the PDF 
+20180703 17:21:14.167 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify entire report is able to export 
+20180703 17:21:14.167 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 17:21:14.167 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 17:24:56.572 |INFO | [TestNG] [ProLogger.java:176] - Verify entire report is able to export
+20180703 17:24:56.575 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify entire report is able to export
+20180703 17:24:56.575 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 17:24:56.576 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 17:24:56.576 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 17:24:56.576 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 17:24:56.576 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 17:24:56.577 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 17:24:56.578 |INFO | [TestNG] [ProLogger.java:176] - 6. Click the Export icon 
+20180703 17:24:56.578 |INFO | [TestNG] [ProLogger.java:176] - 7. Click the PDF 
+20180703 17:24:56.578 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify entire report is able to export 
+20180703 17:24:56.578 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 17:24:56.579 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180703 17:26:57.556 |INFO | [TestNG] [ProLogger.java:176] - Verify entire report is able to export
+20180703 17:26:57.560 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify entire report is able to export
+20180703 17:26:57.561 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180703 17:26:57.562 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180703 17:26:57.562 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180703 17:26:57.562 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180703 17:26:57.562 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180703 17:26:57.563 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180703 17:26:57.565 |INFO | [TestNG] [ProLogger.java:176] - 6. Click the Export icon 
+20180703 17:26:57.565 |INFO | [TestNG] [ProLogger.java:176] - 7. Click the PDF 
+20180703 17:26:57.565 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify entire report is able to export 
+20180703 17:26:57.566 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180703 17:26:57.566 |INFO | [TestNG] [ProLogger.java:176] - Actual Results

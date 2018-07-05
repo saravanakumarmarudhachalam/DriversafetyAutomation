@@ -1,0 +1,11 @@
+20180702 16:42:24.503 |INFO | [TestNG] [ProLogger.java:176] - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
+20180702 16:42:24.507 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify overall score should be displayed in the Ascending order in the Executive console
+20180702 16:42:24.507 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180702 16:42:24.509 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180702 16:42:24.510 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180702 16:42:24.511 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180702 16:42:24.511 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180702 16:42:24.513 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180702 16:42:24.513 |INFO | [TestNG] [ProLogger.java:176] - 6. Verify overall score is displayed in Ascending order| overall score is displayed correctly in Ascending order 
+20180702 16:42:24.513 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180702 16:42:24.513 |INFO | [TestNG] [ProLogger.java:176] - Actual Results

@@ -1,0 +1,26 @@
+20180704 12:23:12.463 |INFO | [TestNG] [ProLogger.java:176] - Verify entire report is able to export
+20180704 12:23:12.488 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify entire report is able to export
+20180704 12:23:12.488 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180704 12:23:12.489 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180704 12:23:12.489 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180704 12:23:12.489 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180704 12:23:12.491 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180704 12:23:12.492 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180704 12:23:12.492 |INFO | [TestNG] [ProLogger.java:176] - 6. Click the Export icon 
+20180704 12:23:12.492 |INFO | [TestNG] [ProLogger.java:176] - 7. Click the PDF 
+20180704 12:23:12.492 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify entire report is able to export 
+20180704 12:23:12.493 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180704 12:23:12.493 |INFO | [TestNG] [ProLogger.java:176] - Actual Results
+20180704 12:25:21.197 |INFO | [TestNG] [ProLogger.java:176] - Verify entire report is able to export
+20180704 12:25:21.201 |INFO | [TestNG] [ProLogger.java:176] - Test Case : Verify entire report is able to export
+20180704 12:25:21.201 |INFO | [TestNG] [ProLogger.java:176] - Test Steps | Expected Results:
+20180704 12:25:21.202 |INFO | [TestNG] [ProLogger.java:176] - 1. Launch the application | Application Should be Launched
+20180704 12:25:21.203 |INFO | [TestNG] [ProLogger.java:176] - 2. Login to the application | User Should be login successfully
+20180704 12:25:21.203 |INFO | [TestNG] [ProLogger.java:176] - 3. Verify Home page | Home page should be displayed
+20180704 12:25:21.203 |INFO | [TestNG] [ProLogger.java:176] - 4. Click My Spaces & Click Dashboards | Trimble pulse home page is displayed
+20180704 12:25:21.204 |INFO | [TestNG] [ProLogger.java:176] - 5. Click Executive Driver safety Console| Executive console home page is displayed
+20180704 12:25:21.204 |INFO | [TestNG] [ProLogger.java:176] - 6. Click the Export icon 
+20180704 12:25:21.204 |INFO | [TestNG] [ProLogger.java:176] - 7. Click the PDF 
+20180704 12:25:21.204 |INFO | [TestNG] [ProLogger.java:176] - 8. Verify entire report is able to export 
+20180704 12:25:21.205 |INFO | [TestNG] [ProLogger.java:176] - ========================
+20180704 12:25:21.205 |INFO | [TestNG] [ProLogger.java:176] - Actual Results

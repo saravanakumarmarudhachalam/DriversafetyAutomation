@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Functional_Testing">
-                    <span>C:\Saravana\DriversafetyAutomation\TestAutomationFramework\src\test\resources\testsuites\Suite1.xml</span>
+                    <span>C:\DriversafetyAutomation-master\DriversafetyAutomation\DriversafetyAutomation\src\test\resources\testsuites\Suite1.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Functional_Testing">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.birst.tests.ExecutiveConsoleTests" hash-for-method="verifyExecutiveconsoleOverallscoreinASC">verifyExecutiveconsoleOverallscoreinASC</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.birst.tests.ExecutiveConsoleTests" hash-for-method="verifyExportPDFmenu">verifyExportPDFmenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Functional_Testing -->
@@ -124,9 +124,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyExecutiveconsoleOverallscoreinASC">
-                  </a> <!-- verifyExecutiveconsoleOverallscoreinASC -->
-                  <span class="method-name">verifyExecutiveconsoleOverallscoreinASC</span>
+                  <a name="verifyExportPDFmenu">
+                  </a> <!-- verifyExportPDFmenu -->
+                  <span class="method-name">verifyExportPDFmenu</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -134,7 +134,7 @@
         </div> <!-- panel Functional_Testing -->
         <div panel-name="test-xml-Functional_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Saravana\DriversafetyAutomation\TestAutomationFramework\src\test\resources\testsuites\Suite1.xml</span>
+            <span class="header-content">C:\DriversafetyAutomation-master\DriversafetyAutomation\DriversafetyAutomation\src\test\resources\testsuites\Suite1.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -153,7 +153,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.trimble.birst.tests.ExecutiveConsoleTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyExecutiveconsoleOverallscoreinASC&quot;/&gt;
+          &lt;include name=&quot;verifyExportPDFmenu&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.trimble.birst.tests.ExecutiveConsoleTests --&gt;
     &lt;/classes&gt;
@@ -197,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyExecutiveconsoleOverallscoreinASC')
+data.setCell(0, 1, 'verifyExportPDFmenu')
 data.setCell(0, 2, 'com.trimble.birst.tests.ExecutiveConsoleTests')
-data.setCell(0, 3, 57462);
+data.setCell(0, 3, 69453);
 window.suiteTableData['Functional_Testing']= { tableData: data, tableDiv: 'times-div-Functional_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Functional_Testing">
               </div> <!-- times-div-Functional_Testing -->
             </div> <!-- times-div -->
@@ -216,20 +216,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyExecutiveconsoleOverallscoreinASC</span>
+              <span class="reporter-method-name">verifyExportPDFmenu</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">My Spaces page is displayed correctly</span>
                 <span class="reporter-method-output">Driver safety page is displayed correctly</span>
                 <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Ok, we're working on your download request</span>
+                <span class="reporter-method-output">Ok, we're working on your download request</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Functional_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.trimble.birst.tests.ExecutiveConsoleTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyExecutiveconsoleOverallscoreinASC</span>
+                <br/>
+                <span class="ignored-method-name">verifyDefaultorganization</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Functional_Testing" class="panel">
@@ -245,23 +256,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">GoToHomePage(CHROME, LOCAL, windows)</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyExecutiveconsoleOverallscoreinASC</span>
-                <span class="method-start">6597 ms</span>
+                <span class="method-name">verifyExportPDFmenu</span>
+                <span class="method-start">7307 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=verifyExecutiveconsoleOverallscoreinASC status=SUCCESS method=ExecutiveConsoleTests...)</span>
-                <span class="method-start">64080 ms</span>
+                <span class="method-name">generateReport([TestResult name=verifyExportPDFmenu status=SUCCESS method=ExecutiveConsoleTests.verifyExportPDFmenu...)</span>
+                <span class="method-start">76769 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">65160 ms</span>
+                <span class="method-start">77961 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
