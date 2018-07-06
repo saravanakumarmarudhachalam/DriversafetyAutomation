@@ -32,6 +32,8 @@ public final class Constants
     
     public static final String OVERALLSCORE_ASCENDINGORDER_DISPLAYED = "Overallscore is displayed in ascending order correctly";
     
+    public static final String OVERALLSCORE_DESCENDINGORDER_DISPLAYED = "Overallscore is displayed in descending order correctly";
+    
     public static final String DEFAULT_ORGANIZATION = "ALLAN MYERS";
     
     public static final String EXPORT_IN_PROGRESS = "Ok, we're working on your download request";
@@ -41,3 +43,4 @@ public final class Constants
     
     public static final String DEFAULT_ORGANIZATION_DISPLAYED = "Default Organization Allen Myers is displayed correctly";
 }
+

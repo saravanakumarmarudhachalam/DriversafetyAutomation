@@ -52,6 +52,19 @@ public class Exectiveconsolesteps
 	Reporter.log(Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
     }
     
+    @Then("^I clicked the Overall Score column to sort it in descending order$")
+    public void clickOverallscoreColumn() throws Throwable
+    {
+	driverSafetypage.clickOverallScore();
+    }
+    
+    @Then ("^I verified overall score is displayed in descending order$")
+    public void verifyDescendingoverallScore () throws Throwable
+    {
+	Assert.assertTrue(driverSafetypage.verifyOverallscoreDsc(), Constants.OVERALLSCORE_DESCENDINGORDER_DISPLAYED);
+	Reporter.log(Constants.OVERALLSCORE_DESCENDINGORDER_DISPLAYED);
+    }
+    
     @Then("^I verified Allen Myers text and overall score is displayed correctly$")
     public void verifyAllenmyerOverallscore() throws Throwable
     {

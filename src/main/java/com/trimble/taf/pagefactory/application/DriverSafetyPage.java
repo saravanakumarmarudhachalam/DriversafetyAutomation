@@ -64,6 +64,9 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(css = "i[class='table-sorting ASC']")
     public WebElement overallScoreasc;
     
+    @FindBy(css = "i[class='table-sorting DESC']")
+    public WebElement overallScoreDsc;
+    
     @FindBy(css = "td[id = org-name]")
     public WebElement defaultOrg;
     
@@ -313,6 +316,31 @@ public class DriverSafetyPage extends AbstractPage
     {
 	waitForElementPresent(overallScoreasc);
 	return isElementDisplayed(overallScoreasc);
+	
+    }
+    
+    /**
+     * Click the Overall score column to sort the column in Descending Order
+     * 
+     * @return
+     * @throws Exception
+     */
+    public void clickOverallScore () throws Exception
+    {
+	waitForElementPresent(overallScoreasc);
+	overallScoreasc.click();
+	
+    }
+    /**
+     * Verify Overallscore displayed in Descending Order
+     * 
+     * @return
+     * @throws Exception
+     */
+    public boolean verifyOverallscoreDsc () throws Exception
+    {
+	waitForElementPresent(overallScoreDsc);
+	return isElementDisplayed(overallScoreDsc);
 	
     }
     
