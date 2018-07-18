@@ -45,7 +45,10 @@ public class MyspacesPage extends AbstractPage
     public WebElement optDesigner;
     
     @FindBy(id = "idMySpacesMainContainer_header_hd-textEl")
-    public WebElement mySpacelbl;
+    public WebElement mySpacelbl;	
+    
+    @FindBy(xpath = "//*[@id=\"gridview-1014\"]/table/tbody/tr[3]/td[2]/div")
+    public WebElement space_AutomationSpace;
     
     public MyspacesPage(WebDriver driver)
     {
@@ -131,6 +134,10 @@ public class MyspacesPage extends AbstractPage
 		checkPageIsReady();
 		space_Sprint18QA.click();
 		break;
+	    case "AutomationSpace":
+		checkPageIsReady();
+		space_AutomationSpace.click();
+		break;	    	
 	}
     }
     

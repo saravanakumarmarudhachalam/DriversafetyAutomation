@@ -61,7 +61,7 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(xpath = "//span[text() = \"Scorecard Report - separated groups\"]")
     public WebElement separatedScorecard;
-    
+        
     @FindAll({
 	    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(6) > div.dashlet-wrapper.ng-scope > report > image-report > img"),
 	    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(11) > div.dashlet-wrapper.ng-scope > report > image-report")
@@ -97,6 +97,12 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[2]/div/div/div[2]")
     public List<WebElement> gridValues;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Individual Safety Score')]")
+    public WebElement individualSafetyscore;
+    
+    @FindBy(xpath = "//*[@id=\"page-dashboard-breadcrumb\"]/h1/a/span[1]")
+    public WebElement individualSafetyconsoleHome;
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -137,6 +143,27 @@ public class DriverSafetyPage extends AbstractPage
     {
 	waitForElementPresent(executiveConsolehomePage);
 	return executiveConsolehomePage.isDisplayed();
+    }
+    /**
+     * Click the Individual safety Score card link
+     * 
+     * @throws Exception
+     */
+    public void clickIndividualsafetyScore () throws Exception
+    {
+	waitForElementPresent(individualSafetyscore);
+	individualSafetyscore.click();
+    }
+    /**
+     * Check Individual safety Score card is displayed
+     * 
+     * @return
+     * @throws Exception
+     */
+    public boolean verifyIndividualsafetyScore () throws Exception
+    {
+	waitForElementPresent(individualSafetyconsoleHome);
+	return individualSafetyconsoleHome.isDisplayed();
     }
     
     /**

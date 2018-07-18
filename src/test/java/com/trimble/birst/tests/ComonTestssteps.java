@@ -69,7 +69,7 @@ public class ComonTestssteps
     @And("^I clicked MySpaces & Dashboard$")
     public void clickWorkspace () throws Throwable
     {
-	mySpacepage.selectSpace("Sprint 18-23 PostgreSQL QA NEW_USERS");
+	mySpacepage.selectSpace("AutomationSpace");
 	mySpacepage.selectOption("optDashboards");
 	Assert.assertTrue(driverSafetypage.verifyTrimblepulseImg(),
 		Constants.TIMBLE_PULSEIMAGE_DISPLAYED);
@@ -80,6 +80,21 @@ public class ComonTestssteps
     public void clickExecutivedriverSafetyConsole () throws Throwable
     {
 	driverSafetypage.clickExecutidriverSafetyconsole();
+    }
+    
+    @When("^I clicked Individual Safety Score card$")
+    public void clickIndividualsafetyScore () throws Throwable
+    {
+	driverSafetypage.clickIndividualsafetyScore();
+	
+    }
+    
+    @Then("^Verify Individual Scorecard is displayed$")
+    public void verifyIndividualscoreHomepage() throws Throwable
+    {
+	Assert.assertTrue(driverSafetypage.verifyIndividualsafetyScore(),
+		Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
+	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }
     
     @Then("^I validate the Executive Driversafety console page is displayed correctly$")
