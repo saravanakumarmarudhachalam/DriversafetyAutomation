@@ -82,6 +82,12 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//*[@id=\"info-dashboardExportInProgress\"]/div/span/span[1]")
     public WebElement exportInprogress;
     
+    @FindBy (css = "#chart > svg > g:nth-child(2) > g.c3-chart > g.c3-chart-arcs > g > text")
+    public WebElement donutChartvalue;
+    
+    @FindBy (xpath = "//*[@id=\"reportview_35\"]/div/div[3]/div[2]/div[1]/div/div/div/div[2]")
+    public WebElement barchartTarget;
+    
     public DriverSafetyPage(WebDriver driver)
     {
 	super(driver);
@@ -387,6 +393,26 @@ public class DriverSafetyPage extends AbstractPage
     {
 	waitForElementPresent(exportInprogress);
 	return getText(exportInprogress);
+    }
+    
+    /**
+     * Verify Donut Chart score
+     * 
+     * @throws Exception
+     */
+    public String getDonutchartScore () throws Exception
+    {
+	waitForElementPresent(donutChartvalue);
+	return(donutChartvalue.getText());
+    }
+    
+    /**
+     * Verify Barchart Target is present
+     */
+    public void clickBarcharttarget () throws Exception
+    {
+	waitForElementPresent(barchartTarget);
+	barchartTarget.click();
     }
     
     /**
