@@ -598,6 +598,29 @@ public class AbstractPage
 	    ProLogger.error("No Such Element {}", nsee.getMessage());
 	}
     }
+    /*
+    **
+    * Method to wait for specific time till element is present
+    * 
+    * @param element
+    * @throws Exception
+    */
+   public void waitForElementPresent (List<WebElement> element) throws Exception
+   {
+	// FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+	// .withTimeout(120, TimeUnit.SECONDS).pollingEvery(5,
+	// TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+	
+	WebDriverWait wait = new WebDriverWait(driver, 120);
+	try
+	{
+	    wait.until(ExpectedConditions.visibilityOfAllElements(element));
+	}
+	catch (NoSuchElementException nsee)
+	{
+	    ProLogger.error("No Such Element {}", nsee.getMessage());
+	}
+   }
     
     /**
      * Method to wait for specific time till element is present

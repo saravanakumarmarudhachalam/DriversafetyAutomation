@@ -1,13 +1,20 @@
 package com.trimble.taf.pagefactory.application;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import com.trimble.taf.pagefactory.global.AbstractPage;
+import com.trimble.taf.utils.Constants;
+import com.trimble.taf.utils.ProLogger;
 
 /**
  * @author smarudh
@@ -78,6 +85,18 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(xpath = "//*[@id=\"info-dashboardExportInProgress\"]/div/span/span[1]")
     public WebElement exportInprogress;
+    
+    @FindBy(xpath = "//text[@dy = '-.1em' and @class='c3-gauge-value']")
+    public WebElement overallScoredonutChart;
+    
+    @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[1]/div/div[3]/i")
+    public List<WebElement> sortedColumndataTable;
+    
+    @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[1]/div[1]/div[3]/i")
+    public WebElement sortedParticularcolumn;
+    
+    @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[2]/div/div/div[2]")
+    public List<WebElement> gridValues;
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -323,9 +342,12 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextdefaultOrg () throws Exception
     {
-	waitForElementPresent(defaultOrg);
+	
+	// waitForElementPresent(overallScoredonutChart);
 	checkPageIsReady();
-	return getText(defaultOrg);
+	System.out.println("Wait");
+	System.out.println("Text:" + overallScoredonutChart.getText());
+	return getText(overallScoredonutChart);
     }
     
     /**
@@ -374,6 +396,7 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Verify PDF is exported correctly
+     * 
      * @param downloadPath
      * @param fileName
      * @return
@@ -391,5 +414,103 @@ public class DriverSafetyPage extends AbstractPage
 	}
 	
 	return flag;
+    }
+    
+    /**
+     * @throws Exception
+     */
+    public void sortDataTableBasedOnUserSelectedSortColumn () throws Exception
+    {
+	
+	waitForElementPresent(sortedColumndataTable);
+	for (int i = 1; i <= sortedColumndataTable.size(); i++)
+	{
+	    waitForElementPresent(driver.findElement(
+		    By.xpath("//*[@id='table-view-27']/div[1]/div/div[1]/div["
+			    + i + "]/div[3]/i")));
+	    WebElement sorted = driver.findElement(
+		    By.xpath("//*[@id='table-view-27']/div[1]/div/div[1]/div["
+			    + i + "]/div[3]/i"));
+	    
+	    if (!sorted.getAttribute("class").contains("ASC"))
+	    {
+		clickElement(driver.findElement(By
+			.xpath("//*[@id='table-view-27']/div[1]/div/div[1]/div["
+				+ i + "]/div[3]/i")));
+		checkPageIsReady();
+		Assert.assertTrue(Constants.SORTED_ASC_DESC_WORKING_CORRECTLY,
+			sorted.getAttribute("class").contains("ASC"));
+	    }
+	    
+	    if (!sorted.getAttribute("class").contains("DESC"))
+	    {
+		clickElement(driver.findElement(By
+			.xpath("//*[@id='table-view-27']/div[1]/div/div[1]/div["
+				+ i + "]/div[3]/i")));
+		checkPageIsReady();
+		Assert.assertTrue(Constants.SORTED_ASC_DESC_WORKING_CORRECTLY,
+			sorted.getAttribute("class").contains("DESC"));
+		
+	    }
+	}
+    }
+    
+    /**
+     * verify the score grid column will be displayed in Ascending and
+     * Descending
+     * 
+     * @throws Exception
+     */
+    public void sortTableascDescanyColumn () throws Exception
+    {
+	checkPageIsReady();
+	waitForElementPresent(sortedParticularcolumn);
+	clickElement(sortedParticularcolumn);
+	if (!sortedParticularcolumn.getAttribute("class").contains("ASC"))
+	{
+	    checkPageIsReady();
+	    Assert.assertTrue(Constants.SORTED_ASC_DESC_WORKING_CORRECTLY,
+		    sortedParticularcolumn.getAttribute("class")
+			    .contains("ASC"));
+	    
+	}
+	clickElement(sortedParticularcolumn);
+	if (!sortedParticularcolumn.getAttribute("class").contains("DESC"))
+	{
+	    checkPageIsReady();
+	    Assert.assertTrue(Constants.SORTED_ASC_DESC_WORKING_CORRECTLY,
+		    sortedParticularcolumn.getAttribute("class")
+			    .contains("DESC"));
+	}
+    }
+    
+    /**
+     * Verify the value should display without decimal point
+     */
+    public List<String> verifyWOdecimalPoint ()
+    {
+	List<String> acutal = new ArrayList<String>();
+	checkPageIsReady();
+	for (int i = 0; i < gridValues.size(); i++)
+	{
+	    List<WebElement> values = gridValues.get(i)
+		    .findElements(By.tagName("span"));
+	    String value = values.get(0).getText();
+	    Double j = Double.parseDouble(value);
+	    try
+	    {
+		if (j % 1 == 0)
+		{
+		    ProLogger.info(Constants.GRIDVALUES_DISPLAYED_WODECMIAL_VALUE);
+		}
+	    }
+	    catch (Exception e)
+	    {
+		ProLogger.error(Constants.GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE, e.getMessage());
+	    }
+	    acutal.add(values.get(0).getText());	    
+	}
+	
+	return acutal;
     }
 }

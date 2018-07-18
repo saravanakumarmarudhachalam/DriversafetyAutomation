@@ -84,11 +84,25 @@ public class Exectiveconsolesteps
 	driverSafetypage.clickExportdetailPDF();
     }
     
-    @Then("^I validated PDF has been exported corretly$")
+    /*@Then("^I validated PDF has been exported corretly$")
     public void verifyExportpdfDownloadloc() throws Throwable
     {
+	Thread.sleep(60000);
 	Assert.assertTrue(driverSafetypage.isFileDownloaded(propertyUtils.getProperty("downloadPath"),
 		"Executive Console.pdf"), Constants.FILE_DOWNLOAD);
 	Reporter.log(Constants.FILE_DOWNLOAD);
+    }
+    */
+    
+    @Then("^I verified all the sorting column are working correctly$")
+    public void verifySortingcolumn() throws Throwable
+    {	
+	driverSafetypage.sortTableascDescanyColumn();
+    }
+    
+    @Then("^I verified all the displayed without decimal point in the score grid$")
+    public void verifyWOdecimalPoint() throws Throwable
+    {	
+	driverSafetypage.verifyWOdecimalPoint();
     }
 }
