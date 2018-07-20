@@ -3,6 +3,9 @@
  */
 package com.trimble.birst.tests;
 
+import java.io.IOException;
+import java.util.Set;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -29,6 +32,8 @@ public class ComonTestssteps
     String startDate;
     
     String endDate;
+    
+    String exePagedriverName;
     
     public LoginPage loginPage;
     
@@ -185,4 +190,39 @@ public class ComonTestssteps
 	loginPage.enterPassword(propertyUtils.getProperty("password"));
 	loginPage.clickLogin();
     }
+    
+    @And("^I clicked on driver name in Executive console$")
+    public void clickDrivername() throws Throwable
+    {
+//	String executiveDrivername;
+//	executiveDrivername = driverSafetypage.executivePagedriverName.getAttribute("data-name");
+	Thread.sleep(30000);
+	exePagedriverName = driverSafetypage.executivePagedriverName.getText();
+	driverSafetypage.executivePagedriverLink.click();
+	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
+		
+    }
+    
+    @Then("^Verify Individual Scorecard is displayed for that driver$")
+    public void verifyIndividualscorePage() throws Throwable
+    {
+	//String winHandleBefore = driver.getWindowHandle();
+	Thread.sleep(30000);
+	
+	String newWindowtitle = driver.getTitle();
+	System.out.println(newWindowtitle);
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
+	driver.switchTo().window(newWindowtitle);
+	String individualScoredriverName;
+	individualScoredriverName = driverSafetypage.individualScoredriverNameinFilter.getText();
+	System.out.println("Individual Scorecard Driver Name: " + individualScoredriverName);
+	System.out.println("Executive Page Driver Name: " + exePagedriverName);
+	Assert.assertEquals(exePagedriverName,individualScoredriverName);
+	Reporter.log(Constants.DRIVER_NAME_IN_EXECUTIVE_CONSOLE_AND_INDIVIDUAL_SCORECARD_MATCHES);
+	
+    }
+    
+    
+   
 }
+

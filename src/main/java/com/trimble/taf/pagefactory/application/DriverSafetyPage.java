@@ -3,11 +3,14 @@ package com.trimble.taf.pagefactory.application;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -15,6 +18,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.trimble.taf.pagefactory.global.AbstractPage;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.ProLogger;
+
+import cucumber.api.java.en.Then;
 
 /**
  * @author smarudh
@@ -74,7 +79,7 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(css = "td[id = org-name]")
     public WebElement defaultOrg;
     
-    @FindBy(xpath = "//*[@id=\"global-header\"]/header/ng-include/div/div/ul/li[3]/a/i")
+    @FindBy(xpath = "//i[@class='icon-export']")
     public WebElement exportIcon;
     
     @FindBy(xpath = "//span[text() = \"PDF\"]")
@@ -104,8 +109,18 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//*[@id=\"page-dashboard-breadcrumb\"]/h1/a/span[1]")
     public WebElement individualSafetyconsoleHome;
     
+    @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div")
+    public WebElement executivePagedriverName;
+    
+    @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div/div/span/a")
+    public WebElement executivePagedriverLink;
+    
+    @FindBy(xpath = "//*[@id=\"background-color-wrapper\"]/div[2]/div[1]/ul/li/a[2]/span")
+    public WebElement individualScoredriverNameinFilter;
+    
     public DriverSafetyPage(WebDriver driver)
     {
+	
 	super(driver);
 	PageFactory.initElements(driver, this);
     }
@@ -540,4 +555,14 @@ public class DriverSafetyPage extends AbstractPage
 	
 	return acutal;
     }
+    
+    public void waitFornewWindowandSwitchtoIt(WebDriver driver) throws InterruptedException
+    {
+	String windowHandle = driver.getWindowHandle();
+	driver.switchTo().window(windowHandle);
+    }
+
 }
+
+    
+

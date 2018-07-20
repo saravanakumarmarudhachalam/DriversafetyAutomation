@@ -49,4 +49,6 @@ public final class Constants
     public static final String GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE = "All the grid score value is displaed with Decimal Point";
     
     public static final String INDIVIDUAL_SCORECARD_DISPLAYED = "Individual Scorecard page is displayed correctly";
+    
+    public static final String DRIVER_NAME_IN_EXECUTIVE_CONSOLE_AND_INDIVIDUAL_SCORECARD_MATCHES = "Driver name in Executive console and Individual scorecard matches"; 
 }
