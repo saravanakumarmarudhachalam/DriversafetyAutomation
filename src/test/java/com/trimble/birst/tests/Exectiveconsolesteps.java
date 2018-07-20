@@ -53,14 +53,16 @@ public class Exectiveconsolesteps
     }
     
     @Then("^I verified Allen Myers text and overall score is displayed correctly$")
-    public void verifyAllenmyerOverallscore() throws Throwable
+    public void verifyAllenmyerOverallscore () throws Throwable
     {
-	Assert.assertEquals(driverSafetypage.getTextdefaultOrg(), Constants.DEFAULT_ORGANIZATION,Constants.DEFAULT_ORGANIZATION_DISPLAYED);
+	Assert.assertEquals(driverSafetypage.getTextdefaultOrg(),
+		Constants.DEFAULT_ORGANIZATION,
+		Constants.DEFAULT_ORGANIZATION_DISPLAYED);
 	Reporter.log(Constants.DEFAULT_ORGANIZATION_DISPLAYED);
     }
     
     @When("^I clicked Exporticon$")
-    public void clickExporticon() throws Throwable
+    public void clickExporticon () throws Throwable
     {
 	driverSafetypage.clickExporticon();
     }
@@ -72,9 +74,10 @@ public class Exectiveconsolesteps
     }
     
     @Then("^I verified file has been exported correctly$")
-    public void verifyExportpdfProgress() throws Throwable
+    public void verifyExportpdfProgress () throws Throwable
     {
-	Assert.assertEquals(driverSafetypage.getTextexportInprogress(), Constants.EXPORT_IN_PROGRESS,Constants.PDF_EXPORTED_CORRECTLY);
+	Assert.assertEquals(driverSafetypage.getTextexportInprogress(),
+		Constants.EXPORT_IN_PROGRESS, Constants.PDF_EXPORTED_CORRECTLY);
 	Reporter.log(Constants.PDF_EXPORTED_CORRECTLY);
     }
     
@@ -84,25 +87,45 @@ public class Exectiveconsolesteps
 	driverSafetypage.clickExportdetailPDF();
     }
     
-    /*@Then("^I validated PDF has been exported corretly$")
-    public void verifyExportpdfDownloadloc() throws Throwable
-    {
-	Thread.sleep(60000);
-	Assert.assertTrue(driverSafetypage.isFileDownloaded(propertyUtils.getProperty("downloadPath"),
-		"Executive Console.pdf"), Constants.FILE_DOWNLOAD);
-	Reporter.log(Constants.FILE_DOWNLOAD);
-    }
-    */
+    /*
+     * @Then("^I validated PDF has been exported corretly$") public void
+     * verifyExportpdfDownloadloc() throws Throwable { Thread.sleep(60000);
+     * Assert.assertTrue(driverSafetypage.isFileDownloaded(propertyUtils.
+     * getProperty("downloadPath"), "Executive Console.pdf"),
+     * Constants.FILE_DOWNLOAD); Reporter.log(Constants.FILE_DOWNLOAD); }
+     */
     
     @Then("^I verified all the sorting column are working correctly$")
-    public void verifySortingcolumn() throws Throwable
-    {	
+    public void verifySortingcolumn () throws Throwable
+    {
 	driverSafetypage.sortTableascDescanyColumn();
     }
     
     @Then("^I verified all the displayed without decimal point in the score grid$")
-    public void verifyWOdecimalPoint() throws Throwable
-    {	
+    public void verifyWOdecimalPoint () throws Throwable
+    {
 	driverSafetypage.verifyWOdecimalPoint();
+    }
+    
+    @Then("^I Verify Target is enabled in the Bar chart$")
+    public void verifyBarchartTargetisEnabled () throws Throwable
+    {
+	String targetWhenenabled;
+	targetWhenenabled = driverSafetypage.getAttributetargetLine();
+	Assert.assertEquals(targetWhenenabled, "legend-item");
+    }
+    
+    @Then("^I clicked the Target$")
+    public void clickTargetinBarchart () throws Throwable
+    {
+	driverSafetypage.clickBarcharttarget();
+	
+    }
+    @Then("^I verify Target is disabled in the bar chart$")
+    public void veirfyBarchartTargetisDisabled () throws Throwable
+    {
+	String targetWhendiabled;
+	targetWhendiabled = driverSafetypage.getAttributetargetLine();
+	Assert.assertEquals(targetWhendiabled, "legend-item filtered-legend");
     }
 }

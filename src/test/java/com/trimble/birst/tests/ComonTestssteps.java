@@ -69,7 +69,7 @@ public class ComonTestssteps
     @And("^I clicked MySpaces & Dashboard$")
     public void clickWorkspace () throws Throwable
     {
-	mySpacepage.selectSpace("Sprint 18-23 PostgreSQL QA NEW_USERS");
+	mySpacepage.selectSpace("AutomationSpace");
 	mySpacepage.selectOption("optDashboards");
 	Assert.assertTrue(driverSafetypage.verifyTrimblepulseImg(),
 		Constants.TIMBLE_PULSEIMAGE_DISPLAYED);

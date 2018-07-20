@@ -2,10 +2,14 @@ package com.trimble.taf.pagefactory.application;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -30,7 +34,7 @@ public class DriverSafetyPage extends AbstractPage
     public WebElement lnkExecDSConsole;
     
     @FindBy(css = "#page-dashboard-breadcrumb > h1 > a > span.ng-binding")
-    public WebElement executiveConsolehomePage;
+    public WebElement driversafetyHomepage;
     
     @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(5) > span")
     public WebElement last30daysFilter;
@@ -98,6 +102,22 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[2]/div/div/div[2]")
     public List<WebElement> gridValues;
     
+    @FindBy(xpath = "//*[@id=\"reportview_35\"]/div/div[3]/div[2]/div[1]/div/div/div/div[2]")
+    public WebElement barchartTarget;
+    
+    @FindBy(xpath = "//span[text() = \"Individual Safety Scorecard\"]")
+    public WebElement individualSafetyscorecard;
+    
+    @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div")
+    public WebElement executivePagedriverName;
+    
+    @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div/div/span/a")
+    public WebElement executivePagedriverLink;
+    
+    @FindBy(xpath = "//*[@id=\"background-color-wrapper\"]/div[2]/div[1]/ul/li/a[2]/span")
+    public WebElement individualScoredriverNameinFilter;
+    
+    
     public DriverSafetyPage(WebDriver driver)
     {
 	super(driver);
@@ -135,8 +155,8 @@ public class DriverSafetyPage extends AbstractPage
      */
     public boolean verifyExectiveconsolePage () throws Exception
     {
-	waitForElementPresent(executiveConsolehomePage);
-	return executiveConsolehomePage.isDisplayed();
+	waitForElementPresent(driversafetyHomepage);
+	return driversafetyHomepage.isDisplayed();
     }
     
     /**
@@ -501,16 +521,95 @@ public class DriverSafetyPage extends AbstractPage
 	    {
 		if (j % 1 == 0)
 		{
-		    ProLogger.info(Constants.GRIDVALUES_DISPLAYED_WODECMIAL_VALUE);
+		    ProLogger.info(
+			    Constants.GRIDVALUES_DISPLAYED_WODECMIAL_VALUE);
 		}
 	    }
 	    catch (Exception e)
 	    {
-		ProLogger.error(Constants.GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE, e.getMessage());
+		ProLogger.error(
+			Constants.GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE,
+			e.getMessage());
 	    }
-	    acutal.add(values.get(0).getText());	    
+	    acutal.add(values.get(0).getText());
 	}
 	
 	return acutal;
+    }
+    
+    /**
+     * Verify Barchart Target is present
+     */
+    public void clickBarcharttarget () throws Exception
+    {
+	waitForElementPresent(barchartTarget);
+	barchartTarget.click();
+    }
+    
+    /**
+     * Get the Class attribute name
+     * @return
+     * @throws Exception
+     */
+    public String getAttributetargetLine() throws Exception{
+	waitForElementPresent(barchartTarget);
+	checkPageIsReady();
+	return barchartTarget.getAttribute("class");
+    }
+    
+    /**
+     * Click Individual Safety Scorecard
+     * @throws Exception
+     */
+    public void clickIndividualsafetyScorecard() throws Exception{
+	waitForElementPresent(individualSafetyscorecard);
+	individualSafetyscorecard.click();
+    }
+    
+    /**
+     * Check Individual Scorecard page is displayed
+     * 
+     * @return
+     * @throws Exception
+     */
+    public boolean verifyIndividualscorecardPage () throws Exception
+    {
+	waitForElementPresent(driversafetyHomepage);
+	return driversafetyHomepage.isDisplayed();
+    }
+    
+    /**
+     * Get the text from Driver name
+     * @return
+     * @throws Exception
+     */
+    public String getTextdriverName() throws Exception{
+	waitForElementPresent(executivePagedriverName);
+	checkPageIsReady();
+	return executivePagedriverName.getText();	
+    }
+    
+    /**
+     * Wait for windows to Switch To
+     * @param driver
+     * @throws InterruptedException
+     */
+    public void waitFornewWindowandSwitchtoIt(WebDriver driver) throws InterruptedException
+    {
+	checkPageIsReady();
+	Set<String> window_handles = driver.getWindowHandles();
+	Iterator<String> iterate = window_handles.iterator();
+	String first =iterate.next();
+	String second=iterate.next();	
+	driver.switchTo().window(second);	
+    }   
+    
+    /**
+     * Get text from Individual Score card driver name
+     * @return
+     */
+    public String getTextindividualScoredriverNameinFilter() throws Exception{
+	waitForElementPresent(individualScoredriverNameinFilter);
+	return individualScoredriverNameinFilter.getText();
     }
 }

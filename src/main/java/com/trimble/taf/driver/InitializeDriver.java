@@ -203,10 +203,13 @@ public class InitializeDriver
     private DesiredCapabilities getFirefoxCapabilities ()
     {
 	ProfilesIni theAllProfiles = new ProfilesIni();
+	String firefoxDriverpath = propertyUtils.getProperty("firefoxDriverPath");
+	System.setProperty("webdriver.gecko.driver", CURRENT_DIR
+		+ firefoxDriverpath);
 	DesiredCapabilities theDesCap = DesiredCapabilities.firefox();
 	FirefoxProfile theProfile = theAllProfiles.getProfile(FIREFOX_PROFILE);
-	theProfile.setAcceptUntrustedCertificates(true);
-	theProfile.setAssumeUntrustedCertificateIssuer(false);
+	//theProfile.setAcceptUntrustedCertificates(true);
+	//theProfile.setAssumeUntrustedCertificateIssuer(false);
 	((DesiredCapabilities) theDesCap).setCapability(FirefoxDriver.PROFILE,
 		theProfile);
 	((DesiredCapabilities) theDesCap).setCapability(

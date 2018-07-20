@@ -45,15 +45,24 @@ Feature: Executive Console
     #Then I validate the Executive Driversafety console page is displayed correctly
     #Then I verified all the sorting column are working correctly
 
-      @Regression
-  Scenario: Verify all Score values are shown rounded i.e. without any decimals (applicable to Overall Score, Accel, Braking, Speeding, Turning columns)
-    Given I am logged into Application
-    Then I validate home page displayed correctly
-    And I clicked MySpaces & Dashboard
-    When I clicked Executive Driversafety console
-    Then I validate the Executive Driversafety console page is displayed correctly
+      #@Regression
+  #Scenario: Verify all Score values are shown rounded i.e. without any decimals (applicable to Overall Score, Accel, Braking, Speeding, Turning columns)
+    #Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #Then I validate the Executive Driversafety console page is displayed correctly
     #Then I verified all the displayed without decimal point in the score grid
     
-    
+    #@Regression
+#	Scenario: Verify Target is enabled in the barchart.
+#		Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #Then I validate the Executive Driversafety console page is displayed correctly
+    #Then I Verify Target is enabled in the Bar chart
+    #When I clicked the Target
+    #Then I verify Target is disabled in the bar chart
     
     

@@ -35,6 +35,9 @@ public class MyspacesPage extends AbstractPage
     @FindBy(xpath = "//div[text()='Sprint 18-23 PostgreSQL QA NEW_USERS']")
     public WebElement space_Sprint18QA;
     
+    @FindBy(xpath = "//div[text()='AutomationSpace']")
+    public WebElement automationSpace;
+    
     @FindBy(css = "#component-1069 > p")
     public WebElement optDashboards;
     
@@ -130,6 +133,10 @@ public class MyspacesPage extends AbstractPage
 	    case "Sprint 18-23 PostgreSQL QA NEW_USERS":
 		checkPageIsReady();
 		space_Sprint18QA.click();
+		break;
+	    case "AutomationSpace":
+		checkPageIsReady();
+		automationSpace.click();
 		break;
 	}
     }
