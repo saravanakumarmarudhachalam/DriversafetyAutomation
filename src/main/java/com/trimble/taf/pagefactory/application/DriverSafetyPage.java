@@ -117,7 +117,12 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//*[@id=\"background-color-wrapper\"]/div[2]/div[1]/ul/li/a[2]/span")
     public WebElement individualScoredriverNameinFilter;
     
+    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(3) > div > div.cell-value > span")
+    public WebElement overallScoreforDrivers;
     
+    @FindBy(css="#xpath-dashboard-canvas > div > dashlet:nth-child(8) > div.dashlet-wrapper.ng-scope > report > div > div > div > h3 > span")
+    public WebElement overallScoreindividualScorecard;
+     
     public DriverSafetyPage(WebDriver driver)
     {
 	super(driver);
@@ -282,7 +287,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextlastThirtydays () throws Exception
     {
-	waitForElementPresent(last30daysFilter);
+	waitForElementPresent(last30daysFilter);	
 	return getText(last30daysFilter);
     }
     
@@ -317,6 +322,7 @@ public class DriverSafetyPage extends AbstractPage
     public String getTextlastThirtydays_Indvscorecard () throws Exception
     {
 	waitForElementPresent(last30daysFilterIndiviudalscorecard);
+	System.out.println("Invidiual Scorecard"+getText(last30daysFilterIndiviudalscorecard));
 	return getText(last30daysFilterIndiviudalscorecard);
     }
     
@@ -611,5 +617,25 @@ public class DriverSafetyPage extends AbstractPage
     public String getTextindividualScoredriverNameinFilter() throws Exception{
 	waitForElementPresent(individualScoredriverNameinFilter);
 	return individualScoredriverNameinFilter.getText();
+    }
+    
+    /**
+     * Get text from overall score in dashlet of driver name
+     * @return
+     * @throws Exception
+     */
+    public String getTextoverallScoreofDrivername() throws Exception{
+	waitForElementPresent(overallScoreforDrivers);	
+	return getText(overallScoreforDrivers);
+    }
+    
+    /**
+     * Get text from Overallscore Dashlet in Individual Scorecard
+     * @return
+     * @throws Exception
+     */
+    public String getTextoverallScoreIndivudalscoreCard() throws Exception{
+	waitForElementPresent(overallScoreindividualScorecard);	
+	return getText(overallScoreindividualScorecard);
     }
 }
