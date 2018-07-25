@@ -14,22 +14,22 @@
       <![CDATA[Driver name in Executive console and Individual scorecard matches]]>
     </line>
     <line>
-      <![CDATA[Overall Score displayed dashlet is correctly]]>
+      <![CDATA[Total distance KPI value is matched correctly]]>
     </line>
   </reporter-output>
-  <suite name="Functional Testing" duration-ms="70851" started-at="2018-07-23T07:07:41Z" finished-at="2018-07-23T07:08:52Z">
+  <suite name="Functional Testing" duration-ms="65853" started-at="2018-07-25T12:45:47Z" finished-at="2018-07-25T12:46:53Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="feature" class="com.trimble.taf.suite.tests.base.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login Test Birst" duration-ms="70851" started-at="2018-07-23T07:07:41Z" finished-at="2018-07-23T07:08:52Z">
+    <test name="Login Test Birst" duration-ms="65853" started-at="2018-07-25T12:45:47Z" finished-at="2018-07-25T12:46:53Z">
       <class name="com.trimble.taf.suite.tests.base.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="setUpClass" is-config="true" duration-ms="296" started-at="2018-07-23T07:07:41Z" finished-at="2018-07-23T07:07:41Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="setUpClass" is-config="true" duration-ms="254" started-at="2018-07-25T12:45:47Z" finished-at="2018-07-25T12:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="feature" duration-ms="70095" started-at="2018-07-23T07:07:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-23T07:08:52Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="feature" duration-ms="65226" started-at="2018-07-25T12:45:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-25T12:46:53Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,11 @@
               <![CDATA[Driver name in Executive console and Individual scorecard matches]]>
             </line>
             <line>
-              <![CDATA[Overall Score displayed dashlet is correctly]]>
+              <![CDATA[Total distance KPI value is matched correctly]]>
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="tearDownClass" is-config="true" duration-ms="323" started-at="2018-07-23T07:08:52Z" finished-at="2018-07-23T07:08:52Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@5383967b]" name="tearDownClass" is-config="true" duration-ms="274" started-at="2018-07-25T12:46:53Z" finished-at="2018-07-25T12:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

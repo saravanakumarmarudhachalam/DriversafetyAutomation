@@ -23,7 +23,7 @@ public class IndividualSafetyScorecardsteps
 {
     
     public WebDriver driver;
-    String lastThirtdaystxt,startDate,endDate,exePagedriverName,overallScore;    
+    String lastThirtdaystxt,startDate,endDate,exePagedriverName,overallScore,totalDistance;    
     
     public static PropertyUtils propertyUtils = PropertyUtils
 	    .getInstance("testconfig.properties");
@@ -51,6 +51,7 @@ public class IndividualSafetyScorecardsteps
 	endDate = driverSafetypage.getTextendDate();
 	exePagedriverName = driverSafetypage.getTextdriverName();
 	overallScore = driverSafetypage.getTextoverallScoreofDrivername();	
+	totalDistance = driverSafetypage.getTexttotalDistance();	
 	driverSafetypage.executivePagedriverLink.click();
 	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);	
     }
@@ -88,4 +89,35 @@ public class IndividualSafetyScorecardsteps
 		overallScore, Constants.OVERALLSCORE_INDIVIDUAL_SCORECARD);
 	Reporter.log(Constants.OVERALLSCORE_INDIVIDUAL_SCORECARD);	
     }    
+    
+    @Then("^I Verify Target is enabled in the Bar chart in individual Scorecard$")
+    public void verifyBarchartTargetisEnabled () throws Throwable
+    {
+	String targetWhenenabled;
+	targetWhenenabled = driverSafetypage.getAttributetargetLine();
+	Assert.assertEquals(targetWhenenabled, "legend-item");
+    }
+    
+    @Then("^I clicked the Target in individual Scorecard$")
+    public void clickTargetinBarchart () throws Throwable
+    {
+	driverSafetypage.clickBarcharttarget();
+	
+    }
+    
+    @Then("^I verify Target is disabled in the bar chart in individual Scorecard$")
+    public void veirfyBarchartTargetisDisabled () throws Throwable
+    {
+	String targetWhendiabled;
+	targetWhendiabled = driverSafetypage.getAttributetargetLine();
+	Assert.assertEquals(targetWhendiabled, "legend-item filtered-legend");
+    }
+    
+    @Then("^I verified total distance KPI in Individual Scorecard$")
+    public void veirfyTotaldistanceKPI() throws Throwable
+    {
+	Assert.assertTrue(driverSafetypage.getTexttotalDistanceKPI().contains(totalDistance), Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
+	//Assert.assertEquals(driverSafetypage.getTexttotalDistanceKPI(),totalDistance, Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
+	Reporter.log(Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
+    }
 }
