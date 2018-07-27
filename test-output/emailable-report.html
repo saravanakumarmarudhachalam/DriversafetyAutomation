@@ -9,10 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Functional Testing</th></tr>
-<tr><td><a href="#t0">Login Test Birst</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">65,853</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Login Test Birst</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">105,884</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test Birst &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1532522748039</td><td rowspan="1">65226</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test Birst &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1532669370702</td><td rowspan="1">104997</td></tr></tbody>
 </table>
-<h2>Login Test Birst</h2><h3 id="m0">com.trimble.taf.suite.tests.base.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Individual Scorecard</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly<br/>Individual Scorecard page is displayed correctly<br/>Driver name in Executive console and Individual scorecard matches<br/>Total distance KPI value is matched correctly</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Test Birst</h2><h3 id="m0">com.trimble.taf.suite.tests.base.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Common Tests</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:43)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:882)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:104)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:71)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at com.trimble.taf.pagefactory.global.AbstractPage.waitForElementPresent(AbstractPage.java:591)
+	at com.trimble.taf.pagefactory.application.MyspacesPage.verifyMyspacelbl(MyspacesPage.java:104)
+	at com.trimble.birst.tests.ComonTestssteps.verify_Homepage(ComonTestssteps.java:84)
+	at ✽.Then I validate home page displayed correctly(commontests.feature:9)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

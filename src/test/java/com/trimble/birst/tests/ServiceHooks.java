@@ -11,14 +11,12 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Optional;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.trimble.taf.driver.InitializeDriver;
 import com.trimble.taf.pagefactory.application.LoginPage;
 import com.trimble.taf.utils.ProLogger;
 import com.trimble.taf.utils.PropertyUtils;
-
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
@@ -114,7 +112,7 @@ public class ServiceHooks
 	FileUtils.copyFile(SrcFile, DestFile);
     }
     
-    @Before
+    @Before()
     public void GoToHomePage () throws Exception
     {
 	driver = setUpDriver(propertyUtils.getProperty("browser"),
@@ -124,7 +122,7 @@ public class ServiceHooks
 	
     }
     
-    @After
+    @After()
     public void Aftersteps () throws IOException
     {
 	tearDownDriver(propertyUtils.getProperty("browser"),
@@ -139,5 +137,5 @@ public class ServiceHooks
 	loginPage.enterPassword(propertyUtils.getProperty("password"));
 	loginPage.clickLogin();
     }
-    
+   
 }

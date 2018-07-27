@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.poi.poifs.storage.DocumentBlock;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -58,14 +59,14 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(css = "#global-header > header > ng-include > div > div > ul > li.nav-item-open > button")
     public WebElement folderIcon;
     
-    @FindBy(xpath = "//span[text() = \"Individual Scorecard\"]")
-    public WebElement individualScorecard;
-    
     @FindBy(xpath = "//span[text() = \"Scorecard Report - combined groups\"]")
     public WebElement combinedScorecard;
     
     @FindBy(xpath = "//span[text() = \"Scorecard Report - separated groups\"]")
     public WebElement separatedScorecard;
+    
+    @FindBy(xpath = "//span[text() = \"Executive Console\"]")
+    public WebElement executiveConsole;
     
     @FindAll({
 	    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(6) > div.dashlet-wrapper.ng-scope > report > image-report > img"),
@@ -109,29 +110,20 @@ public class DriverSafetyPage extends AbstractPage
     })
     public WebElement barchartTarget;
     
-    @FindBy(xpath = "//span[text() = \"Individual Safety Scorecard\"]")
-    public WebElement individualSafetyscorecard;
-    
     @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div")
-    public WebElement executivePagedriverName;
+    public WebElement executivePagedriverName;    
     
-    @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div/div/span/a")
+    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(1) > div > div > span > a")  
     public WebElement executivePagedriverLink;
-    
-    @FindBy(xpath = "//*[@id=\"background-color-wrapper\"]/div[2]/div[1]/ul/li/a[2]/span")
-    public WebElement individualScoredriverNameinFilter;
     
     @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(3) > div > div.cell-value > span")
     public WebElement overallScoreforDrivers;
     
-    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(8) > div.dashlet-wrapper.ng-scope > report > div > div > div > h3 > span")
-    public WebElement overallScoreindividualScorecard;
-    
     @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(10) > div > div > span")
     public WebElement totalDistance;
     
-    @FindBy(css = "#xpath-dashboard-canvas > div > dashlet:nth-child(5) > div.dashlet-wrapper.ng-scope > report > div > div > div > h3 > span")
-    public WebElement totalDistanceindividualScorecard;
+    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(9) > div > div > span")
+    public WebElement idleDurationexecConsole;
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -246,17 +238,6 @@ public class DriverSafetyPage extends AbstractPage
     }
     
     /**
-     * Click Individual scorecard
-     * 
-     * @throws Exception
-     */
-    public void clickIndividualscoreCard () throws Exception
-    {
-	individualScorecard.click();
-	checkPageIsReady();
-    }
-    
-    /**
      * Click Scorecard Report - Combined Groups
      * 
      * @throws Exception
@@ -275,6 +256,17 @@ public class DriverSafetyPage extends AbstractPage
     public void clickSeparatedscoreCard () throws Exception
     {
 	separatedScorecard.click();
+	checkPageIsReady();
+    }
+    
+    /**
+     * Click Scorecard Report - Separated Groups
+     * 
+     * @throws Exception
+     */
+    public void clickExectiveconsole() throws Exception
+    {
+	executiveConsole.click();
 	checkPageIsReady();
     }
     
@@ -379,12 +371,10 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextdefaultOrg () throws Exception
     {
-	
-	// waitForElementPresent(overallScoredonutChart);
 	checkPageIsReady();
 	System.out.println("Wait");
-	System.out.println("Text:" + overallScoredonutChart.getText());
-	return getText(overallScoredonutChart);
+	System.out.println("Text:" + defaultOrg.getText());
+	return getText(defaultOrg);
     }
     
     /**
@@ -577,17 +567,6 @@ public class DriverSafetyPage extends AbstractPage
     }
     
     /**
-     * Click Individual Safety Scorecard
-     * 
-     * @throws Exception
-     */
-    public void clickIndividualsafetyScorecard () throws Exception
-    {
-	waitForElementPresent(individualSafetyscorecard);
-	individualSafetyscorecard.click();
-    }
-    
-    /**
      * Check Individual Scorecard page is displayed
      * 
      * @return
@@ -630,17 +609,6 @@ public class DriverSafetyPage extends AbstractPage
     }
     
     /**
-     * Get text from Individual Score card driver name
-     * 
-     * @return
-     */
-    public String getTextindividualScoredriverNameinFilter () throws Exception
-    {
-	waitForElementPresent(individualScoredriverNameinFilter);
-	return individualScoredriverNameinFilter.getText();
-    }
-    
-    /**
      * Get text from overall score in dashlet of driver name
      * 
      * @return
@@ -650,18 +618,6 @@ public class DriverSafetyPage extends AbstractPage
     {
 	waitForElementPresent(overallScoreforDrivers);
 	return getText(overallScoreforDrivers);
-    }
-    
-    /**
-     * Get text from Overallscore Dashlet in Individual Scorecard
-     * 
-     * @return
-     * @throws Exception
-     */
-    public String getTextoverallScoreIndivudalscoreCard () throws Exception
-    {
-	waitForElementPresent(overallScoreindividualScorecard);
-	return getText(overallScoreindividualScorecard);
     }
     
     /**
@@ -680,14 +636,28 @@ public class DriverSafetyPage extends AbstractPage
     }
     
     /**
-     * Get Text from total Distance of KPI in individual Scorecard
+     * Get text from Total Distance
      * 
      * @return
      * @throws Exception
      */
-    public String getTexttotalDistanceKPI () throws Exception
+    public String getTexttotalDistanceRoundoff () throws Exception
     {
-	waitForElementPresent(totalDistanceindividualScorecard);
-	return getText(totalDistanceindividualScorecard);
+	waitForElementPresent(totalDistance);
+	String value = getText(totalDistance);
+	Double j = Double.parseDouble(value);
+	double roundOff = Math.round(j);
+	String numWihoutDecimal = String.valueOf(roundOff).split("\\.")[0];
+	return numWihoutDecimal;
+    }
+    
+    /**
+     * Get Text from Idle Duration in Executive Console
+     * @return
+     * @throws Exception
+     */
+    public String getTextidleDuration() throws Exception{
+	waitForElementPresent(idleDurationexecConsole);
+	return getText(idleDurationexecConsole);
     }
 }

@@ -135,6 +135,7 @@ public class MyspacesPage extends AbstractPage
 		space_Sprint18QA.click();
 		break;
 	    case "AutomationSpace":
+		waitForElementPresent(automationSpace);
 		checkPageIsReady();
 		automationSpace.click();
 		break;
@@ -153,7 +154,9 @@ public class MyspacesPage extends AbstractPage
 	switch (option)
 	{
 	    case "optDashboards":
+		waitForElementPresent(optDashboards);
 		checkPageIsReady();
+		//Thread.sleep(10000);
 		optDashboards.click();
 		break;
 	    case "optVisualizer":

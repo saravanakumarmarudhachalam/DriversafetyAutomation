@@ -243,6 +243,7 @@ public class InitializeDriver
 	if (!(aBrowserName.equalsIgnoreCase(Browsers.INTERNETEXPLORER
 		.toString())))
 	{
+	    driver.manage().deleteAllCookies();
 	    driver.quit();
 	}
 	else

@@ -3,13 +3,21 @@
  */
 package com.trimble.birst.tests;
 
+import java.io.IOException;
+
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Optional;
+
+import com.trimble.taf.driver.InitializeDriver;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
+import com.trimble.taf.pagefactory.application.IndividualScorecardpage;
 import com.trimble.taf.pagefactory.application.LoginPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
 import com.trimble.taf.utils.Constants;
+import com.trimble.taf.utils.ProLogger;
 import com.trimble.taf.utils.PropertyUtils;
 
 import cucumber.api.java.en.And;
@@ -32,14 +40,21 @@ public class ComonTestssteps
     
     public LoginPage loginPage;
     
+    private Platform aDeviceType;
+    
     public WebDriver driver;
     
     public static PropertyUtils propertyUtils = PropertyUtils
 	    .getInstance("testconfig.properties");
     
+    protected static final String appBaseURL = propertyUtils
+	    .getProperty("appURL");
+    
     public MyspacesPage mySpacepage;
     
     public DriverSafetyPage driverSafetypage;
+    
+    public IndividualScorecardpage individualScorepage;
     
     /**
      * Constructor
@@ -49,12 +64,13 @@ public class ComonTestssteps
 	driver = ServiceHooks.driver;
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
+	individualScorepage = new IndividualScorecardpage(driver);
 	// TODO Auto-generated constructor stub
     }
     
     @Given("^I am logged into Application$")
     public void user_is_on_Landing_Page () throws Throwable
-    {
+    {	
 	performLoginaction();
     }
     
@@ -122,7 +138,7 @@ public class ComonTestssteps
     public void clickIndividualscorecard () throws Throwable
     {
 	driverSafetypage.clickFoldericon();
-	driverSafetypage.clickIndividualscoreCard();
+	individualScorepage.clickIndividualscoreCard();
     }
     
     @And("^I clicked Foldericon and Scorecard Report - combined groups$")
@@ -162,6 +178,13 @@ public class ComonTestssteps
 	Reporter.log(Constants.ENDDATEFILTER_TEXT_DISPLAYED);
     }
     
+    @And("^I redirected to Executive Console page$")
+    public void redirectToHomepage () throws Throwable
+    {
+	driverSafetypage.clickFoldericon();
+	driverSafetypage.clickExectiveconsole();
+    }   
+    
     public void performLoginaction () throws Exception
     {
 	loginPage = new LoginPage(driver);
@@ -169,5 +192,50 @@ public class ComonTestssteps
 	loginPage.enterUsername(propertyUtils.getProperty("username"));
 	loginPage.enterPassword(propertyUtils.getProperty("password"));
 	loginPage.clickLogin();
+    }
+    
+    /**
+     * @param aBrowserName
+     * @param aRunMode
+     * @param aPlatform
+     */
+    public WebDriver setUpDriver (String aBrowserName,
+	    String aRunMode,
+	    String aPlatform)
+    {
+	aDeviceType = Platform.WINDOWS;
+	if (aPlatform.equalsIgnoreCase(Platform.LINUX.toString()))
+	{
+	    aDeviceType = Platform.LINUX;
+	}
+	else if (aPlatform.equalsIgnoreCase(Platform.LINUX.toString()))
+	{
+	    aDeviceType = Platform.UNIX;
+	}
+	else if (aPlatform.equalsIgnoreCase(Platform.MAC.toString()))
+	{
+	    aDeviceType = Platform.MAC;
+	}
+	
+	driver = InitializeDriver.getInstance().getWebDriver(aBrowserName,
+		aRunMode, aDeviceType);
+	driver.manage().deleteAllCookies();
+	driver.manage().window().maximize();
+	
+	return driver;
+    }
+    
+    public void tearDownDriver (@Optional String aBrowserName,
+	    @Optional String aPlatform)
+    {
+	try
+	{
+	    InitializeDriver.getInstance().quitDriver(driver, aBrowserName,
+		    aPlatform);
+	}
+	catch (IOException ioe)
+	{
+	    ProLogger.error("IO Exception {}", ioe.getMessage());
+	}
     }
 }

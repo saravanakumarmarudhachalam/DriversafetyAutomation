@@ -55,4 +55,6 @@ public final class Constants
     public static final String OVERALLSCORE_INDIVIDUAL_SCORECARD = "Overall Score displayed dashlet is correctly";
     
     public static final String TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD = "Total distance KPI value is matched correctly";
+    
+    public static final String IDLING_DURATION_INDIVIDUAL_SCORECARD = "Idling Duration value is matched correctly";
 }

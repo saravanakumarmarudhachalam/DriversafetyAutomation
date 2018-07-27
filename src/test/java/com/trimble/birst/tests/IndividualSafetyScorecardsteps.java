@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
+import com.trimble.taf.pagefactory.application.IndividualScorecardpage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.PropertyUtils;
@@ -22,8 +23,11 @@ import cucumber.api.java.en.When;
 public class IndividualSafetyScorecardsteps
 {
     
+    
     public WebDriver driver;
-    String lastThirtdaystxt,startDate,endDate,exePagedriverName,overallScore,totalDistance;    
+    
+    String lastThirtdaystxt, startDate, endDate, exePagedriverName,
+	    overallScore, totalDistance, idleDuration;
     
     public static PropertyUtils propertyUtils = PropertyUtils
 	    .getInstance("testconfig.properties");
@@ -31,6 +35,8 @@ public class IndividualSafetyScorecardsteps
     public MyspacesPage mySpacepage;
     
     public DriverSafetyPage driverSafetypage;
+    
+    public IndividualScorecardpage individualScorepage;
     
     /**
      * Constructor
@@ -40,6 +46,7 @@ public class IndividualSafetyScorecardsteps
 	driver = ServiceHooks.driver;
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
+	individualScorepage = new IndividualScorecardpage(driver);
 	// TODO Auto-generated constructor stub
     }
     
@@ -50,25 +57,30 @@ public class IndividualSafetyScorecardsteps
 	startDate = driverSafetypage.getTextstartDate();
 	endDate = driverSafetypage.getTextendDate();
 	exePagedriverName = driverSafetypage.getTextdriverName();
-	overallScore = driverSafetypage.getTextoverallScoreofDrivername();	
-	totalDistance = driverSafetypage.getTexttotalDistance();	
+	overallScore = driverSafetypage.getTextoverallScoreofDrivername();
+	totalDistance = driverSafetypage.getTexttotalDistanceRoundoff();
+	idleDuration = driverSafetypage.getTextidleDuration();
+	System.out.println("Executive Consle Idle Time"+driverSafetypage.getTextidleDuration());
 	driverSafetypage.executivePagedriverLink.click();
-	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);	
+	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }
     
     @Then("^Verify Individual Scorecard is displayed for that driver$")
-    public void verifyIndividualscorePage() throws Throwable
-    {	
-	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);	
+    public void verifyIndividualscorePage () throws Throwable
+    {
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
 	String individualScoredriverName;
-	individualScoredriverName = driverSafetypage.getTextindividualScoredriverNameinFilter();	
-	Assert.assertEquals(exePagedriverName,individualScoredriverName.replace("= ", ""));
-	Reporter.log(Constants.DRIVER_NAME_IN_EXECUTIVE_CONSOLE_AND_INDIVIDUAL_SCORECARD_MATCHES);	
-    }    
+	individualScoredriverName = individualScorepage
+		.getTextindividualScoredriverNameinFilter();
+	Assert.assertEquals(exePagedriverName,
+		individualScoredriverName.replace("= ", ""));
+	Reporter.log(
+		Constants.DRIVER_NAME_IN_EXECUTIVE_CONSOLE_AND_INDIVIDUAL_SCORECARD_MATCHES);
+    }
     
     @Then("^I verified the Date filter settings is displayed correctly$")
-    public void verifyDatefilterSettings() throws Throwable
-    {	
+    public void verifyDatefilterSettings () throws Throwable
+    {
 	Assert.assertEquals(
 		driverSafetypage.getTextlastThirtydays(),
 		lastThirtdaystxt, Constants.LAST30DAYS_FILTER_TEXT_DISPLAYED);
@@ -79,16 +91,16 @@ public class IndividualSafetyScorecardsteps
 	Assert.assertEquals(driverSafetypage.getTextendDate(),
 		endDate, Constants.ENDDATEFILTER_TEXT_DISPLAYED);
 	Reporter.log(Constants.ENDDATEFILTER_TEXT_DISPLAYED);
-    }    
+    }
     
     @Then("^I verified overall score in dashlet in Individual Scorecard$")
-    public void verifyOverallscoreDashlet() throws Throwable
-    {	
+    public void verifyOverallscoreDashlet () throws Throwable
+    {
 	Assert.assertEquals(
-		driverSafetypage.getTextoverallScoreIndivudalscoreCard(),
+		individualScorepage.getTextoverallScoreIndivudalscoreCard(),
 		overallScore, Constants.OVERALLSCORE_INDIVIDUAL_SCORECARD);
-	Reporter.log(Constants.OVERALLSCORE_INDIVIDUAL_SCORECARD);	
-    }    
+	Reporter.log(Constants.OVERALLSCORE_INDIVIDUAL_SCORECARD);
+    }
     
     @Then("^I Verify Target is enabled in the Bar chart in individual Scorecard$")
     public void verifyBarchartTargetisEnabled () throws Throwable
@@ -114,10 +126,20 @@ public class IndividualSafetyScorecardsteps
     }
     
     @Then("^I verified total distance KPI in Individual Scorecard$")
-    public void veirfyTotaldistanceKPI() throws Throwable
+    public void veirfyTotaldistanceKPI () throws Throwable
     {
-	Assert.assertTrue(driverSafetypage.getTexttotalDistanceKPI().contains(totalDistance), Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
-	//Assert.assertEquals(driverSafetypage.getTexttotalDistanceKPI(),totalDistance, Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
+	Assert.assertEquals(individualScorepage.getTexttotalDistanceKPI(),
+		totalDistance,
+		Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
 	Reporter.log(Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
+    }
+    
+    @Then("^I verified Idling Duration in Individual Scorecard$")
+    public void veirfyIdlingduraction () throws Throwable
+    {
+	Assert.assertEquals(individualScorepage.getTextidlingDurationindividualScorecard(),
+		idleDuration,
+		Constants.IDLING_DURATION_INDIVIDUAL_SCORECARD);
+	Reporter.log(Constants.IDLING_DURATION_INDIVIDUAL_SCORECARD);
     }
 }
