@@ -1266,7 +1266,7 @@ public class AbstractPage
 	{
 	    try
 	    {
-		Thread.sleep(7000);
+		Thread.sleep(5000);
 	    }
 	    catch (Exception ex)
 	    {

@@ -29,8 +29,7 @@ import cucumber.api.java.en.When;
  * @author smarudh
  */
 public class ComonTestssteps
-{
-    
+{   
     
     String lastThirtdaystxt;
     
@@ -70,7 +69,7 @@ public class ComonTestssteps
     
     @Given("^I am logged into Application$")
     public void user_is_on_Landing_Page () throws Throwable
-    {	
+    {
 	performLoginaction();
     }
     
@@ -183,7 +182,7 @@ public class ComonTestssteps
     {
 	driverSafetypage.clickFoldericon();
 	driverSafetypage.clickExectiveconsole();
-    }   
+    }
     
     public void performLoginaction () throws Exception
     {
@@ -192,50 +191,5 @@ public class ComonTestssteps
 	loginPage.enterUsername(propertyUtils.getProperty("username"));
 	loginPage.enterPassword(propertyUtils.getProperty("password"));
 	loginPage.clickLogin();
-    }
-    
-    /**
-     * @param aBrowserName
-     * @param aRunMode
-     * @param aPlatform
-     */
-    public WebDriver setUpDriver (String aBrowserName,
-	    String aRunMode,
-	    String aPlatform)
-    {
-	aDeviceType = Platform.WINDOWS;
-	if (aPlatform.equalsIgnoreCase(Platform.LINUX.toString()))
-	{
-	    aDeviceType = Platform.LINUX;
-	}
-	else if (aPlatform.equalsIgnoreCase(Platform.LINUX.toString()))
-	{
-	    aDeviceType = Platform.UNIX;
-	}
-	else if (aPlatform.equalsIgnoreCase(Platform.MAC.toString()))
-	{
-	    aDeviceType = Platform.MAC;
-	}
-	
-	driver = InitializeDriver.getInstance().getWebDriver(aBrowserName,
-		aRunMode, aDeviceType);
-	driver.manage().deleteAllCookies();
-	driver.manage().window().maximize();
-	
-	return driver;
-    }
-    
-    public void tearDownDriver (@Optional String aBrowserName,
-	    @Optional String aPlatform)
-    {
-	try
-	{
-	    InitializeDriver.getInstance().quitDriver(driver, aBrowserName,
-		    aPlatform);
-	}
-	catch (IOException ioe)
-	{
-	    ProLogger.error("IO Exception {}", ioe.getMessage());
-	}
     }
 }

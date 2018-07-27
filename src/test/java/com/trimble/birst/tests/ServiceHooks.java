@@ -118,8 +118,7 @@ public class ServiceHooks
 	driver = setUpDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("runMode"),
 		propertyUtils.getProperty("platform"));
-	driver.navigate().to(appBaseURL);
-	
+	driver.navigate().to(appBaseURL);	
     }
     
     @After()

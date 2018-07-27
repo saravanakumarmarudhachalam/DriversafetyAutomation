@@ -323,9 +323,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextlastThirtydays_Indvscorecard () throws Exception
     {
-	waitForElementPresent(last30daysFilterIndiviudalscorecard);
-	System.out.println("Invidiual Scorecard"
-		+ getText(last30daysFilterIndiviudalscorecard));
+	waitForElementPresent(last30daysFilterIndiviudalscorecard);	
 	return getText(last30daysFilterIndiviudalscorecard);
     }
     
@@ -371,9 +369,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextdefaultOrg () throws Exception
     {
-	checkPageIsReady();
-	System.out.println("Wait");
-	System.out.println("Text:" + defaultOrg.getText());
+	checkPageIsReady();	
 	return getText(defaultOrg);
     }
     

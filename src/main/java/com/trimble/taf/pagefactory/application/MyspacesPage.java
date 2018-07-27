@@ -116,7 +116,7 @@ public class MyspacesPage extends AbstractPage
     {
 	switch (spaceName)
 	{
-	    case "space_Sprint11QA":
+	    case "space_Sprint11QA":		
 		checkPageIsReady();
 		space_Sprint11QA.click();
 		break;
@@ -136,7 +136,7 @@ public class MyspacesPage extends AbstractPage
 		break;
 	    case "AutomationSpace":
 		waitForElementPresent(automationSpace);
-		checkPageIsReady();
+		//checkPageIsReady();
 		automationSpace.click();
 		break;
 	}
@@ -155,7 +155,7 @@ public class MyspacesPage extends AbstractPage
 	{
 	    case "optDashboards":
 		waitForElementPresent(optDashboards);
-		checkPageIsReady();
+		//checkPageIsReady();
 		//Thread.sleep(10000);
 		optDashboards.click();
 		break;
