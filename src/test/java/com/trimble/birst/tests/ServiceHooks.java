@@ -11,12 +11,16 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Optional;
+
+import com.cucumber.listener.Reporter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.trimble.taf.driver.InitializeDriver;
 import com.trimble.taf.pagefactory.application.LoginPage;
 import com.trimble.taf.utils.ProLogger;
 import com.trimble.taf.utils.PropertyUtils;
+
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
@@ -113,8 +117,10 @@ public class ServiceHooks
     }
     
     @Before()
-    public void GoToHomePage () throws Exception
+    public void GoToHomePage (Scenario sceario) throws Exception
     {
+	String scenarioName = sceario.getName();	
+	System.out.println("Executing Scenario : " + scenarioName);
 	driver = setUpDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("runMode"),
 		propertyUtils.getProperty("platform"));

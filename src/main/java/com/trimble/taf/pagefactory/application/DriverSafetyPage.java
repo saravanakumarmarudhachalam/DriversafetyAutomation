@@ -83,10 +83,10 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//*[@id='global-header']/header/ng-include/div/div/ul/li[4]/a")
     public WebElement exportIcon;
     
-    @FindBy(xpath = "//span[text() = \"PDF\"]")
+    @FindBy(xpath = "//span[text() = \"Printable PDF\"]")
     public WebElement exportPDF;
     
-    @FindBy(xpath = "//span[text() = \"PDF (with Details)\"]")
+    @FindBy(xpath = "//span[text() = \"Printable PDF (with Details)\"]")
     public WebElement exportDetailPDF;
     
     @FindBy(xpath = "//*[@id=\"info-dashboardExportInProgress\"]/div/span/span[1]")
@@ -98,31 +98,31 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[1]/div/div[3]/i")
     public List<WebElement> sortedColumndataTable;
     
-    @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[1]/div[1]/div[3]/i")
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[1]/div[1]/div[3]/i")
     public WebElement sortedParticularcolumn;
     
     @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[2]/div/div/div[2]")
     public List<WebElement> gridValues;
     
     @FindAll({
-	    @FindBy(xpath = "//*[@id=\"reportview_35\"]/div/div[3]/div[2]/div[1]/div/div/div/div[2]"),
-	    @FindBy(xpath = "//*[@id='reportview_22']/div/div[3]/div[2]/div[1]/div/div/div/div[3]")
-    })
+	    @FindBy(xpath = "//*[@id='chart25']/div[2]/div[1]/div/div/div/div[2]"),
+	    @FindBy(xpath = "//*[@id='chart10']/div[2]/div[1]/div/div/div/div[2]")
+    })  
     public WebElement barchartTarget;
     
-    @FindBy(xpath = "//*[@id=\"table-view-27\"]/div[1]/div/div[2]/div[1]/div")
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div")
     public WebElement executivePagedriverName;    
     
-    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(1) > div > div > span > a")  
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div/div/span/a")     
     public WebElement executivePagedriverLink;
     
-    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(3) > div > div.cell-value > span")
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[3]/div/div[2]/span")    
     public WebElement overallScoreforDrivers;
     
-    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(10) > div > div > span")
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[10]/div/div/span")
     public WebElement totalDistance;
     
-    @FindBy(css = "#table-view-27 > div.abc > div > div:nth-child(2) > div:nth-child(9) > div > div > span")
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[9]/div/div/span")
     public WebElement idleDurationexecConsole;
     
     public DriverSafetyPage(WebDriver driver)

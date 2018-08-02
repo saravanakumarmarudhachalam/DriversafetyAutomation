@@ -59,8 +59,7 @@ public class IndividualSafetyScorecardsteps
 	exePagedriverName = driverSafetypage.getTextdriverName();
 	overallScore = driverSafetypage.getTextoverallScoreofDrivername();
 	totalDistance = driverSafetypage.getTexttotalDistanceRoundoff();
-	idleDuration = driverSafetypage.getTextidleDuration();
-	System.out.println("Executive Consle Idle Time"+driverSafetypage.getTextidleDuration());
+	idleDuration = driverSafetypage.getTextidleDuration();	
 	driverSafetypage.executivePagedriverLink.click();
 	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }

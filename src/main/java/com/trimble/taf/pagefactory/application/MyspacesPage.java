@@ -136,7 +136,7 @@ public class MyspacesPage extends AbstractPage
 		break;
 	    case "AutomationSpace":
 		waitForElementPresent(automationSpace);
-		//checkPageIsReady();
+		//checkPageIsReady();		
 		automationSpace.click();
 		break;
 	}
