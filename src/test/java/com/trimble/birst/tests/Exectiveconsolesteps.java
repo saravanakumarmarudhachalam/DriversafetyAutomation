@@ -46,7 +46,7 @@ public class Exectiveconsolesteps
     
     @Then("^I verified overall score is displayed in ascending order$")
     public void verifyAscendingoverallScore () throws Throwable
-    {
+    {	
 	Assert.assertTrue(driverSafetypage.verifyOverallscoreAsc(),
 		Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
 	Reporter.log(Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
@@ -125,5 +125,5 @@ public class Exectiveconsolesteps
 	String targetWhendiabled;
 	targetWhendiabled = driverSafetypage.getAttributetargetLine();
 	Assert.assertEquals(targetWhendiabled, "legend-item filtered-legend");
-    }
+    } 
 }

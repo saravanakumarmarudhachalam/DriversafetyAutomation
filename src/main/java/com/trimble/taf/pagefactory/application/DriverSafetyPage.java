@@ -125,6 +125,14 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[9]/div/div/span")
     public WebElement idleDurationexecConsole;
     
+    @FindBy(xpath="//*[@id='undefined/]/div[1]/div[2]/div[2]/svg/g[")
+    public WebElement mapBlob1;
+    
+    @FindBy(xpath="]/path")
+    public WebElement mapBlob2;
+    
+  
+    
     public DriverSafetyPage(WebDriver driver)
     {
 	super(driver);
@@ -655,5 +663,15 @@ public class DriverSafetyPage extends AbstractPage
     public String getTextidleDuration() throws Exception{
 	waitForElementPresent(idleDurationexecConsole);
 	return getText(idleDurationexecConsole);
+    }
+    
+    /**
+     * Verify Map blob is displayed correctly
+     */
+    public void verifyMapblob(){
+	for (int i=1; i<=10;i++){	    
+	    WebElement mapBlob = driver.findElement(By.xpath("//*[@id='undefined']/div[1]/div[2]/div[2]/svg/g["+i+"]/path"));
+	    Assert.assertTrue(mapBlob.isDisplayed());	    
+	}    
     }
 }

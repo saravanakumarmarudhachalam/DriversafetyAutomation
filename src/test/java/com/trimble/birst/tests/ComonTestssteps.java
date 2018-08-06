@@ -99,7 +99,8 @@ public class ComonTestssteps
     
     @Then("^I validate the Executive Driversafety console page is displayed correctly$")
     public void verifyExecutivedriverSafetyhomePage () throws Throwable
-    {
+    {	
+	driverSafetypage.verifyMapblob();
 	Assert.assertTrue(driverSafetypage.verifyExectiveconsolePage(),
 		Constants.EXECUTIVE_CONSOLEPAGE_DISPLAYED);
 	Reporter.log(Constants.EXECUTIVE_CONSOLEPAGE_DISPLAYED);
