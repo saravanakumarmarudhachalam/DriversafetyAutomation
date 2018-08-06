@@ -123,12 +123,17 @@ public class DriverSafetyPage extends AbstractPage
     public WebElement totalDistance;
     
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[9]/div/div/span")
-    public WebElement idleDurationexecConsole;
-    
+    public WebElement idleDurationexecConsole;    
+
     @FindBy(xpath = "//div[@id=\"dashboard-5e343324-ee23-42b6-b172-9c3cb8e0ff76\"]/div[1]")
     public WebElement driverSafetydropdown;
+
+    @FindBy(xpath="//*[@id='undefined/]/div[1]/div[2]/div[2]/svg/g[")
+    public WebElement mapBlob1;
     
-    
+    @FindBy(xpath="]/path")
+    public WebElement mapBlob2;  
+
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -673,5 +678,14 @@ public class DriverSafetyPage extends AbstractPage
 	waitForElementPresent(idleDurationexecConsole);
 	return getText(idleDurationexecConsole);
     }
-    
+
+    /**
+     * Verify Map blob is displayed correctly
+     */
+    public void verifyMapblob(){
+	for (int i=1; i<=10;i++){	    
+	    WebElement mapBlob = driver.findElement(By.xpath("//*[@id='undefined']/div[1]/div[2]/div[2]/svg/g["+i+"]/path"));
+	    Assert.assertTrue(mapBlob.isDisplayed());	    
+	}    
+    }
 }

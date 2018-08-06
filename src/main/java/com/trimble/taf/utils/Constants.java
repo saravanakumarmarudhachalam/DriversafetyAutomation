@@ -57,6 +57,13 @@ public final class Constants
     public static final String TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD = "Total distance KPI value is matched correctly";
     
     public static final String IDLING_DURATION_INDIVIDUAL_SCORECARD = "Idling Duration value is matched correctly";
-    
+
     public static final String DATA_TO_EXCEL_IS_SUCCESS = "Report exported successfully";
+
+    public static final String MAPBLOB_IS_DISPLAYED = "Mapblob is displayed";
+    
+    public static final String EVENT_PER_KILOMETER ="Events Per Kilometer";
+    
+    public static final String EVENT_PER_KILOMETER_TEXT_MATCHED ="Events Per kilometer is matched correctly";
+
 }

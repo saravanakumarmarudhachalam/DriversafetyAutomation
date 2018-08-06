@@ -59,7 +59,7 @@ public class IndividualSafetyScorecardsteps
 	exePagedriverName = driverSafetypage.getTextdriverName();
 	overallScore = driverSafetypage.getTextoverallScoreofDrivername();
 	totalDistance = driverSafetypage.getTexttotalDistanceRoundoff();
-	idleDuration = driverSafetypage.getTextidleDuration();	
+	idleDuration = driverSafetypage.getTextidleDuration();
 	driverSafetypage.executivePagedriverLink.click();
 	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }
@@ -136,9 +136,26 @@ public class IndividualSafetyScorecardsteps
     @Then("^I verified Idling Duration in Individual Scorecard$")
     public void veirfyIdlingduraction () throws Throwable
     {
-	Assert.assertEquals(individualScorepage.getTextidlingDurationindividualScorecard(),
+	Assert.assertEquals(
+		individualScorepage.getTextidlingDurationindividualScorecard(),
 		idleDuration,
 		Constants.IDLING_DURATION_INDIVIDUAL_SCORECARD);
 	Reporter.log(Constants.IDLING_DURATION_INDIVIDUAL_SCORECARD);
     }
+    
+    @And("^I Changed to Kilometers$")
+    public void changeTokilemeter () throws Throwable
+    {
+	individualScorepage.changeTokilometer();
+    }
+    
+    @Then("^I verified Kilometer Text has been changed$")
+    public void verifyKilometerchanged () throws Throwable
+    {
+	Assert.assertEquals(individualScorepage.getTxteventPerkiloMeter(),
+		Constants.EVENT_PER_KILOMETER,
+		Constants.EVENT_PER_KILOMETER_TEXT_MATCHED);
+	Reporter.log(Constants.EVENT_PER_KILOMETER_TEXT_MATCHED);
+    }
+    
 }

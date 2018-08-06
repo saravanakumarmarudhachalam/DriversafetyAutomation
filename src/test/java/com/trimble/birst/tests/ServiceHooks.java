@@ -120,7 +120,7 @@ public class ServiceHooks
     public void GoToHomePage (Scenario sceario) throws Exception
     {
 	String scenarioName = sceario.getName();	
-	System.out.println("Executing Scenario : " + scenarioName);
+	System.out.println("Executing Scenario : " + scenarioName);	
 	driver = setUpDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("runMode"),
 		propertyUtils.getProperty("platform"));

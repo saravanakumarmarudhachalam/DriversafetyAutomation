@@ -35,6 +35,22 @@ public class IndividualScorecardpage extends AbstractPage
     @FindBy(css="#xpath-dashboard-canvas > div > dashlet:nth-child(12) > div.dashlet-wrapper.ng-scope > report > div > div > div > h3 > span")
     public WebElement idlingDurationIndividualscorecard;
     
+    @FindBy(css="#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(1)")
+    public WebElement distanceDropdown;
+    
+    @FindBy(css="#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(1) > div > h1")
+    public WebElement distanceUnits;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[2]/label")
+    public WebElement kilometerRadiobutton;
+    
+    @FindBy(id="xpath-apply-prompts")
+    public WebElement applyButton;
+    
+    @FindBy(css="#xpath-dashboard-canvas > div > dashlet:nth-child(7) > div.dashlet-wrapper.ng-scope > report > div > div > div > h2")
+    public WebElement eventPerKilometerText;
+    
+    
     /**
      * @param driver
      */
@@ -112,5 +128,31 @@ public class IndividualScorecardpage extends AbstractPage
 	System.out.println("Indv Scorecard:"+getText(idlingDurationIndividualscorecard));
 	return getText(idlingDurationIndividualscorecard);
     }
+ 
+    /**
+     * Change Miles to Kilometers
+     * @throws Exception
+     */
+    public void changeTokilometer() throws Exception{
+	waitForElementPresent(distanceDropdown);
+	distanceDropdown.click();
+	waitForElementPresent(distanceUnits);
+	distanceUnits.click();
+	waitForElementPresent(kilometerRadiobutton);
+	kilometerRadiobutton.click();
+	waitForElementPresent(applyButton);
+	applyButton.click();
+    }
     
+    /**
+     * Get Text from Event Per Mile
+     * @return
+     * @throws Exception
+     */
+    public String getTxteventPerkiloMeter() throws Exception{
+	waitForElementPresent(eventPerKilometerText);
+	System.out.println(getText(eventPerKilometerText));
+	return getText(eventPerKilometerText);
+    }
+
 }
