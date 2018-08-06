@@ -64,17 +64,17 @@ Feature: Individual Scorecard
     #Then Verify Individual Scorecard is displayed for that driver
     #Then I verified Idling Duration in Individual Scorecard
 
-   @Regression
-  Scenario: IndividualScorecard - Verify export of the entire report via Export (menu) -> PDF (with Details)
-    Given I am logged into Application
-    Then I validate home page displayed correctly
-    And I clicked MySpaces & Dashboard
-    When I clicked Executive Driversafety console
-    And I clicked on driver name in Executive console
-    Then Verify Individual Scorecard is displayed for that driver  
-    When I clicked Exporticon
-    And I clicked ExportPDF
-    Then I verified file has been exported correctly
-    When I clicked Exporticon
-    And I clicked ExportPDFdetails
-    Then I verified file has been exported correctly
+   #@Regression
+  #Scenario: IndividualScorecard - Verify export of the entire report via Export (menu) -> PDF (with Details)
+    #Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #And I clicked on driver name in Executive console
+    #Then Verify Individual Scorecard is displayed for that driver  
+    #When I clicked Exporticon
+    #And I clicked ExportPDF
+    #Then I verified file has been exported correctly
+    #When I clicked Exporticon
+    #And I clicked ExportPDFdetails
+    #Then I verified file has been exported correctly

@@ -140,11 +140,25 @@ public class ComonTestssteps
 	individualScorepage.clickIndividualscoreCard();
     }
     
-    @And("^I clicked Foldericon and Scorecard Report - combined groups$")
-    public void clickCombinedgroups () throws Throwable
+    @When("^I clicked Foldericon and Driver Safety$")
+    public void clickDriverSafty() throws Throwable
     {
 	driverSafetypage.clickFoldericon();
+	driverSafetypage.clickDriversafetyDropdown();
+	
+    }
+    
+    @And("^I clicked Foldericon$")
+    public void clickFoldericon () throws Throwable
+    {
+	driverSafetypage.clickFoldericon();
+	
+    }
+    @And ("^I clicked Scorecard Report - combined groups$")
+    public void clickCombinebscore() throws Throwable
+    {
 	driverSafetypage.clickCombinedscoreCard();
+	
     }
     
     @And("^I clicked Foldericon and Scorecard Report - separated groups$")

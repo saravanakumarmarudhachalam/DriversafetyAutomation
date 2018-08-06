@@ -125,6 +125,11 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[9]/div/div/span")
     public WebElement idleDurationexecConsole;
     
+    @FindBy(xpath = "//div[@id=\"dashboard-5e343324-ee23-42b6-b172-9c3cb8e0ff76\"]/div[1]")
+    public WebElement driverSafetydropdown;
+    
+    
+    
     public DriverSafetyPage(WebDriver driver)
     {
 	super(driver);
@@ -237,6 +242,16 @@ public class DriverSafetyPage extends AbstractPage
 	checkPageIsReady();
     }
     
+    /**
+     * Click Driver safety dropdown
+     * @throws Exception 
+     */
+    public void clickDriversafetyDropdown() throws Exception
+    {
+	driverSafetydropdown.click();
+	checkPageIsReady();
+	
+    }
     /**
      * Click Scorecard Report - Combined Groups
      * 
@@ -416,6 +431,8 @@ public class DriverSafetyPage extends AbstractPage
 	waitForElementPresent(exportDetailPDF);
 	exportDetailPDF.click();
     }
+    
+    
     
     /**
      * Verify PDF is exported correctly
@@ -656,4 +673,5 @@ public class DriverSafetyPage extends AbstractPage
 	waitForElementPresent(idleDurationexecConsole);
 	return getText(idleDurationexecConsole);
     }
+    
 }

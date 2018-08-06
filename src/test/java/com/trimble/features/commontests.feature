@@ -22,7 +22,8 @@ Feature: Common Tests
     #Then I verified Last 30days, Startdate and Enddate filter is displayed correctly
     #And I clicked Foldericon and Individual Scorecard
     #Then I verified Last 30days, Startdate and Enddate filter is displayed correctly
-    #And I clicked Foldericon and Scorecard Report - combined groups
+    #And I clicked Foldericon 
+    #And I clicked Scorecard Report - combined groups
     #Then I verified Last 30days, Startdate and Enddate filter is displayed correctly
     #And I clicked Foldericon and Scorecard Report - separated groups
     #Then I verified Last 30days, Startdate and Enddate filter is displayed correctly
