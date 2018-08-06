@@ -79,14 +79,14 @@ Feature: Individual Scorecard
     #And I clicked ExportPDFdetails
     #Then I verified file has been exported correctly
 
-   @Regression
-  Scenario: IndividualScorecard - Verify text for Events Per Mile changes appropriately based on the value set against the Distance Units filter
-    Given I am logged into Application
-    Then I validate home page displayed correctly
-    And I clicked MySpaces & Dashboard
-    When I clicked Executive Driversafety console
-    And I clicked on driver name in Executive console
-    Then Verify Individual Scorecard is displayed for that driver
-    And I Changed to Kilometers
-    Then I verified Kilometer Text has been changed   
+   #@Regression
+  #Scenario: IndividualScorecard - Verify text for Events Per Mile changes appropriately based on the value set against the Distance Units filter
+    #Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #And I clicked on driver name in Executive console
+    #Then Verify Individual Scorecard is displayed for that driver
+    #And I Changed to Kilometers
+    #Then I verified Kilometer Text has been changed   
 

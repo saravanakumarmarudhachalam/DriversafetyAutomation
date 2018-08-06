@@ -1,4 +1,4 @@
-#Author: Prakash SAh
+#Author: Prakash Sah
 @tag
 Feature: Combined Scorecard Report
   I want to use this template for my feature file

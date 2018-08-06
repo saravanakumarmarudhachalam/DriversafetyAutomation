@@ -14,7 +14,7 @@ import com.trimble.taf.pagefactory.global.AbstractPage;
 /**
  * @author smarudh
  */
-public class CombinedScorecard extends AbstractPage
+public class CombinedScorecardPage extends AbstractPage
 {
     @FindBy(xpath = "//*[@id=\"xpath-dashboard-canvas\"]/div/dashlet/div[1]/div[1]/div[1]/button/i")
     public WebElement dashletActionarrow;
@@ -30,7 +30,7 @@ public class CombinedScorecard extends AbstractPage
     /**
      * @param driver
      */
-    public CombinedScorecard(WebDriver driver)
+    public CombinedScorecardPage(WebDriver driver)
     {
 	super(driver);
 	PageFactory.initElements(driver, this);
@@ -41,9 +41,9 @@ public class CombinedScorecard extends AbstractPage
      * @throws Exception
      */
     public void clickDashletaction() throws Exception
-    {
-	
+    {	
 	mouseOver(dashletActionarrow);
+	waitForElementPresent(dashletActionarrow);
 	dashletActionarrow.click();
     }
     
