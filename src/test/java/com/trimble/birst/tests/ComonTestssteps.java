@@ -162,10 +162,10 @@ public class ComonTestssteps
 	
     }
     
-    @And("^I clicked Foldericon and Scorecard Report - separated groups$")
+    @And("^I clicked Scorecard Report - seperated groups$")
     public void clickSeparatedgroups () throws Throwable
     {
-	driverSafetypage.clickFoldericon();
+	
 	driverSafetypage.clickSeparatedscoreCard();
     }
     

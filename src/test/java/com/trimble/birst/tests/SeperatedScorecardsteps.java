@@ -9,7 +9,7 @@ package com.trimble.birst.tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
-import com.trimble.taf.pagefactory.application.CombinedScorecardPage;
+import com.trimble.taf.pagefactory.application.SeperatedScorecardPage;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
 import com.trimble.taf.utils.Constants;
@@ -20,7 +20,7 @@ import cucumber.api.java.en.Then;
 /**
  * @author smarudh
  */
-public class CombinedScorecardsteps
+public class SeperatedScorecardsteps
 {
 
     public WebDriver driver;
@@ -32,41 +32,41 @@ public class CombinedScorecardsteps
     
     public DriverSafetyPage driverSafetypage;
     
-    public CombinedScorecardPage combinedScorecardpage;
+    public SeperatedScorecardPage seperatedScorecardpage;
     /**
      * @param driver
      */
-    public CombinedScorecardsteps()
+    public SeperatedScorecardsteps()
     {
 	driver = ServiceHooks.driver;
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
-	combinedScorecardpage = new CombinedScorecardPage(driver);
+	seperatedScorecardpage = new SeperatedScorecardPage(driver);
 	// TODO Auto-generated constructor stub
     }
     
-    @And("^I clicked Dashlet Actions on combined groups$")
+    @And("^I clicked Dashlet Actions on seperated groups$")
     public void clickDashletaction() throws Throwable
     {	
-	combinedScorecardpage.clickDashletaction();	
+	seperatedScorecardpage.clickDashletaction();	
 	System.out.println("Dashlet Actions arrow clicked");
     }
     
-    @And("^I clicked Export As on combined groups$")
+    @And("^I clicked Export As on seperated groups$")
     public void clickExportas() throws Throwable
     {
-	combinedScorecardpage.clickExportasDashletaction();
+	seperatedScorecardpage.clickExportasDashletaction();
 	System.out.println("Export As in Dashlet Actions clicked");
     }
     
-    @And("^I clicked Data to Excel on combined groups$")
+    @And("^I clicked Data to Excel on seperated groups$")
     public void clickDateToexcel() throws Throwable
     {
-	combinedScorecardpage.clickData2excel();
+	seperatedScorecardpage.clickData2excel();
 	System.out.println("Data to Excel clicked");
     }
     
-    @Then("^Verify Export of the Report on combined groups$")
+    @Then("^Verify Export of the Report on seperated groups$")
     public void verifyExportDatatoExcel() throws Throwable
     {
 	Reporter.log(Constants.DATA_TO_EXCEL_IS_SUCCESS);
