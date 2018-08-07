@@ -50,6 +50,17 @@ public class IndividualScorecardpage extends AbstractPage
     @FindBy(css="#xpath-dashboard-canvas > div > dashlet:nth-child(7) > div.dashlet-wrapper.ng-scope > report > div > div > div > h2")
     public WebElement eventPerKilometerText;
     
+    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[5]/span")
+    public WebElement dateRangedropDown;
+    
+    @FindBy(xpath="//h1[text()='Time Period']")
+    public WebElement timePeriod;
+    
+    @FindBy(xpath="//label[text()='Custom date range']")
+    public WebElement customDaterange;
+        
+    
+    
     
     /**
      * @param driver
@@ -154,5 +165,6 @@ public class IndividualScorecardpage extends AbstractPage
 	System.out.println(getText(eventPerKilometerText));
 	return getText(eventPerKilometerText);
     }
+  
 
 }

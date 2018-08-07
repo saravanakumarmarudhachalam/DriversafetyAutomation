@@ -90,3 +90,13 @@ Feature: Individual Scorecard
     #And I Changed to Kilometers
     #Then I verified Kilometer Text has been changed   
 
+   @Regression
+  Scenario: IndividualScorecard - Verify the grid below the KPIs show the events for the selected driver for the selected Date Filter range correctly
+    Given I am logged into Application
+    Then I validate home page displayed correctly
+    And I clicked MySpaces & Dashboard
+    When I clicked Executive Driversafety console
+    And I clicked on driver name in Executive console
+    Then Verify Individual Scorecard is displayed for that driver
+    And I Changed to Kilometers
+    Then I verified Kilometer Text has been changed 
