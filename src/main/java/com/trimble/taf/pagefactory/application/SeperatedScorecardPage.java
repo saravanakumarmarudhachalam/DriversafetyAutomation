@@ -8,8 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.MoveMouseAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.junit.Assert;
 
 import com.trimble.taf.pagefactory.global.AbstractPage;
+import com.trimble.taf.utils.Constants;
 
 /**
  * @author smarudh
@@ -27,6 +29,10 @@ public class SeperatedScorecardPage extends AbstractPage
     
     @FindBy(xpath = "//span[contains(text(),\"Report exported successfully\")]")
     public WebElement dashletExportSuccess;
+    
+    @FindBy(xpath = "//span[contains(text(), 'DOVER')]")
+    public WebElement defaultSeperatedgroupName;
+    
     /**
      * @param driver
      */
@@ -71,6 +77,13 @@ public class SeperatedScorecardPage extends AbstractPage
     {
 	waitForElementPresent(dashletExportSuccess);
 	return(dashletExportSuccess.isDisplayed()); 
+    }
+    
+    public void verifyDefaultgroupName() throws Exception
+    {
+	waitForElementPresent(defaultSeperatedgroupName);
+	Assert.assertEquals("DOVER", defaultSeperatedgroupName.getText());
+	
     }
 }
     

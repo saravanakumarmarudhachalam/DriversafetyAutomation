@@ -71,4 +71,11 @@ public class SeperatedScorecardsteps
     {
 	Reporter.log(Constants.DATA_TO_EXCEL_IS_SUCCESS);
     }
+    
+    @Then("^Verify separated groups report opened shows the data for DOVER Group by default$")
+    public void veifyDefaultseperatedGroupname() throws Throwable
+    {
+	seperatedScorecardpage.verifyDefaultgroupName();
+	Reporter.log(Constants.DEFAULT_SEPERATE_SCORECARD_GROUP_NAME);
+    }
 }
