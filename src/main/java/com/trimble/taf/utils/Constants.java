@@ -65,5 +65,11 @@ public final class Constants
     public static final String EVENT_PER_KILOMETER ="Events Per Kilometer";
     
     public static final String EVENT_PER_KILOMETER_TEXT_MATCHED ="Events Per kilometer is matched correctly";
+    
+    public static final String DEFAULT_SEPERATE_SCORECARD_GROUP_NAME = "Default Seperate Scorecard Group Name is DOVER";
+    
+    public static final String EVENTDATE_FILTERED_CORRECTLY = "Event Date Filtered Correctly";
+    
+    public static final String EVENTDATE_FILTERED_NOT_CORRECTLY = "Event Date not Filtered Correctly";
 
 }

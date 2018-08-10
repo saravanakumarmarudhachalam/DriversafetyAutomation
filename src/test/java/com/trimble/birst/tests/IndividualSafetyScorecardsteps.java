@@ -158,4 +158,23 @@ public class IndividualSafetyScorecardsteps
 	Reporter.log(Constants.EVENT_PER_KILOMETER_TEXT_MATCHED);
     }
     
+    @And("^I Changed to customdateRange$")
+    public void changeTocustomDaterange () throws Throwable
+    {
+	individualScorepage.changeTocustomDaterange();
+    }
+    
+    @And("^I filtered the EventStartdate and enddate$")
+    public void changeTocustomEventstartEnddate () throws Throwable
+    {
+	individualScorepage.enterCustomstartDate();
+	individualScorepage.enterCustomendDate();
+    }
+    
+    @Then("^I verified Event Data and time$")
+    public void verifyEventdateAndtime () throws Throwable
+    {
+	individualScorepage.scrollVertically();
+	individualScorepage.verifyEventdateTime();
+    }
 }

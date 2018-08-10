@@ -7,6 +7,7 @@ package com.trimble.birst.tests;
  * 
  */
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.trimble.taf.pagefactory.application.SeperatedScorecardPage;
@@ -70,5 +71,12 @@ public class SeperatedScorecardsteps
     public void verifyExportDatatoExcel() throws Throwable
     {
 	Reporter.log(Constants.DATA_TO_EXCEL_IS_SUCCESS);
+    }
+    
+    @Then("^Verify separated groups report opened shows the data for DOVER Group by default$")
+    public void veifyDefaultseperatedGroupname() throws Throwable
+    {
+	Assert.assertEquals("DOVER", seperatedScorecardpage.verifyDefaultgroupName());
+	Reporter.log(Constants.DEFAULT_SEPERATE_SCORECARD_GROUP_NAME);
     }
 }

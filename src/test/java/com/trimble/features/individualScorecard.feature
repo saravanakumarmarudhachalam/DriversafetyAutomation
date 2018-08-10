@@ -98,5 +98,7 @@ Feature: Individual Scorecard
     When I clicked Executive Driversafety console
     And I clicked on driver name in Executive console
     Then Verify Individual Scorecard is displayed for that driver
-    And I Changed to Kilometers
-    Then I verified Kilometer Text has been changed 
+    And I Changed to customdateRange
+    And I filtered the EventStartdate and enddate
+    Then I verified Event Data and time 
+   
