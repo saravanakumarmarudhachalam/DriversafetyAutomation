@@ -1221,6 +1221,27 @@ public class AbstractPage
     }
     
     /**
+     * Method to hover on some element
+     * 
+     * @param parentElementBy
+     * @throws Exception
+     */
+    public void hoverOn (WebElement element) throws Exception
+    {
+	driver.getCurrentUrl().trim();
+	try
+	{
+	    Actions action = new Actions(driver);
+	    action.moveToElement(element);
+	    action.perform();
+	}
+	catch (Exception ex)
+	{
+	    ProLogger.error("Exception in hover on element {}",
+		    ex.getMessage());
+	}
+    }
+    /**
      * Method to clear browser history
      * 
      * @throws Exception

@@ -71,5 +71,9 @@ public final class Constants
     public static final String EVENTDATE_FILTERED_CORRECTLY = "Event Date Filtered Correctly";
     
     public static final String EVENTDATE_FILTERED_NOT_CORRECTLY = "Event Date not Filtered Correctly";
+    
+    public static final String VERIFICATION_CONFIRMATION_MESSAGE ="'test1' sent successfully.";
+    
+    public static final String VERIFICATED_SUCCESSFULLY = "Both the text are same and verified successfully";
 
 }

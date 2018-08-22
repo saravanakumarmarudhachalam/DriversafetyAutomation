@@ -126,4 +126,23 @@ public class Exectiveconsolesteps
 	targetWhendiabled = driverSafetypage.getAttributetargetLine();
 	Assert.assertEquals(targetWhendiabled, "legend-item filtered-legend");
     } 
+    
+    @And("^I created a new notification center and ran it$")
+    public void createNotificationmessage () throws Throwable
+    {
+	driverSafetypage.clickNotification();
+	driverSafetypage.clickCreatenotification();
+	driverSafetypage.enterNotification();
+	driverSafetypage.enterEmail();
+	driverSafetypage.clickSavebutton();
+	driverSafetypage.clickBackbutton();
+	driverSafetypage.clickActionmenu();
+	driverSafetypage.clickRunnowIcon();	
+    }
+    
+    @Then("^I verified notification send successsfully$")
+    public void veirfyEmailsuccessfulMessage() throws Throwable
+    {
+	Assert.assertEquals(driverSafetypage.getTextverificationMessage(), Constants.VERIFICATION_CONFIRMATION_MESSAGE,Constants.VERIFICATED_SUCCESSFULLY);
+    } 
 }

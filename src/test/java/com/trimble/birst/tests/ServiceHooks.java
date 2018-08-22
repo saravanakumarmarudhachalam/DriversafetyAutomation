@@ -128,8 +128,12 @@ public class ServiceHooks
     }
     
     @After()
-    public void Aftersteps () throws IOException
+    public void Aftersteps (@Optional Scenario scenario) throws IOException
     {
+//	if (scenario.isFailed()) {
+//            byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//            scenario.embed(screenshotBytes, "image/png");
+//        }
 	tearDownDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("platform"));
     }
@@ -143,4 +147,7 @@ public class ServiceHooks
 	loginPage.clickLogin();
     }
    
+    public static WebDriver getDriver() {
+        return driver;
+    }
 }

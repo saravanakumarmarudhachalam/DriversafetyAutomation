@@ -4,6 +4,8 @@
 package com.trimble.taf.suite.tests.base;
 
 import java.io.File;
+
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -60,6 +62,6 @@ public class TestRunner
 	Reporter.setSystemInfo("Hostname", "smarudh");
 	Reporter.setSystemInfo("Test Type", "Regression");
 	Reporter.setSystemInfo("Test Environment", "QA");
-	Reporter.setSystemInfo("UserName", "Saravanakumar");
+	Reporter.setSystemInfo("UserName", "Saravanakumar");	
     }
 }

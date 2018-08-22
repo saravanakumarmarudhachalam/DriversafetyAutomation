@@ -107,33 +107,74 @@ public class DriverSafetyPage extends AbstractPage
     @FindAll({
 	    @FindBy(xpath = "//*[@id='chart25']/div[2]/div[1]/div/div/div/div[2]"),
 	    @FindBy(xpath = "//*[@id='chart10']/div[2]/div[1]/div/div/div/div[2]")
-    })  
+    })
     public WebElement barchartTarget;
     
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div")
-    public WebElement executivePagedriverName;    
+    public WebElement executivePagedriverName;
     
-    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div/div/span/a")     
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div/div/span/a")
     public WebElement executivePagedriverLink;
     
-    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[3]/div/div[2]/span")    
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[3]/div/div[2]/span")
     public WebElement overallScoreforDrivers;
     
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[10]/div/div/span")
     public WebElement totalDistance;
     
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[9]/div/div/span")
-    public WebElement idleDurationexecConsole;    
-
+    public WebElement idleDurationexecConsole;
+    
     @FindBy(xpath = "//div[@id=\"dashboard-5e343324-ee23-42b6-b172-9c3cb8e0ff76\"]/div[1]")
     public WebElement driverSafetydropdown;
-
-    @FindBy(xpath="//*[@id='undefined/]/div[1]/div[2]/div[2]/svg/g[")
+    
+    @FindBy(xpath = "//*[@id='undefined/]/div[1]/div[2]/div[2]/svg/g[")
     public WebElement mapBlob1;
     
-    @FindBy(xpath="]/path")
-    public WebElement mapBlob2;  
-
+    @FindBy(xpath = "]/path")
+    public WebElement mapBlob2;
+    
+    @FindBy(css = "a[data-title='Notifications']")
+    public WebElement notificationIcon;
+    
+    @FindBy(id = "xpath-notifications-add-button")
+    public WebElement createNotificationicon;
+    
+    @FindBy(id = "xpath-notifications-form-name")
+    public WebElement notificationNametext;
+    
+    @FindBy(id = "xpath-notifications-form-to")
+    public WebElement emailNotificationtext;
+    
+    @FindBy(id = "xpath-notifications-save")
+    public WebElement saveButton;
+    
+    @FindBy(css = "a[ng-click='$ctrl.nCtrl.detailsOpen = false']")
+    public WebElement backButton;
+    
+    @FindBy(css = "button[data-title='Actions']")
+    public WebElement actionsMenu;
+        
+    @FindBy(css = "a[ng-click='$ctrl.runNotification( notification )']")
+    public WebElement runNowicon;
+    
+    @FindBy(css = "#notificationRunSuccess > div > span > span.ng-binding")
+    public WebElement notificationMessage;
+    
+    @FindBy(id = "notifications-search-input")
+    public WebElement searchNotification;
+    
+    @FindBy(css = "a[ng-click='$ctrl.notificationToDelete = notification']")
+    public WebElement deleteIcon;
+    
+    @FindBy(id="confirmDeleteNotification")
+    public WebElement deleteConfirmbutton;
+    
+    @FindBy(css="span[ng-bind-html='notification.name | mark:$ctrl.searchQuery']")
+    public WebElement createdNotificationname;
+    
+    public String notificationName = "TestNotification1";
+    public String emailId = "testingpurpose@test.com";
     
     public DriverSafetyPage(WebDriver driver)
     {
@@ -249,9 +290,10 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Click Driver safety dropdown
-     * @throws Exception 
+     * 
+     * @throws Exception
      */
-    public void clickDriversafetyDropdown() throws Exception
+    public void clickDriversafetyDropdown () throws Exception
     {
 	driverSafetydropdown.click();
 	checkPageIsReady();
@@ -284,7 +326,7 @@ public class DriverSafetyPage extends AbstractPage
      * 
      * @throws Exception
      */
-    public void clickExectiveconsole() throws Exception
+    public void clickExectiveconsole () throws Exception
     {
 	executiveConsole.click();
 	checkPageIsReady();
@@ -343,7 +385,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextlastThirtydays_Indvscorecard () throws Exception
     {
-	waitForElementPresent(last30daysFilterIndiviudalscorecard);	
+	waitForElementPresent(last30daysFilterIndiviudalscorecard);
 	return getText(last30daysFilterIndiviudalscorecard);
     }
     
@@ -389,7 +431,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public String getTextdefaultOrg () throws Exception
     {
-	checkPageIsReady();	
+	checkPageIsReady();
 	return getText(defaultOrg);
     }
     
@@ -436,8 +478,6 @@ public class DriverSafetyPage extends AbstractPage
 	waitForElementPresent(exportDetailPDF);
 	exportDetailPDF.click();
     }
-    
-    
     
     /**
      * Verify PDF is exported correctly
@@ -671,21 +711,116 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Get Text from Idle Duration in Executive Console
+     * 
      * @return
      * @throws Exception
      */
-    public String getTextidleDuration() throws Exception{
+    public String getTextidleDuration () throws Exception
+    {
 	waitForElementPresent(idleDurationexecConsole);
 	return getText(idleDurationexecConsole);
     }
-
+    
     /**
      * Verify Map blob is displayed correctly
      */
-    public void verifyMapblob(){
-	for (int i=1; i<=10;i++){	    
-	    WebElement mapBlob = driver.findElement(By.xpath("//*[@id='undefined']/div[1]/div[2]/div[2]/svg/g["+i+"]/path"));
-	    Assert.assertTrue(mapBlob.isDisplayed());	    
-	}    
+    public void verifyMapblob ()
+    {
+	for (int i = 1; i <= 10; i++)
+	{
+	    WebElement mapBlob = driver.findElement(
+		    By.xpath("//*[@id='undefined']/div[1]/div[2]/div[2]/svg/g["
+			    + i + "]/path"));
+	    Assert.assertTrue(mapBlob.isDisplayed());
+	}
     }
+    
+    /**
+     * Click Notification Tab
+     * @throws Exception
+     */
+    public void clickNotification() throws Exception{
+	waitForElementPresent(notificationIcon);	
+	notificationIcon.click();
+    }
+    
+    /**
+     * Click create notification icon
+     * @throws Exception
+     */
+    public void clickCreatenotification() throws Exception{
+	checkPageIsReady();
+	waitForElementPresent(createNotificationicon);
+	createNotificationicon.click();
+    }
+    
+    /**
+     * Enter Notification in the text box
+     * @throws Exception
+     */
+    public void enterNotification() throws Exception{
+	waitForElementPresent(notificationNametext);
+	notificationNametext.click();
+	notificationNametext.clear();
+	notificationNametext.sendKeys(notificationName);
+    }
+    
+    /**
+     * Enter Email id in the Text box
+     * @throws Exception
+     */
+    public void enterEmail() throws Exception{
+	waitForElementPresent(emailNotificationtext);
+	emailNotificationtext.click();
+	emailNotificationtext.clear();
+	emailNotificationtext.sendKeys(emailId);
+    }
+    
+    /**
+     * Click Save button
+     * @throws Exception
+     */
+    public void clickSavebutton() throws Exception{
+	waitForElementPresent(saveButton);
+	saveButton.click();
+    }
+    
+    /**
+     * Click Save button
+     * @throws Exception
+     */
+    public void clickBackbutton() throws Exception{
+	waitForElementPresent(backButton);
+	backButton.click();
+    }
+       
+   /**
+    * Click Action menu 
+ * @throws Exception 
+    */
+    public void clickActionmenu() throws Exception{
+	checkPageIsReady();
+	hoverOn(actionsMenu);	
+	actionsMenu.click();
+    }
+    
+    /**
+     * Click Run now Icon
+     * @throws Exception
+     */
+    public void clickRunnowIcon() throws Exception{
+	waitForElementPresent(runNowicon);
+	runNowicon.click();
+    }
+    
+    /**
+     * Get notification message
+     * @return
+     * @throws Exception
+     */
+    public String getTextverificationMessage() throws Exception{
+	waitForElementPresent(notificationMessage);
+	return notificationMessage.getText();
+    }
+    
 }
