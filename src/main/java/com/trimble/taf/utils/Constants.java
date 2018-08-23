@@ -77,5 +77,7 @@ public final class Constants
     public static final String VERIFICATED_SUCCESSFULLY = "Both the text are same and verified successfully";
     
     public static final String NOTIFICATION_DELETED_SUCCESSFULLY = "Notification deleted Successfully";
+    
+    public static final String SUPERVISOR_CONSOLE_OPENED_SUCCESSFULLY = "Supervisor Console successfully opened";
 
 }

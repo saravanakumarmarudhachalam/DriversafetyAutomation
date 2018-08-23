@@ -174,8 +174,8 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(css="span[ng-bind-html='notification.name | mark:$ctrl.searchQuery']")
     public WebElement createdNotificationname;
+  
     
-    @FindBy(xpath = "")
     
     public String notificationName = "TestNotification1";
     public String emailId = "testingpurpose@test.com";
