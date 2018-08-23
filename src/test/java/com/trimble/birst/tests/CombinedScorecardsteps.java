@@ -17,12 +17,14 @@ import com.trimble.taf.utils.PropertyUtils;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+
 /**
  * @author smarudh
  */
 public class CombinedScorecardsteps
 {
-
+    
+    
     public WebDriver driver;
     
     public static PropertyUtils propertyUtils = PropertyUtils
@@ -33,6 +35,7 @@ public class CombinedScorecardsteps
     public DriverSafetyPage driverSafetypage;
     
     public CombinedScorecardPage combinedScorecardpage;
+    
     /**
      * @param driver
      */
@@ -46,29 +49,35 @@ public class CombinedScorecardsteps
     }
     
     @And("^I clicked Dashlet Actions on combined groups$")
-    public void clickDashletaction() throws Throwable
-    {	
+    public void clickDashletaction () throws Throwable
+    {
 	combinedScorecardpage.clickDashletaction();	
-	System.out.println("Dashlet Actions arrow clicked");
     }
     
     @And("^I clicked Export As on combined groups$")
-    public void clickExportas() throws Throwable
+    public void clickExportas () throws Throwable
     {
-	combinedScorecardpage.clickExportasDashletaction();
-	System.out.println("Export As in Dashlet Actions clicked");
+	combinedScorecardpage.clickExportasDashletaction();	
     }
     
     @And("^I clicked Data to Excel on combined groups$")
-    public void clickDateToexcel() throws Throwable
+    public void clickDateToexcel () throws Throwable
     {
-	combinedScorecardpage.clickData2excel();
-	System.out.println("Data to Excel clicked");
+	combinedScorecardpage.clickData2excel();	
     }
     
     @Then("^Verify Export of the Report on combined groups$")
-    public void verifyExportDatatoExcel() throws Throwable
+    public void verifyExportDatatoExcel () throws Throwable
     {
 	Reporter.log(Constants.DATA_TO_EXCEL_IS_SUCCESS);
     }
+    
+    @And("^I checked Include Active Drivers as YES$")
+    public void checkIncludeactiveDriver () throws Throwable
+    {
+	combinedScorecardpage.clickIncludeinactiveDriver();
+    }
+    
+    
+    
 }

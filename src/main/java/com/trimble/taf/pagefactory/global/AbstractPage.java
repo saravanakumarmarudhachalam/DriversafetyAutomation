@@ -1232,7 +1232,7 @@ public class AbstractPage
 	try
 	{
 	    Actions action = new Actions(driver);
-	    action.moveToElement(element);
+	    action.moveToElement(element,24,0).click().build();
 	    action.perform();
 	}
 	catch (Exception ex)

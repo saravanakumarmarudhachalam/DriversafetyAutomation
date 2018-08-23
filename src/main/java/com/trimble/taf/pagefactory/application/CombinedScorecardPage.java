@@ -27,6 +27,22 @@ public class CombinedScorecardPage extends AbstractPage
     
     @FindBy(xpath = "//span[contains(text(),\"Report exported successfully\")]")
     public WebElement dashletExportSuccess;
+    
+    @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(3) > span")
+    public WebElement includeInactivedriver;
+    
+    @FindBy(css="#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(3) > div > h1")
+    public WebElement includeInactivedriverOption;
+    
+    @FindBy(css="label[data-title='Yes']")
+    public WebElement includeInactivedriverYesoption;
+    
+    @FindBy(id="xpath-apply-prompts")
+    public WebElement applyButton;
+    
+    @FindBy(css="#xpath-dashboard-canvas > div > dashlet > div.dashlet-wrapper.ng-scope > ul > li:nth-child(5) > a")
+    public WebElement lastPage;
+    
     /**
      * @param driver
      */
@@ -67,10 +83,39 @@ public class CombinedScorecardPage extends AbstractPage
 	dataToexcel.click();
     }
     
+    /**
+     * Verify Dashlet Export is success
+     * @return
+     * @throws Exception
+     */
     public boolean verifyDashletexportSuccess() throws Exception
     {
 	waitForElementPresent(dashletExportSuccess);
 	return(dashletExportSuccess.isDisplayed()); 
+    }
+    
+    /**
+     * Click YES option for Include inactive driver
+     * @throws Exception
+     */
+    public void clickIncludeinactiveDriver() throws Exception{
+	waitForElementPresent(includeInactivedriver);
+	if(!includeInactivedriver.getText().equals("= Yes")){
+	    includeInactivedriver.click();
+	    includeInactivedriverOption.click();
+	    waitForElementPresent(includeInactivedriverYesoption);
+	    includeInactivedriverYesoption.click();
+	    applyButton.click();	    
+	}
+    }
+    
+    /**
+     * Click last Page
+     * @throws Exception
+     */
+    public void clickLastpage() throws Exception{
+	waitForElementPresent(lastPage);
+	lastPage.click();
     }
 }
     
