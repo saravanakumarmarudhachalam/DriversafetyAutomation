@@ -145,4 +145,22 @@ public class Exectiveconsolesteps
     {
 	Assert.assertEquals(driverSafetypage.getTextverificationMessage(), Constants.VERIFICATION_CONFIRMATION_MESSAGE,Constants.VERIFICATED_SUCCESSFULLY);
     } 
+    
+    @And("^I open the Notification and ran an existing one$")
+    public void runAnotification() throws Throwable
+    {
+	driverSafetypage.clickNotification();
+	driverSafetypage.clickActionmenu();
+	driverSafetypage.clickRunnowIcon();
+    }
+    
+    @Then("^I delete an existing one$")
+    public void deleteAnotification() throws Throwable
+    {
+	//driverSafetypage.clickActionmenu();
+	driverSafetypage.deleteNotification();
+	
+    }
+   
+    
 }

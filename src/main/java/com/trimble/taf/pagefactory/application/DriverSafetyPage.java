@@ -18,6 +18,8 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
+
 import com.trimble.taf.pagefactory.global.AbstractPage;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.ProLogger;
@@ -172,6 +174,8 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(css="span[ng-bind-html='notification.name | mark:$ctrl.searchQuery']")
     public WebElement createdNotificationname;
+    
+    @FindBy(xpath = "")
     
     public String notificationName = "TestNotification1";
     public String emailId = "testingpurpose@test.com";
@@ -800,7 +804,9 @@ public class DriverSafetyPage extends AbstractPage
     */
     public void clickActionmenu() throws Exception{
 	checkPageIsReady();
-	hoverOn(actionsMenu);	
+	//mouseHover(createdNotificationname);
+	hoverOn(createdNotificationname);	
+	waitForElementPresent(actionsMenu);
 	actionsMenu.click();
     }
     
@@ -822,5 +828,21 @@ public class DriverSafetyPage extends AbstractPage
 	waitForElementPresent(notificationMessage);
 	return notificationMessage.getText();
     }
-    
+    /*
+     * Delete Notification
+     * @throws Exception
+     */
+    public void deleteNotification() throws Exception
+    {
+	mouseHover(createdNotificationname);	
+	waitForElementPresent(actionsMenu);
+	actionsMenu.click();
+	//waitForElementPresent(deleteIcon);
+	deleteIcon.click();
+	waitForElementPresent(deleteConfirmbutton);
+	deleteConfirmbutton.click();
+	checkPageIsReady();
+	Reporter.log(Constants.NOTIFICATION_DELETED_SUCCESSFULLY);
+	
+    }
 }

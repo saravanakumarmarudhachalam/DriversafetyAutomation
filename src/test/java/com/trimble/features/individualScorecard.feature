@@ -102,3 +102,25 @@ Feature: Individual Scorecard
     #And I filtered the EventStartdate and enddate
     #Then I verified Event Data and time 
    #
+   
+    #@Regression
+#	Scenario: Individual Scorecard - Verify that a new Notification is working ok
+#		Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #And I clicked on driver name in Executive console
+    #Then Verify Individual Scorecard is displayed for that driver
+    #And I created a new notification center and ran it
+    #Then I verified notification send successsfully
+    	
+   #	@Regression
+#	Scenario: Individual Scorecard - Verify that existing notification is working fine.
+#		Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #And I clicked on driver name in Executive console
+    #Then Verify Individual Scorecard is displayed for that driver
+    #And I open the Notification and ran an existing one
+    #Then I delete an existing one

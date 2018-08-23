@@ -15,4 +15,24 @@ Feature: Combined Scorecard Report
     #And I clicked Data to Excel on combined groups
     #Then Verify Export of the Report on combined groups
     
-   
+   #@Regression
+#	Scenario: Individual Scorecard Combined Groups - Verify that a new Notification is working ok
+		#Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Foldericon and Driver Safety
+    #And I clicked Scorecard Report - combined groups
+    #And I clicked Dashlet Actions on combined groups
+    #And I created a new notification center and ran it
+    #Then I verified notification send successsfully
+    	
+   #	@Regression
+#	Scenario: Individual Scorecard Combined Groups - Verify that existing notification is working fine.
+		#Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Foldericon and Driver Safety
+    #And I clicked Scorecard Report - combined groups
+    #And I clicked Dashlet Actions on combined groups
+    #And I open the Notification and ran an existing one
+    #Then I delete an existing one
