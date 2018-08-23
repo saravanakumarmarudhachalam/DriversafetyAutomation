@@ -65,16 +65,25 @@ Feature: Executive Console
     #When I clicked the Target
     #Then I verify Target is disabled in the bar chart
     
-       @Regression
-	Scenario: Exectiveconsole - Verify that a new Notification is working ok
-		Given I am logged into Application
-    Then I validate home page displayed correctly
-    And I clicked MySpaces & Dashboard
-    When I clicked Executive Driversafety console
-    Then I validate the Executive Driversafety console page is displayed correctly
-   	And I created a new notification center and ran it
-   	Then I verified notification send successsfully
-   	
+       #@Regression
+#	Scenario: Exectiveconsole - Verify that a new Notification is working ok
+#		Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #Then I validate the Executive Driversafety console page is displayed correctly
+   #	And I created a new notification center and ran it
+   #	Then I verified notification send successsfully
+   #	
+   #	@Regression
+#	Scenario: Exectiveconsole - Verify that existing notification is working fine.
+#		Given I am logged into Application
+    #Then I validate home page displayed correctly
+    #And I clicked MySpaces & Dashboard
+    #When I clicked Executive Driversafety console
+    #Then I validate the Executive Driversafety console page is displayed correctly
+    #And I open the Notification and ran an existing one
+    #Then I delete an existing one
    	
    	
     

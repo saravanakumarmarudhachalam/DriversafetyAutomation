@@ -72,8 +72,13 @@ public final class Constants
     
     public static final String EVENTDATE_FILTERED_NOT_CORRECTLY = "Event Date not Filtered Correctly";
     
-    public static final String VERIFICATION_CONFIRMATION_MESSAGE ="'test1' sent successfully.";
+    public static final String VERIFICATION_CONFIRMATION_MESSAGE ="'TestNotification1' sent successfully.";
     
     public static final String VERIFICATED_SUCCESSFULLY = "Both the text are same and verified successfully";
+    
+    public static final String NOTIFICATION_DELETED_SUCCESSFULLY = "Notification deleted Successfully";
+    
+    public static final String SUPERVISOR_CONSOLE_OPENED_SUCCESSFULLY = "Supervisor Console successfully opened";
 
+    
 }

@@ -154,7 +154,7 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(css = "button[data-title='Actions']")
     public WebElement actionsMenu;
-        
+    
     @FindBy(css = "a[ng-click='$ctrl.runNotification( notification )']")
     public WebElement runNowicon;
     
@@ -167,13 +167,14 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(css = "a[ng-click='$ctrl.notificationToDelete = notification']")
     public WebElement deleteIcon;
     
-    @FindBy(id="confirmDeleteNotification")
+    @FindBy(id = "confirmDeleteNotification")
     public WebElement deleteConfirmbutton;
     
-    @FindBy(css="span[ng-bind-html='notification.name | mark:$ctrl.searchQuery']")
+    @FindBy(css = "span[ng-bind-html='notification.name | mark:$ctrl.searchQuery']")
     public WebElement createdNotificationname;
     
     public String notificationName = "TestNotification1";
+    
     public String emailId = "testingpurpose@test.com";
     
     public DriverSafetyPage(WebDriver driver)
@@ -737,18 +738,22 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Click Notification Tab
+     * 
      * @throws Exception
      */
-    public void clickNotification() throws Exception{
-	waitForElementPresent(notificationIcon);	
+    public void clickNotification () throws Exception
+    {
+	waitForElementPresent(notificationIcon);
 	notificationIcon.click();
     }
     
     /**
      * Click create notification icon
+     * 
      * @throws Exception
      */
-    public void clickCreatenotification() throws Exception{
+    public void clickCreatenotification () throws Exception
+    {
 	checkPageIsReady();
 	waitForElementPresent(createNotificationicon);
 	createNotificationicon.click();
@@ -756,9 +761,11 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Enter Notification in the text box
+     * 
      * @throws Exception
      */
-    public void enterNotification() throws Exception{
+    public void enterNotification () throws Exception
+    {
 	waitForElementPresent(notificationNametext);
 	notificationNametext.click();
 	notificationNametext.clear();
@@ -767,9 +774,11 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Enter Email id in the Text box
+     * 
      * @throws Exception
      */
-    public void enterEmail() throws Exception{
+    public void enterEmail () throws Exception
+    {
 	waitForElementPresent(emailNotificationtext);
 	emailNotificationtext.click();
 	emailNotificationtext.clear();
@@ -778,49 +787,75 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Click Save button
+     * 
      * @throws Exception
      */
-    public void clickSavebutton() throws Exception{
+    public void clickSavebutton () throws Exception
+    {
 	waitForElementPresent(saveButton);
 	saveButton.click();
     }
     
     /**
      * Click Save button
+     * 
      * @throws Exception
      */
-    public void clickBackbutton() throws Exception{
+    public void clickBackbutton () throws Exception
+    {
 	waitForElementPresent(backButton);
 	backButton.click();
     }
-       
-   /**
-    * Click Action menu 
- * @throws Exception 
-    */
-    public void clickActionmenu() throws Exception{
+    
+    /**
+     * Click Action menu
+     * 
+     * @throws Exception
+     */
+    public void clickActionmenu () throws Exception
+    {
 	checkPageIsReady();
-	hoverOn(actionsMenu);	
+	hoverOn(createdNotificationname);
+	waitForElementPresent(actionsMenu);
 	actionsMenu.click();
     }
     
     /**
      * Click Run now Icon
+     * 
      * @throws Exception
      */
-    public void clickRunnowIcon() throws Exception{
+    public void clickRunnowIcon () throws Exception
+    {
 	waitForElementPresent(runNowicon);
 	runNowicon.click();
     }
     
     /**
      * Get notification message
+     * 
      * @return
      * @throws Exception
      */
-    public String getTextverificationMessage() throws Exception{
+    public String getTextverificationMessage () throws Exception
+    {
 	waitForElementPresent(notificationMessage);
 	return notificationMessage.getText();
+    }
+    
+    /*
+     * Delete Notification
+     * @throws Exception
+     */
+    public void deleteNotification () throws Exception
+    {
+	mouseHover(createdNotificationname);
+	waitForElementPresent(actionsMenu);
+	actionsMenu.click();	
+	deleteIcon.click();
+	waitForElementPresent(deleteConfirmbutton);
+	deleteConfirmbutton.click();
+	checkPageIsReady();	
     }
     
 }

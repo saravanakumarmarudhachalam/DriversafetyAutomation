@@ -38,6 +38,9 @@ public class MyspacesPage extends AbstractPage
     @FindBy(xpath = "//div[text()='AutomationSpace']")
     public WebElement automationSpace;
     
+    @FindBy(xpath = "//div[text()='AutomationSpace2']")
+    public WebElement automationSpace2;
+    
     @FindBy(css = "#component-1069 > p")
     public WebElement optDashboards;
     
@@ -138,6 +141,11 @@ public class MyspacesPage extends AbstractPage
 		waitForElementPresent(automationSpace);
 		//checkPageIsReady();		
 		automationSpace.click();
+		break;
+	    case "AutomationSpace2":
+		waitForElementPresent(automationSpace2);
+		//checkPageIsReady();		
+		automationSpace2.click();
 		break;
 	}
     }

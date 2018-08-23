@@ -46,7 +46,7 @@ public class Exectiveconsolesteps
     
     @Then("^I verified overall score is displayed in ascending order$")
     public void verifyAscendingoverallScore () throws Throwable
-    {	
+    {
 	Assert.assertTrue(driverSafetypage.verifyOverallscoreAsc(),
 		Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
 	Reporter.log(Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
@@ -125,7 +125,7 @@ public class Exectiveconsolesteps
 	String targetWhendiabled;
 	targetWhendiabled = driverSafetypage.getAttributetargetLine();
 	Assert.assertEquals(targetWhendiabled, "legend-item filtered-legend");
-    } 
+    }
     
     @And("^I created a new notification center and ran it$")
     public void createNotificationmessage () throws Throwable
@@ -137,12 +137,29 @@ public class Exectiveconsolesteps
 	driverSafetypage.clickSavebutton();
 	driverSafetypage.clickBackbutton();
 	driverSafetypage.clickActionmenu();
-	driverSafetypage.clickRunnowIcon();	
+	driverSafetypage.clickRunnowIcon();
     }
     
     @Then("^I verified notification send successsfully$")
-    public void veirfyEmailsuccessfulMessage() throws Throwable
+    public void veirfyEmailsuccessfulMessage () throws Throwable
     {
-	Assert.assertEquals(driverSafetypage.getTextverificationMessage(), Constants.VERIFICATION_CONFIRMATION_MESSAGE,Constants.VERIFICATED_SUCCESSFULLY);
-    } 
+	Assert.assertEquals(driverSafetypage.getTextverificationMessage(),
+		Constants.VERIFICATION_CONFIRMATION_MESSAGE,
+		Constants.VERIFICATED_SUCCESSFULLY);
+    }
+    
+    @And("^I open the Notification and ran an existing one$")
+    public void runAnotification () throws Throwable
+    {
+	driverSafetypage.clickNotification();
+	driverSafetypage.clickActionmenu();
+	driverSafetypage.clickRunnowIcon();
+    }
+    
+    @Then("^I delete an existing one$")
+    public void deleteAnotification () throws Throwable
+    {	
+	driverSafetypage.deleteNotification();
+	
+    }
 }

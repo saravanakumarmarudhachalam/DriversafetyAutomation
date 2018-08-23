@@ -78,6 +78,16 @@ public class CombinedScorecardsteps
 	combinedScorecardpage.clickIncludeinactiveDriver();
     }
     
+    @And("^I navigate to last page$")
+    public void navigateTolastPage () throws Throwable
+    {
+	combinedScorecardpage.clickLastpage();
+    }
     
+    @Then("^I verified  Include inactive Drivers are displayed$")
+    public void verifyIncludeinactiveDriverdisplayed () throws Throwable
+    {
+	
+    }
     
 }
