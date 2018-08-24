@@ -3,6 +3,8 @@
  */
 package com.trimble.taf.pagefactory.application;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.MoveMouseAction;
@@ -10,7 +12,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.cucumber.listener.Reporter;
 import com.trimble.taf.pagefactory.global.AbstractPage;
+import com.trimble.taf.utils.ProLogger;
 
 /**
  * @author smarudh
@@ -46,7 +50,7 @@ public class CombinedScorecardPage extends AbstractPage
     public WebElement lastPage;
     
     @FindBy(xpath = "//*[@id='xpath-dashboard-canvas']/div/dashlet/div[1]/report/designer-report/div[1]/span")
-    public WebElement driverSafetyscorecardReport;
+    public List<WebElement> driverSafetyscorecardReport;
     
     /**
      * @param driver
@@ -128,30 +132,32 @@ public class CombinedScorecardPage extends AbstractPage
      */
     public void clickLastpage () throws Exception
     {
+	checkPageIsReady();
 	waitForElementPresent(lastPage);
 	lastPage.click();
     }
     
-//    /**
-//     * Verify Include Inactive Driver
-//     * 
-//     * @return
-//     */
-//    public boolean verifyIncludeinactiveDriver ()
-//    {
-//	checkPageIsReady();
-//	waitForElementPresent(driverSafetyscorecardReport);
-//	boolean isEmpty = false;
-//	for (WebElement datapassUsageRow : driverSafetyscorecardReport)
-//	{
-//	    if (!datapassUsageRow.getText()
-//		    .contains("There are no records at this time"))
-//	    {
-//		isEmpty = true;
-//		break;
-//	    }
-//	}
-//	return isEmpty;
-//    }
+    /**
+     * Verify Include Inactive Driver
+     * 
+     * @return
+     * @throws Exception 
+     */
+    public boolean verifyIncludeinactiveDriver () throws Exception
+    {
+	checkPageIsReady();
+	waitForElementPresent(driverSafetyscorecardReport);
+	boolean isEmpty = false;
+	for (WebElement datapassUsageRow : driverSafetyscorecardReport)
+	{
+	    	    if (datapassUsageRow.getText().isEmpty())
+	    {		
+		System.out.println("Test:"+datapassUsageRow.getText());
+		isEmpty = true;
+		break;
+	    }	    
+	}
+	return isEmpty;
+    }
     
 }

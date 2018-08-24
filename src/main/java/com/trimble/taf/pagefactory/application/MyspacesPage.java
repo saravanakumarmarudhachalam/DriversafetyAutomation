@@ -119,24 +119,10 @@ public class MyspacesPage extends AbstractPage
     {
 	switch (spaceName)
 	{
-	    case "space_Sprint11QA":		
-		checkPageIsReady();
-		space_Sprint11QA.click();
-		break;
-	    
 	    case "space_NAProduction":
 		checkPageIsReady();
 		space_NAProduction.click();
-		break;
-	    
-	    case "Sprint 18-21 PostgreSQL QA NEW_USERS":
-		checkPageIsReady();
-		space_Newuser.click();
-		break;
-	    case "Sprint 18-23 PostgreSQL QA NEW_USERS":
-		checkPageIsReady();
-		space_Sprint18QA.click();
-		break;
+		break;  	    
 	    case "AutomationSpace":
 		waitForElementPresent(automationSpace);
 		//checkPageIsReady();		

@@ -7,6 +7,7 @@ package com.trimble.birst.tests;
  * 
  */
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.trimble.taf.pagefactory.application.CombinedScorecardPage;
@@ -87,7 +88,7 @@ public class CombinedScorecardsteps
     @Then("^I verified  Include inactive Drivers are displayed$")
     public void verifyIncludeinactiveDriverdisplayed () throws Throwable
     {
-	
+	Assert.assertTrue(combinedScorecardpage.verifyIncludeinactiveDriver(),Constants.INCLUDE_INACTIVE_DRIVERS_DISPLAYED);
     }
     
 }

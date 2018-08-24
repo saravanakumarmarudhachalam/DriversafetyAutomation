@@ -79,6 +79,8 @@ public final class Constants
     public static final String NOTIFICATION_DELETED_SUCCESSFULLY = "Notification deleted Successfully";
     
     public static final String SUPERVISOR_CONSOLE_OPENED_SUCCESSFULLY = "Supervisor Console successfully opened";
+    
+    public static final String INCLUDE_INACTIVE_DRIVERS_DISPLAYED = "Include Inactive drivers are displayed correctly";
 
     
 }
