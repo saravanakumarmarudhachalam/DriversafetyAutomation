@@ -4,6 +4,7 @@
 package com.trimble.birst.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
@@ -11,6 +12,7 @@ import com.trimble.taf.pagefactory.application.SupervisorConsolepage;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.PropertyUtils;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Then;
 
 /**
  * @author smarudh
@@ -46,6 +48,20 @@ public class SupervisorTestSteps
     {
 	superVisorconsole.invokeSupervisorconsole();
 	Reporter.log(Constants.SUPERVISOR_CONSOLE_OPENED_SUCCESSFULLY);
+    }
+    
+    @Then("^I verified overall score is displayed in ascending order in Supervisor Console$")
+    public void verifyAscendingoverallScore () throws Throwable
+    {
+	Assert.assertTrue(driverSafetypage.verifyOverallscoreAsc(),
+		Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
+	Reporter.log(Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
+    }
+    
+    @Then("^I verified all the sorting column are working correctly in Supervisor Console$")
+    public void verifySortingcolumn () throws Throwable
+    {
+	driverSafetypage.sortTableascDescanyColumn();
     }
     
 }

@@ -37,7 +37,7 @@ Feature: Executive Console
     ####Then I validated PDF has been exported corretly - Not to use this method
     #
    #@Regression
-  #Scenario: Exectiveconsole - Verify drivers are shown in descending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having highest Overall Score is at the top
+  #Scenario: Exectiveconsole - Verify sorting based on any column (in Driver Ranking by Scores grid) works correctly
     #Given I am logged into Application
     #Then I validate home page displayed correctly
     #And I clicked MySpaces & Dashboard
