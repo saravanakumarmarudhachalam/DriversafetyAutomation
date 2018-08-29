@@ -295,8 +295,7 @@ public class AbstractPage
     {
 	WebElement weElement = driver.findElement(elementBy);
 	JavascriptExecutor executor = (JavascriptExecutor) driver;
-	((RemoteWebDriver) executor).executeScript("arguments[0].click();",
-		weElement);
+	((RemoteWebDriver) executor).executeScript("return arguments[0].click();",weElement);
     }
     
     /**
@@ -1232,8 +1231,8 @@ public class AbstractPage
 	try
 	{
 	    Actions action = new Actions(driver);
-	    action.moveToElement(element,24,0).click().build();
-	    action.perform();
+	    action.moveToElement(element,24,0).perform();
+	    action.perform();	
 	}
 	catch (Exception ex)
 	{

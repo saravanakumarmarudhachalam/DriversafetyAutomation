@@ -14,10 +14,10 @@ Feature: Combined Scorecard Report
     #And I clicked Export As on combined groups
     #And I clicked Data to Excel on combined groups
     #Then Verify Export of the Report on combined groups
-    
+    #
      #@Regression
 #	Scenario: Individual Scorecard Combined Groups - Verify that a new Notification is working ok
-		#Given I am logged into Application
+#		Given I am logged into Application
     #Then I validate home page displayed correctly
     #And I clicked MySpaces & Dashboard
     #When I clicked Foldericon and Driver Safety
@@ -28,7 +28,7 @@ Feature: Combined Scorecard Report
     	
    #	@Regression
 #	Scenario: Individual Scorecard Combined Groups - Verify that existing notification is working fine.
-		#Given I am logged into Application
+#		Given I am logged into Application
     #Then I validate home page displayed correctly
     #And I clicked MySpaces & Dashboard
     #When I clicked Foldericon and Driver Safety
@@ -36,7 +36,7 @@ Feature: Combined Scorecard Report
     #And I clicked Dashlet Actions on combined groups
     #And I open the Notification and ran an existing one
     #Then I delete an existing one
-   
+   #
    #@Regression
   #Scenario: Scorecard Report - combined groups - Verify if Include Inactive Drivers is set to yes then drivers with no scores data (for the selected report period) are shown at the end of the report
     #Given I am logged into Application
