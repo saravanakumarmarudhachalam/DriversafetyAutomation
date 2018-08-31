@@ -3,21 +3,15 @@
  */
 package com.trimble.birst.tests;
 
-import java.io.IOException;
-
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.Optional;
-
-import com.trimble.taf.driver.InitializeDriver;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.IndividualScorecardpage;
 import com.trimble.taf.pagefactory.application.LoginPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
+import com.trimble.taf.suite.tests.base.TestRunner;
 import com.trimble.taf.utils.Constants;
-import com.trimble.taf.utils.ProLogger;
 import com.trimble.taf.utils.PropertyUtils;
 
 import cucumber.api.java.en.And;
@@ -29,8 +23,7 @@ import cucumber.api.java.en.When;
  * @author smarudh
  */
 public class ComonTestssteps
-{   
-    
+{       
     String lastThirtdaystxt;
     
     String startDate;
@@ -38,8 +31,6 @@ public class ComonTestssteps
     String endDate;
     
     public LoginPage loginPage;
-    
-    private Platform aDeviceType;
     
     public WebDriver driver;
     
@@ -60,7 +51,7 @@ public class ComonTestssteps
      */
     public ComonTestssteps()
     {
-	driver = ServiceHooks.driver;
+	driver = TestRunner.getDriver();	
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	individualScorepage = new IndividualScorecardpage(driver);
@@ -178,7 +169,7 @@ public class ComonTestssteps
     
     @Then("^I verified the data of Last30days,startdate and enddate after switching one dash board to anotherdashboard is displayed correctly$")
     public void verifyDataforAlldateFilter () throws Throwable
-    {
+    {	
 	Assert.assertEquals(
 		driverSafetypage.getTextlastThirtydays_Indvscorecard(),
 		lastThirtdaystxt, Constants.LAST30DAYS_FILTER_TEXT_DISPLAYED);

@@ -7,14 +7,9 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.MoveMouseAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import com.cucumber.listener.Reporter;
 import com.trimble.taf.pagefactory.global.AbstractPage;
-import com.trimble.taf.utils.ProLogger;
 
 /**
  * @author smarudh

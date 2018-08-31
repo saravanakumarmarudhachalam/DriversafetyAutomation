@@ -12,7 +12,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Optional;
 
-import com.cucumber.listener.Reporter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.trimble.taf.driver.InitializeDriver;
@@ -121,10 +120,6 @@ public class ServiceHooks
     {
 	String scenarioName = sceario.getName();	
 	System.out.println("Executing Scenario : " + scenarioName);	
-	driver = setUpDriver(propertyUtils.getProperty("browser"),
-		propertyUtils.getProperty("runMode"),
-		propertyUtils.getProperty("platform"));
-	driver.navigate().to(appBaseURL);	
     }
     
     @After()
@@ -133,9 +128,7 @@ public class ServiceHooks
 //	if (scenario.isFailed()) {
 //            byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 //            scenario.embed(screenshotBytes, "image/png");
-//        }
-	tearDownDriver(propertyUtils.getProperty("browser"),
-		propertyUtils.getProperty("platform"));
+//        }	
     }
     
     public void performLoginaction () throws Exception

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Functional Testing" parallel="tests" thread-count="2"
+<suite name="Functional Testing"  thread-count="2"
 	preserve-order="true">	
 
 	<test name="Login Test Birst">	
 		<classes>
-			<class name="com.trimble.taf.suite.tests.base.TestRunner"></class>			
-		</classes>
+			<class name="com.trimble.taf.suite.tests.base.TestRunner" /> 
+			<!-- <class name="com.trimble.taf.suite.tests.base.ExecutiveconsoleTestRunner" /> -->		
+		</classes>			
 	</test>
 </suite>

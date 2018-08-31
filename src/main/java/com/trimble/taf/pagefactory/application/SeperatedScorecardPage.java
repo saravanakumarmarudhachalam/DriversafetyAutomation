@@ -5,11 +5,8 @@ package com.trimble.taf.pagefactory.application;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.MoveMouseAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
 import com.trimble.taf.pagefactory.global.AbstractPage;
 
 /**
@@ -29,8 +26,24 @@ public class SeperatedScorecardPage extends AbstractPage
     @FindBy(xpath = "//span[contains(text(),\"Report exported successfully\")]")
     public WebElement dashletExportSuccess;
     
-    @FindBy(xpath = "//span[contains(text(), 'DOVER')]")
+    @FindBy(xpath = "//span[contains(text(), 'ALLAN MYERS')]")
     public WebElement defaultSeperatedgroupName;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[4]/span")
+    public WebElement groupNamedisplayed;
+    
+    @FindBy(xpath ="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[4]/div/h1")
+    public WebElement organizationalLevelname;
+    
+    @FindBy(xpath ="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/div/search-panel/form/div[1]/label")
+    public WebElement selectAllcheckbox;
+    
+    @FindBy(xpath ="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[2]/label")
+    public WebElement doverCheckbox;
+    
+    @FindBy(id="xpath-apply-prompts")
+    public WebElement applyButton;
+    
     /**
      * @param driver
      */
@@ -89,6 +102,17 @@ public class SeperatedScorecardPage extends AbstractPage
      */
     public String verifyDefaultgroupName() throws Exception
     {
+//	if(!defaultSeperatedgroupName.getText().contains("DOVERS")){
+//	    waitForElementPresent(groupNamedisplayed);
+//	    groupNamedisplayed.click();
+//	    waitForElementPresent(organizationalLevelname);
+//	    organizationalLevelname.click();
+//	    waitForElementPresent(selectAllcheckbox);
+//	    selectAllcheckbox.click();
+//	    selectAllcheckbox.click();
+//	    doverCheckbox.click();
+//	    applyButton.click();	    
+//	}
 	waitForElementPresent(defaultSeperatedgroupName);
 	return defaultSeperatedgroupName.getText();
     }

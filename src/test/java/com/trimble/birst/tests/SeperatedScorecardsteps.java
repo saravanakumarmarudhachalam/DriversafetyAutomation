@@ -3,14 +3,12 @@
  */
 package com.trimble.birst.tests;
 
-/**
- * 
- */
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.trimble.taf.pagefactory.application.SeperatedScorecardPage;
+import com.trimble.taf.suite.tests.base.TestRunner;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
 import com.trimble.taf.utils.Constants;
@@ -39,7 +37,7 @@ public class SeperatedScorecardsteps
      */
     public SeperatedScorecardsteps()
     {
-	driver = ServiceHooks.driver;
+	driver = TestRunner.getDriver();
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	seperatedScorecardpage = new SeperatedScorecardPage(driver);
@@ -76,7 +74,7 @@ public class SeperatedScorecardsteps
     @Then("^Verify separated groups report opened shows the data for DOVER Group by default$")
     public void veifyDefaultseperatedGroupname() throws Throwable
     {
-	Assert.assertEquals("DOVER", seperatedScorecardpage.verifyDefaultgroupName());
+	Assert.assertEquals("ALLAN MYERS", seperatedScorecardpage.verifyDefaultgroupName());
 	Reporter.log(Constants.DEFAULT_SEPERATE_SCORECARD_GROUP_NAME);
     }
 }

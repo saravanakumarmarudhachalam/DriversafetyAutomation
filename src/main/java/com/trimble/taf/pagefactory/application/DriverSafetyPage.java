@@ -1,22 +1,17 @@
 package com.trimble.taf.pagefactory.application;
 
 import java.io.File;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.poi.poifs.storage.DocumentBlock;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import com.trimble.taf.pagefactory.global.AbstractPage;
 import com.trimble.taf.utils.Constants;

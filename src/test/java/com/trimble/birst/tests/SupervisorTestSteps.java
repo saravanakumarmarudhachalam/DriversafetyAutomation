@@ -9,6 +9,7 @@ import org.testng.Reporter;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
 import com.trimble.taf.pagefactory.application.SupervisorConsolepage;
+import com.trimble.taf.suite.tests.base.TestRunner;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.PropertyUtils;
 import cucumber.api.java.en.And;
@@ -36,7 +37,7 @@ public class SupervisorTestSteps
      */
     public SupervisorTestSteps()
     {
-	driver = ServiceHooks.driver;
+	driver = TestRunner.getDriver();
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	superVisorconsole = new SupervisorConsolepage(driver);

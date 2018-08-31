@@ -10,20 +10,18 @@ import org.testng.Reporter;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.IndividualScorecardpage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
+import com.trimble.taf.suite.tests.base.TestRunner;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.PropertyUtils;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 /**
  * @author smarudh
  */
 public class IndividualSafetyScorecardsteps
-{
-    
-    
+{  
     public WebDriver driver;
     
     String lastThirtdaystxt, startDate, endDate, exePagedriverName,
@@ -43,7 +41,7 @@ public class IndividualSafetyScorecardsteps
      */
     public IndividualSafetyScorecardsteps()
     {
-	driver = ServiceHooks.driver;
+	driver = TestRunner.getDriver();
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	individualScorepage = new IndividualScorecardpage(driver);

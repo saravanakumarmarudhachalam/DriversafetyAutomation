@@ -6,13 +6,11 @@ package com.trimble.birst.tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
-import com.trimble.taf.pagefactory.application.LoginPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
+import com.trimble.taf.suite.tests.base.TestRunner;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.PropertyUtils;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -21,15 +19,13 @@ import cucumber.api.java.en.When;
  * @author smarudh
  */
 public class Exectiveconsolesteps
-{
-    
-    
+{        
     public WebDriver driver;
     
     public static PropertyUtils propertyUtils = PropertyUtils
 	    .getInstance("testconfig.properties");
     
-    public MyspacesPage mySpacepage;
+    public MyspacesPage mySpacepage; 
     
     public DriverSafetyPage driverSafetypage;
     
@@ -38,7 +34,7 @@ public class Exectiveconsolesteps
      */
     public Exectiveconsolesteps()
     {
-	driver = ServiceHooks.driver;
+	driver = TestRunner.getDriver();	
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	// TODO Auto-generated constructor stub
@@ -150,8 +146,7 @@ public class Exectiveconsolesteps
     
     @And("^I open the Notification and ran an existing one$")
     public void runAnotification () throws Throwable
-    {
-	driverSafetypage.clickNotification();
+    {	
 	driverSafetypage.clickActionmenu();
 	driverSafetypage.clickRunnowIcon();
     }
