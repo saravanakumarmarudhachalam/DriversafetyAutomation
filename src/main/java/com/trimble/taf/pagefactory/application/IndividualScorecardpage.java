@@ -88,6 +88,9 @@ public class IndividualScorecardpage extends AbstractPage
     @FindBy(id = "xpath-dashboard-canvas")
     public WebElement scroll;
     
+    @FindBy(xpath ="//*[@id='page-dashboard-breadcrumb']/h1/a/span[1]")
+    public WebElement individualScorecardpage;
+    
     /**
      * @param driver
      */
@@ -296,5 +299,13 @@ public class IndividualScorecardpage extends AbstractPage
 			e.getMessage());
 	    }	    
 	}
+    }
+    
+    /**
+     * To verify Individual scorecard page is displayed correctly
+     * @return
+     */
+    public boolean verifyIndividualscorecardPage(){
+	return isElementDisplayed(individualScorecardpage);
     }
 }

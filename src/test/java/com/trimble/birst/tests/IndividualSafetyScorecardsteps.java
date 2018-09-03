@@ -54,7 +54,7 @@ public class IndividualSafetyScorecardsteps
 	lastThirtdaystxt = driverSafetypage.getTextlastThirtydays();
 	startDate = driverSafetypage.getTextstartDate();
 	endDate = driverSafetypage.getTextendDate();
-	exePagedriverName = driverSafetypage.getTextdriverName();
+	exePagedriverName = driverSafetypage.getTextdriverName();	
 	overallScore = driverSafetypage.getTextoverallScoreofDrivername();
 	totalDistance = driverSafetypage.getTexttotalDistanceRoundoff();
 	idleDuration = driverSafetypage.getTextidleDuration();
@@ -68,7 +68,7 @@ public class IndividualSafetyScorecardsteps
 	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
 	String individualScoredriverName;
 	individualScoredriverName = individualScorepage
-		.getTextindividualScoredriverNameinFilter();
+		.getTextindividualScoredriverNameinFilter();	
 	Assert.assertEquals(exePagedriverName,
 		individualScoredriverName.replace("= ", ""));
 	Reporter.log(
@@ -174,5 +174,11 @@ public class IndividualSafetyScorecardsteps
     {
 	individualScorepage.scrollVertically();
 	individualScorepage.verifyEventdateTime();
+    }
+    
+    @Then("^Verify Individual Scorecard page displayed correctly$")
+    public void verifyIndvscoreCardpage () throws Throwable
+    {
+	Assert.assertTrue(individualScorepage.verifyIndividualscorecardPage(),Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }
 }

@@ -8,44 +8,50 @@
       <![CDATA[Driver safety page is displayed correctly]]>
     </line>
     <line>
-      <![CDATA[Report exported successfully]]>
+      <![CDATA[Individual Scorecard page is displayed correctly]]>
     </line>
     <line>
-      <![CDATA[Default Seperate Scorecard Group Name is DOVER]]>
+      <![CDATA[Driver name in Executive console and Individual scorecard matches]]>
+    </line>
+    <line>
+      <![CDATA[PDF is exported correctly]]>
+    </line>
+    <line>
+      <![CDATA[PDF is exported correctly]]>
     </line>
   </reporter-output>
-  <suite name="Functional Testing" duration-ms="92841" started-at="2018-08-31T10:20:42Z" finished-at="2018-08-31T10:22:15Z">
+  <suite name="Functional Testing" duration-ms="224415" started-at="2018-08-31T12:21:25Z" finished-at="2018-08-31T12:25:09Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" class="com.trimble.taf.suite.tests.base.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login Test Birst" duration-ms="92841" started-at="2018-08-31T10:20:42Z" finished-at="2018-08-31T10:22:15Z">
+    <test name="Login Test Birst" duration-ms="224415" started-at="2018-08-31T12:21:25Z" finished-at="2018-08-31T12:25:09Z">
       <class name="com.trimble.taf.suite.tests.base.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="437" started-at="2018-08-31T10:20:42Z" finished-at="2018-08-31T10:20:43Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="251" started-at="2018-08-31T12:21:25Z" finished-at="2018-08-31T12:21:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="driversetUp()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="driversetUp" is-config="true" duration-ms="6392" started-at="2018-08-31T10:20:43Z" finished-at="2018-08-31T10:20:49Z">
+        <test-method status="PASS" signature="driversetUp()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="driversetUp" is-config="true" duration-ms="6534" started-at="2018-08-31T12:21:25Z" finished-at="2018-08-31T12:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetUp -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" duration-ms="84857" started-at="2018-08-31T10:20:49Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-31T10:22:14Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" duration-ms="216343" started-at="2018-08-31T12:21:32Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-31T12:25:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Seperated Scorecard Report]]>
+                <![CDATA[Individual Scorecard]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]]]>
+              <![CDATA[java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:76)
+at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:78)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,12 +77,14 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]
+Caused by: java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at com.trimble.birst.tests.CombinedScorecardsteps.verifyIncludeinactiveDriverdisplayed(CombinedScorecardsteps.java:92)
-at ✽.Then I verified  Include inactive Drivers are displayed(src/test/java/com/trimble/features/seperatedScorecard.feature:37)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.trimble.birst.tests.IndividualSafetyScorecardsteps.verifyDatefilterSettings(IndividualSafetyScorecardsteps.java:83)
+at ✽.Then I verified the Date filter settings is displayed correctly(src/test/java/com/trimble/features/individualScorecard.feature:18)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
@@ -88,18 +96,24 @@ at ✽.Then I verified  Include inactive Drivers are displayed(src/test/java/com
               <![CDATA[Driver safety page is displayed correctly]]>
             </line>
             <line>
-              <![CDATA[Report exported successfully]]>
+              <![CDATA[Individual Scorecard page is displayed correctly]]>
             </line>
             <line>
-              <![CDATA[Default Seperate Scorecard Group Name is DOVER]]>
+              <![CDATA[Driver name in Executive console and Individual scorecard matches]]>
+            </line>
+            <line>
+              <![CDATA[PDF is exported correctly]]>
+            </line>
+            <line>
+              <![CDATA[PDF is exported correctly]]>
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tear()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tear" is-config="true" duration-ms="698" started-at="2018-08-31T10:22:14Z" finished-at="2018-08-31T10:22:15Z">
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tear" is-config="true" duration-ms="845" started-at="2018-08-31T12:25:08Z" finished-at="2018-08-31T12:25:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="312" started-at="2018-08-31T10:22:15Z" finished-at="2018-08-31T10:22:15Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="323" started-at="2018-08-31T12:25:09Z" finished-at="2018-08-31T12:25:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

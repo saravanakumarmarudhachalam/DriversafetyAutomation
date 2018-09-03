@@ -165,8 +165,9 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(id = "confirmDeleteNotification")
     public WebElement deleteConfirmbutton;
     
-    //@FindBy(css = "li[ng-repeat='notification in  $ctrl.nCtrl.notifications | filterNotifications:$ctrl.searchQuery']")
-    @FindBy(css="#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i")
+    // @FindBy(css = "li[ng-repeat='notification in $ctrl.nCtrl.notifications |
+    // filterNotifications:$ctrl.searchQuery']")
+    @FindBy(css = "#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i")
     public WebElement createdNotificationname;
     
     public String notificationName = "TestNotification1";
@@ -715,9 +716,17 @@ public class DriverSafetyPage extends AbstractPage
      * @throws Exception
      */
     public String getTextidleDuration () throws Exception
-    {
-	waitForElementPresent(idleDurationexecConsole);
-	return getText(idleDurationexecConsole);
+    {	
+	if (idleDurationexecConsole.getAttribute("value")!= null)
+	{
+	    waitForElementPresent(idleDurationexecConsole);
+	    return getText(idleDurationexecConsole);
+	}
+	else
+	{
+	    String nullValue="N/A";
+	    return nullValue;
+	}
     }
     
     /**
@@ -816,7 +825,7 @@ public class DriverSafetyPage extends AbstractPage
 	hoverOn(createdNotificationname);
 	waitForElementPresent(actionsMenu);
 	actionsMenu.click();
-	//jsClick(actionsMenu);
+	// jsClick(actionsMenu);
     }
     
     /**
@@ -850,11 +859,11 @@ public class DriverSafetyPage extends AbstractPage
     {
 	hoverOn(createdNotificationname);
 	waitForElementPresent(actionsMenu);
-	actionsMenu.click();	
+	actionsMenu.click();
 	deleteIcon.click();
 	waitForElementPresent(deleteConfirmbutton);
 	deleteConfirmbutton.click();
-	checkPageIsReady();	
+	checkPageIsReady();
     }
     
 }

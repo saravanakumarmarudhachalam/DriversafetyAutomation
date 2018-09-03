@@ -9,3 +9,12 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
 Session ID: 01c2e02516170ddc8836b34d6de0faf8
 *** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180831 17:54:50.722 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.725 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.725 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.725 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.726 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.726 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.726 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.727 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180831 17:54:50.727 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 31 15:50:42 IST 2018</td>
+<td>Started on:</td><td>Fri Aug 31 17:51:25 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>92 seconds (92841 ms)</td>
+<tr><td>Total time:</td><td>224 seconds (224415 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,27 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.trimble.taf.suite.tests.base.TestRunner.feature()'><b>feature</b><br>Test class: com.trimble.taf.suite.tests.base.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Seperated Scorecard Report<br/>
-<a href="#Output-477463877" onClick='toggleBox("Output-477463877", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.trimble.taf.suite.tests.base.TestRunner.feature()'><b>feature</b><br>Test class: com.trimble.taf.suite.tests.base.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: Individual Scorecard<br/>
+<a href="#Output-293326812" onClick='toggleBox("Output-293326812", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-477463877" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-477463877">
+<a href="#Output-293326812" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293326812">
 My Spaces page is displayed correctly<br/>
 Driver safety page is displayed correctly<br/>
-Report exported successfully<br/>
-Default Seperate Scorecard Group Name is DOVER<br/>
+Individual Scorecard page is displayed correctly<br/>
+Driver name in Executive console and Individual scorecard matches<br/>
+PDF is exported correctly<br/>
+PDF is exported correctly<br/>
 </div>
 </td>
-<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:76)
-Caused by: java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]
-	at com.trimble.birst.tests.CombinedScorecardsteps.verifyIncludeinactiveDriverdisplayed(CombinedScorecardsteps.java:92)
-	at ?.Then I verified  Include inactive Drivers are displayed(src/test/java/com/trimble/features/seperatedScorecard.feature:37)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477463877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace477463877'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]
+	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:78)
+Caused by: java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]
+	at com.trimble.birst.tests.IndividualSafetyScorecardsteps.verifyDatefilterSettings(IndividualSafetyScorecardsteps.java:83)
+	at ?.Then I verified the Date filter settings is displayed correctly(src/test/java/com/trimble/features/individualScorecard.feature:18)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace293326812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace293326812'><pre>cucumber.runtime.CucumberException: java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:76)
+	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,14 +123,16 @@ Caused by: java.lang.AssertionError: Include Inactive drivers are displayed corr
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: Include Inactive drivers are displayed correctly expected [true] but found [false]
+Caused by: java.lang.AssertionError: Last 30Days Text filter is matched correctly expected [null] but found [= Last 30 days]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.trimble.birst.tests.CombinedScorecardsteps.verifyIncludeinactiveDriverdisplayed(CombinedScorecardsteps.java:92)
-	at ?.Then I verified  Include inactive Drivers are displayed(src/test/java/com/trimble/features/seperatedScorecard.feature:37)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.trimble.birst.tests.IndividualSafetyScorecardsteps.verifyDatefilterSettings(IndividualSafetyScorecardsteps.java:83)
+	at ?.Then I verified the Date filter settings is displayed correctly(src/test/java/com/trimble/features/individualScorecard.feature:18)
 </pre></div></td>
-<td>84</td>
+<td>216</td>
 <td>com.trimble.taf.suite.tests.base.TestRunner@58134517</td></tr>
 </table><p>
 </body>
