@@ -73,6 +73,7 @@ public class Exectiveconsolesteps
 	Assert.assertEquals(driverSafetypage.getTextexportInprogress(),
 		Constants.EXPORT_IN_PROGRESS, Constants.PDF_EXPORTED_CORRECTLY);
 	Reporter.log(Constants.PDF_EXPORTED_CORRECTLY);
+	driverSafetypage.closeButton();
     }
     
     @And("^I clicked ExportPDFdetails$")

@@ -92,4 +92,41 @@ public class CombinedScorecardsteps
 	Assert.assertTrue(combinedScorecardpage.verifyIncludeinactiveDriver(),Constants.INCLUDE_INACTIVE_DRIVERS_DISPLAYED);
     }
     
+    @And("^I filtered the Org unit under the name DUMP TRUCKS DE$")
+    public void filteredOrgunitDUMPTRUCKSDE () throws Throwable
+    {
+	combinedScorecardpage.clickFilteroption();
+	combinedScorecardpage.clickOrgunit();
+	combinedScorecardpage.selectDumpTrucksDE();
+	combinedScorecardpage.clickApplybutton();
+    }
+    
+    @And("^I navigate to next Page$")
+    public void navigateTonextPage () throws Throwable
+    {
+	combinedScorecardpage.clickNextpage();
+    }    
+    
+    @Then("^I verified DUMP TRUCKS DE data is displayed in the table$")
+    public void verifyDumptruckDatadisplayed() throws Throwable
+    {
+	combinedScorecardpage.verifyDumptrucksTextdisplayed();
+    }
+ 
+    @And("^I set Driver safety lower & target filters$")
+    public void setTargetfilter () throws Throwable
+    {
+	combinedScorecardpage.clickDriversafetyLowertarget();
+	combinedScorecardpage.enterLowtargetValue();	
+	combinedScorecardpage.clickDriversafetyHightarget();
+	combinedScorecardpage.enterHightargetValue();	
+    }  
+    
+    @Then("^I verified score values are color coded as per the Filter values$")
+    public void verifyColorcoded() throws Throwable
+    {
+	combinedScorecardpage.verifyColorcodedTargetfilter();
+	Reporter.log(Constants.DRIVER_SAFETY_COLOR_CODED);
+    }
+    
 }

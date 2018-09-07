@@ -49,8 +49,8 @@ public class IndividualScorecardpage extends AbstractPage
     @FindBy(css = "#background-color-wrapper > div.sub-head.ng-scope > div.filters-wrap.ng-scope > ul > li > a:nth-child(1) > div > h1")
     public WebElement distanceUnits;
     
-    @FindBy(xpath = "//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[2]/label")
-    public WebElement kilometerRadiobutton;
+    @FindBy(xpath = "//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[2]/label")    
+    public WebElement kilometerRadiobutton;    
     
     @FindBy(id = "xpath-apply-prompts")
     public WebElement applyButton;
@@ -180,9 +180,7 @@ public class IndividualScorecardpage extends AbstractPage
     public void changeTokilometer () throws Exception
     {
 	waitForElementPresent(distanceDropdown);
-	distanceDropdown.click();
-	waitForElementPresent(timePeriod);
-	timePeriod.click();
+	distanceDropdown.click();	
 	waitForElementPresent(kilometerRadiobutton);
 	kilometerRadiobutton.click();
 	waitForElementPresent(applyButton);

@@ -170,6 +170,9 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(css = "#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i")
     public WebElement createdNotificationname;
     
+    @FindBy(xpath ="//*[@id='info-dashboardExportInProgress']/div/button/i")
+    public WebElement closeButton;
+    
     public String notificationName = "TestNotification1";
     
     public String emailId = "testingpurpose@test.com";
@@ -667,6 +670,23 @@ public class DriverSafetyPage extends AbstractPage
     }
     
     /**
+     * Wait for windows to Switch To
+     * 
+     * @param driver
+     * @throws InterruptedException
+     */
+    public void switchTofirstWindow (WebDriver driver)
+	    throws InterruptedException
+    {
+	checkPageIsReady();
+	Set<String> window_handles = driver.getWindowHandles();
+	Iterator<String> iterate = window_handles.iterator();
+	String first = iterate.next();
+	String second = iterate.next();
+	driver.switchTo().window(first);
+    }
+    
+    /**
      * Get text from overall score in dashlet of driver name
      * 
      * @return
@@ -864,6 +884,15 @@ public class DriverSafetyPage extends AbstractPage
 	waitForElementPresent(deleteConfirmbutton);
 	deleteConfirmbutton.click();
 	checkPageIsReady();
+    }
+    
+    /**
+     * Click Close button
+     * @throws Exception
+     */
+    public void closeButton() throws Exception{
+	waitForElementPresent(closeButton);
+	closeButton.click();
     }
     
 }

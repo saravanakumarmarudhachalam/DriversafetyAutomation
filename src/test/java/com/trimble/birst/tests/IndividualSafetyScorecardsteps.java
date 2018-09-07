@@ -24,7 +24,7 @@ public class IndividualSafetyScorecardsteps
 {  
     public WebDriver driver;
     
-    String lastThirtdaystxt, startDate, endDate, exePagedriverName,
+    public String lastThirtdaystxt, startDate, endDate, exePagedriverName,
 	    overallScore, totalDistance, idleDuration;
     
     public static PropertyUtils propertyUtils = PropertyUtils
@@ -51,13 +51,7 @@ public class IndividualSafetyScorecardsteps
     @And("^I clicked on driver name in Executive console$")
     public void clickDrivername () throws Throwable
     {
-	lastThirtdaystxt = driverSafetypage.getTextlastThirtydays();
-	startDate = driverSafetypage.getTextstartDate();
-	endDate = driverSafetypage.getTextendDate();
 	exePagedriverName = driverSafetypage.getTextdriverName();	
-	overallScore = driverSafetypage.getTextoverallScoreofDrivername();
-	totalDistance = driverSafetypage.getTexttotalDistanceRoundoff();
-	idleDuration = driverSafetypage.getTextidleDuration();
 	driverSafetypage.executivePagedriverLink.click();
 	Reporter.log(Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }
@@ -78,6 +72,11 @@ public class IndividualSafetyScorecardsteps
     @Then("^I verified the Date filter settings is displayed correctly$")
     public void verifyDatefilterSettings () throws Throwable
     {
+	driverSafetypage.switchTofirstWindow(driver);	
+	lastThirtdaystxt = driverSafetypage.getTextlastThirtydays();
+	startDate = driverSafetypage.getTextstartDate();
+	endDate = driverSafetypage.getTextendDate();
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);	
 	Assert.assertEquals(
 		driverSafetypage.getTextlastThirtydays(),
 		lastThirtdaystxt, Constants.LAST30DAYS_FILTER_TEXT_DISPLAYED);
@@ -93,6 +92,9 @@ public class IndividualSafetyScorecardsteps
     @Then("^I verified overall score in dashlet in Individual Scorecard$")
     public void verifyOverallscoreDashlet () throws Throwable
     {
+	driverSafetypage.switchTofirstWindow(driver);	
+	overallScore = driverSafetypage.getTextoverallScoreofDrivername();	
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
 	Assert.assertEquals(
 		individualScorepage.getTextoverallScoreIndivudalscoreCard(),
 		overallScore, Constants.OVERALLSCORE_INDIVIDUAL_SCORECARD);
@@ -125,6 +127,9 @@ public class IndividualSafetyScorecardsteps
     @Then("^I verified total distance KPI in Individual Scorecard$")
     public void veirfyTotaldistanceKPI () throws Throwable
     {
+	driverSafetypage.switchTofirstWindow(driver);	
+	totalDistance = driverSafetypage.getTexttotalDistanceRoundoff();	
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
 	Assert.assertEquals(individualScorepage.getTexttotalDistanceKPI(),
 		totalDistance,
 		Constants.TOTALDISTANCE_KPI_INDIVIDUAL_SCORECARD);
@@ -134,6 +139,9 @@ public class IndividualSafetyScorecardsteps
     @Then("^I verified Idling Duration in Individual Scorecard$")
     public void veirfyIdlingduraction () throws Throwable
     {
+	driverSafetypage.switchTofirstWindow(driver);	
+	idleDuration = driverSafetypage.getTextidleDuration();	
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
 	Assert.assertEquals(
 		individualScorepage.getTextidlingDurationindividualScorecard(),
 		idleDuration,
@@ -178,7 +186,7 @@ public class IndividualSafetyScorecardsteps
     
     @Then("^Verify Individual Scorecard page displayed correctly$")
     public void verifyIndvscoreCardpage () throws Throwable
-    {
+    {	
 	Assert.assertTrue(individualScorepage.verifyIndividualscorecardPage(),Constants.INDIVIDUAL_SCORECARD_DISPLAYED);
     }
 }
