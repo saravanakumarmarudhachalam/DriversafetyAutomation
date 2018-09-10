@@ -139,6 +139,19 @@ public class ComonTestssteps
 	
     }
     
+    @When("^I clicked Foldericon and Driver Safety Events$")
+    public void clickDriverSafetyEvents() throws Throwable
+    {
+	driverSafetypage.clickFoldericon();
+	driverSafetypage.clickDriversafetyEvents();
+    }
+    
+    @And("^I clicked Most Dangerous Locations Report$")
+    public void clickMostdangerouseLocations() throws Throwable
+    {
+	driverSafetypage.clickMostdangerouseLocations();
+    }
+    
     @And("^I clicked Foldericon$")
     public void clickFoldericon () throws Throwable
     {

@@ -173,6 +173,12 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath ="//*[@id='info-dashboardExportInProgress']/div/button/i")
     public WebElement closeButton;
     
+    @FindBy(xpath = "//span[contains(text(), 'Driver Safety Events')]")
+    public WebElement driverSafetyEventsMenu;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Most Dangerous Locations')]")
+    public WebElement mostDangerouslocationMenu;
+    
     public String notificationName = "TestNotification1";
     
     public String emailId = "testingpurpose@test.com";
@@ -301,6 +307,25 @@ public class DriverSafetyPage extends AbstractPage
 	driverSafetydropdown.click();
 	checkPageIsReady();
 	
+    }
+    /**
+     * Click Driver Safety Events dropdown
+     * @throws Exception
+     */
+    public void clickDriversafetyEvents() throws Exception
+    {
+	driverSafetyEventsMenu.click();
+	checkPageIsReady();
+    }
+    
+    /**
+     * Click Most Dangerous Locations
+     * @throws Exception
+     */
+    public void clickMostdangerouseLocations() throws Exception
+    {
+	mostDangerouslocationMenu.click();
+	checkPageIsReady();
     }
     /**
      * Click Scorecard Report - Combined Groups
