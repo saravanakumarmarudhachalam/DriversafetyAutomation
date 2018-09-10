@@ -12,10 +12,10 @@ import com.trimble.taf.pagefactory.global.AbstractPage;
 
 /**
  * @author smarudh
- *
  */
 public class SupervisorConsolepage extends AbstractPage
 {
+    
     
     /**
      * @param driver
@@ -29,7 +29,7 @@ public class SupervisorConsolepage extends AbstractPage
     @FindBy(xpath = "//span[text() = \"Supervisor Console\"]")
     public WebElement superVisorconsoleDashboard;
     
-    public void invokeSupervisorconsole() throws Exception
+    public void invokeSupervisorconsole () throws Exception
     {
 	superVisorconsoleDashboard.click();
 	checkPageIsReady();

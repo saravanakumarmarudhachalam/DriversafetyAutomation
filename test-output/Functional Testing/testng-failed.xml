@@ -5,7 +5,7 @@
     <classes>
       <class name="com.trimble.taf.suite.tests.base.TestRunner">
         <methods>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature" invocation-numbers="0 3"/>
           <include name="setUpClass"/>
           <include name="tear"/>
           <include name="tearDownClass"/>

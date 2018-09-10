@@ -3,8 +3,10 @@
  */
 package com.trimble.taf.pagefactory.application;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -50,7 +52,7 @@ public class CombinedScorecardPage extends AbstractPage
     @FindBy(css = "#xpath-dashboard-canvas > div > dashlet > div.dashlet-wrapper.ng-scope > ul > li:nth-child(5) > a")
     public WebElement lastPage;
     
-    @FindBy(xpath = "//*[@id='xpath-dashboard-canvas']/div/dashlet/div[1]/report/designer-report/div[1]/span")    
+    @FindBy(xpath = "//*[@id='xpath-dashboard-canvas']/div/dashlet/div[1]/report/designer-report/div[1]/span")
     public List<WebElement> driverSafetyscorecardReport;
     
     @FindBy(xpath = "//*[@id='global-header']/header/ng-include/div/div/ul/li[6]/a/i")
@@ -315,18 +317,65 @@ public class CombinedScorecardPage extends AbstractPage
     
     /**
      * Verify color coded in the driver safety filter
+     * 
      * @throws InterruptedException
      */
-    public void verifyColorcodedTargetfilter() throws InterruptedException{
-	checkPageIsReady();	
-	for (int i=0; i<driverSafetyscorecardReport.size(); i++){
-	    String rgbColor = driverSafetyscorecardReport.get(i).getCssValue("background-color");	  
-	    if(rgbColor.equals("rgba(255, 255, 255, 1)")|| rgbColor.equals("rgba(0, 0, 0, 0)")||rgbColor.equals("rgba(0, 0, 0, 1)")||rgbColor.equals("rgba(230, 230, 230, 1)")||rgbColor.equals("rgba(204, 255, 204, 1)")||rgbColor.equals("rgba(255, 255, 0, 1)")||rgbColor.equals("rgba(255, 0, 0, 1)")){
+    public void verifyColorcodedTargetfilter () throws InterruptedException
+    {
+	checkPageIsReady();
+	for (int i = 0; i < driverSafetyscorecardReport.size(); i++)
+	{
+	    String rgbColor = driverSafetyscorecardReport.get(i)
+		    .getCssValue("background-color");
+	    if (rgbColor.equals("rgba(255, 255, 255, 1)")
+		    || rgbColor.equals("rgba(0, 0, 0, 0)")
+		    || rgbColor.equals("rgba(0, 0, 0, 1)")
+		    || rgbColor.equals("rgba(230, 230, 230, 1)")
+		    || rgbColor.equals("rgba(204, 255, 204, 1)")
+		    || rgbColor.equals("rgba(255, 255, 0, 1)")
+		    || rgbColor.equals("rgba(255, 0, 0, 1)"))
+	    {
 		ProLogger.info(Constants.DRIVER_SAFETY_COLOR_CODED);
 	    }
-	    else{
-		Assert.fail("Driver safety Color coded is not displayed correctly");
+	    else
+	    {
+		Assert.fail(
+			"Driver safety Color coded is not displayed correctly");
 	    }
-	
+	    
 	}
-}}
+    }
+    
+    /**
+     * Verify the value should display without decimal point
+     */
+    public void verifyWOdecimalPoint ()
+    {
+	checkPageIsReady();
+	for (int i = 0; i < driverSafetyscorecardReport.size(); i++)
+	{
+	    String rgbColor = driverSafetyscorecardReport.get(i)
+		    .getCssValue("background-color");
+	    if (rgbColor.equals("rgba(204, 255, 204, 1)")
+		    || rgbColor.equals("rgba(255, 0, 0, 1)")
+		    || rgbColor.equals("rgba(255, 255, 0, 1)"))
+	    {
+		String value = driverSafetyscorecardReport.get(i).getText().replace("%", "");		
+		Double j = Double.parseDouble(value);
+		try
+		{
+		    if (j % 1 == 0)
+		    {
+			ProLogger.info(
+				Constants.GRIDVALUES_DISPLAYED_WODECMIAL_VALUE);
+		    }
+		}
+		catch (Exception e)
+		{
+		    Assert.fail(
+			    Constants.GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE);
+		}
+	    }
+	}
+    }
+}

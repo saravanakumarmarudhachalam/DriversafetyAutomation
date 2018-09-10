@@ -65,4 +65,9 @@ public class SupervisorTestSteps
 	driverSafetypage.sortTableascDescanyColumn();
     }
     
+    @Then("^I verified all the displayed without decimal point in the score grid in supervisor console$")
+    public void verifyAllscoreValueWOdecimal () throws Throwable
+    {
+	driverSafetypage.verifyWOdecimalPoint();
+    }
 }

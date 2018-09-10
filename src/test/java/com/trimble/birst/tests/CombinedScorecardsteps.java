@@ -129,4 +129,10 @@ public class CombinedScorecardsteps
 	Reporter.log(Constants.DRIVER_SAFETY_COLOR_CODED);
     }
     
+    @Then("^I verified all the score values are shown rounded without decimals$")
+    public void verifyScorevalueWOdecimals() throws Throwable
+    {
+	combinedScorecardpage.verifyWOdecimalPoint();
+    }
+    
 }

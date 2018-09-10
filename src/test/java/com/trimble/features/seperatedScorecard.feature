@@ -36,6 +36,10 @@ Feature: Seperated Scorecard Report
     Then I verified  Include inactive Drivers are displayed
     
   @Regression
+  Scenario: Scorecard Report - separated groups - Verify all Score values are shown rounded i.e. without any decimals (applicable to Overall Score, Accel, Braking, Speeding, Turning Score columns)
+     Then I verified all the score values are shown rounded without decimals
+    
+  @Regression
   Scenario: Scorecard Report - separated groups - Verify the Score values are color coded as per the filter values set for Driver Safety Lower & Target filters (in Driver Safety Scorecard Report Grid)
      And I set Driver safety lower & target filters  
      Then I verified score values are color coded as per the Filter values

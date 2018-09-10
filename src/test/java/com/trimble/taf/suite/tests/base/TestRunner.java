@@ -30,16 +30,23 @@ import cucumber.api.testng.TestNGCucumberRunner;
  */
 
 @CucumberOptions(
-		 features = {"src/test/java/com/trimble/features/commontests.feature","src/test/java/com/trimble/features/executiveconsole.feature"
-			 ,"src/test/java/com/trimble/features/individualScorecard.feature","src/test/java/com/trimble/features/combinedScorecard.feature",
-			 "src/test/java/com/trimble/features/seperatedScorecard.feature","src/test/java/com/trimble/features/supervisorconsole.feature"},
-		 //features = {"src/test/java/com/trimble/features/seperatedScorecard.feature"},
+		 features = {
+			 "src/test/java/com/trimble/features/commontests.feature",
+			 "src/test/java/com/trimble/features/executiveconsole.feature",
+			 "src/test/java/com/trimble/features/individualScorecard.feature",
+			 "src/test/java/com/trimble/features/combinedScorecard.feature",
+			 "src/test/java/com/trimble/features/seperatedScorecard.feature",
+			 "src/test/java/com/trimble/features/supervisorconsole.feature",
+			 "src/test/java/com/trimble/features/MostDangerousLocations.feature" },
+		 // features =
+		 // {"src/test/java/com/trimble/features/supervisorconsole.feature"},
 		 glue = { "com/trimble/birst/tests" },
 		 plugin = {
 			 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 		 tags = { "@Regression" })
 public class TestRunner
 {
+    
     public static WebDriver driver;
     
     private Platform aDeviceType;
@@ -59,7 +66,8 @@ public class TestRunner
     }
     
     @BeforeMethod(alwaysRun = true)
-    public void driversetUp(){
+    public void driversetUp ()
+    {
 	driver = setUpDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("runMode"),
 		propertyUtils.getProperty("platform"));
@@ -67,7 +75,8 @@ public class TestRunner
     }
     
     @AfterMethod(alwaysRun = true)
-    public void tear(){
+    public void tear ()
+    {
 	tearDownDriver(propertyUtils.getProperty("browser"),
 		propertyUtils.getProperty("platform"));
     }
@@ -143,7 +152,8 @@ public class TestRunner
 	}
     }
     
-    public static WebDriver getDriver() {
-        return driver;
+    public static WebDriver getDriver ()
+    {
+	return driver;
     }
 }

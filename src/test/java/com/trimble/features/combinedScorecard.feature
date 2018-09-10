@@ -29,8 +29,11 @@ Feature: Combined Scorecard Report
   Scenario: Scorecard Report - combined groups - Verify if Include Inactive Drivers is set to yes then drivers with no scores data (for the selected report period) are shown at the end of the report
     And I checked Include Active Drivers as YES
     And I navigate to last page
-    Then I verified  Include inactive Drivers are displayed 
+    Then I verified  Include inactive Drivers are displayed     
     
+   @Regression
+  Scenario: Scorecard Report - combined groups - Verify all Score values are shown rounded i.e. without any decimals (applicable to Overall Score, Accel, Braking, Speeding, Turning Score columns)
+     Then I verified all the score values are shown rounded without decimals
     
    @Regression
   Scenario: Scorecard Report - combined groups - Verify the Score values are color coded as per the filter values set for Driver Safety Lower & Target filters (in Driver Safety Scorecard Report Grid)

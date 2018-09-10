@@ -96,7 +96,7 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[1]/div[1]/div[3]/i")
     public WebElement sortedParticularcolumn;
     
-    @FindBy(xpath = "//*[@id='table-view-27']/div[1]/div/div[2]/div/div/div[2]")
+    @FindBy(xpath = "//div[contains(@id,'tableChart')]/div[1]/div/div[2]/div/div/div[2]")
     public List<WebElement> gridValues;
     
     @FindAll({
@@ -170,8 +170,17 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(css = "#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i")
     public WebElement createdNotificationname;
     
-    @FindBy(xpath ="//*[@id='info-dashboardExportInProgress']/div/button/i")
+    @FindBy(xpath = "//*[@id='info-dashboardExportInProgress']/div/button/i")
     public WebElement closeButton;
+    
+    @FindBy(xpath = "xpath-notifications-close-button")
+    public WebElement notificationClosebutton;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Driver Safety Events')]")
+    public WebElement driverSafetyEventsMenu;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Most Dangerous Locations')]")
+    public WebElement mostDangerouslocationMenu;
     
     public String notificationName = "TestNotification1";
     
@@ -595,9 +604,7 @@ public class DriverSafetyPage extends AbstractPage
 	    }
 	    catch (Exception e)
 	    {
-		ProLogger.error(
-			Constants.GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE,
-			e.getMessage());
+		Assert.fail(Constants.GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE);
 	    }
 	    acutal.add(values.get(0).getText());
 	}
@@ -736,15 +743,15 @@ public class DriverSafetyPage extends AbstractPage
      * @throws Exception
      */
     public String getTextidleDuration () throws Exception
-    {	
-	if (idleDurationexecConsole.getAttribute("value")!= null)
+    {
+	if (idleDurationexecConsole.getAttribute("value") != null)
 	{
 	    waitForElementPresent(idleDurationexecConsole);
 	    return getText(idleDurationexecConsole);
 	}
 	else
 	{
-	    String nullValue="N/A";
+	    String nullValue = "N/A";
 	    return nullValue;
 	}
     }
@@ -888,11 +895,35 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Click Close button
+     * 
      * @throws Exception
      */
-    public void closeButton() throws Exception{
+    public void closeButton () throws Exception
+    {
 	waitForElementPresent(closeButton);
 	closeButton.click();
+    }
+    
+    /**
+     * Click Driver Safety Events dropdown
+     * 
+     * @throws Exception
+     */
+    public void clickDriversafetyEvents () throws Exception
+    {
+	driverSafetyEventsMenu.click();
+	checkPageIsReady();
+    }
+    
+    /**
+     * Click Most Dangerous Locations
+     * 
+     * @throws Exception
+     */
+    public void clickMostdangerouseLocations () throws Exception
+    {
+	mostDangerouslocationMenu.click();
+	checkPageIsReady();
     }
     
 }

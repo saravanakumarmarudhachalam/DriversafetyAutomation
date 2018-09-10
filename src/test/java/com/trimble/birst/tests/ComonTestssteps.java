@@ -23,7 +23,8 @@ import cucumber.api.java.en.When;
  * @author smarudh
  */
 public class ComonTestssteps
-{       
+{
+    
     String lastThirtdaystxt;
     
     String startDate;
@@ -51,7 +52,7 @@ public class ComonTestssteps
      */
     public ComonTestssteps()
     {
-	driver = TestRunner.getDriver();	
+	driver = TestRunner.getDriver();
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	individualScorepage = new IndividualScorecardpage(driver);
@@ -90,7 +91,7 @@ public class ComonTestssteps
     
     @Then("^I validate the Executive Driversafety console page is displayed correctly$")
     public void verifyExecutivedriverSafetyhomePage () throws Throwable
-    {		
+    {
 	Assert.assertTrue(driverSafetypage.verifyExectiveconsolePage(),
 		Constants.EXECUTIVE_CONSOLEPAGE_DISPLAYED);
 	Reporter.log(Constants.EXECUTIVE_CONSOLEPAGE_DISPLAYED);
@@ -132,7 +133,7 @@ public class ComonTestssteps
     }
     
     @When("^I clicked Foldericon and Driver Safety$")
-    public void clickDriverSafty() throws Throwable
+    public void clickDriverSafty () throws Throwable
     {
 	driverSafetypage.clickFoldericon();
 	driverSafetypage.clickDriversafetyDropdown();
@@ -145,8 +146,8 @@ public class ComonTestssteps
 	driverSafetypage.clickFoldericon();
 	
     }
-    @And ("^I clicked Scorecard Report - combined groups$")
-    public void clickCombinebscore() throws Throwable
+    @And("^I clicked Scorecard Report - combined groups$")
+    public void clickCombinebscore () throws Throwable
     {
 	driverSafetypage.clickCombinedscoreCard();
 	
@@ -169,7 +170,7 @@ public class ComonTestssteps
     
     @Then("^I verified the data of Last30days,startdate and enddate after switching one dash board to anotherdashboard is displayed correctly$")
     public void verifyDataforAlldateFilter () throws Throwable
-    {	
+    {
 	Assert.assertEquals(
 		driverSafetypage.getTextlastThirtydays_Indvscorecard(),
 		lastThirtdaystxt, Constants.LAST30DAYS_FILTER_TEXT_DISPLAYED);
@@ -187,6 +188,19 @@ public class ComonTestssteps
     {
 	driverSafetypage.clickFoldericon();
 	driverSafetypage.clickExectiveconsole();
+    }
+    
+    @When("^I clicked Foldericon and Driver Safety Events$")
+    public void clickDriverSafetyEvents () throws Throwable
+    {
+	driverSafetypage.clickFoldericon();
+	driverSafetypage.clickDriversafetyEvents();
+    }
+    
+    @And("^I clicked Most Dangerous Locations Report$")
+    public void clickMostdangerouseLocations () throws Throwable
+    {
+	driverSafetypage.clickMostdangerouseLocations();
     }
     
     public void performLoginaction () throws Exception

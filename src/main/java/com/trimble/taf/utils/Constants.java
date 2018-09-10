@@ -44,7 +44,7 @@ public final class Constants
     
     public static final String SORTED_ASC_DESC_WORKING_CORRECTLY = "Ascending/Descending ordder is not working properly";
     
-    public static final String GRIDVALUES_DISPLAYED_WODECMIAL_VALUE = "All the grid score value is displaued without Decimal Point";
+    public static final String GRIDVALUES_DISPLAYED_WODECMIAL_VALUE = "All the grid score value is displayed without Decimal Point";
     
     public static final String GRIDVALUES_DISPLAYED_WITHDECMIAL_VALUE = "All the grid score value is displaed with Decimal Point";
     
