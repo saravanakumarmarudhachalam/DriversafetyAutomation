@@ -33,7 +33,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 		 //features = {"src/test/java/com/trimble/features/commontests.feature","src/test/java/com/trimble/features/executiveconsole.feature"
 		//	 ,"src/test/java/com/trimble/features/individualScorecard.feature","src/test/java/com/trimble/features/combinedScorecard.feature",
 		//	 "src/test/java/com/trimble/features/seperatedScorecard.feature","src/test/java/com/trimble/features/supervisorconsole.feature"},
-		 features = {"src/test/java/com/trimble/features/MostDangerousLocations.feature"},
+		 features = {"src/test/java/com/trimble/features/supervisorconsole.feature"},
 		 glue = { "com/trimble/birst/tests" },
 		 plugin = {
 			 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
