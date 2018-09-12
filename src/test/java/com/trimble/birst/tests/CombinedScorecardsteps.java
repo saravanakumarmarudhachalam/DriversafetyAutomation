@@ -132,7 +132,7 @@ public class CombinedScorecardsteps
     @Then("^I verified all the score values are shown rounded without decimals$")
     public void verifyScorevalueWOdecimals() throws Throwable
     {
-	combinedScorecardpage.verifyWOdecimalPoint();
+	combinedScorecardpage.verifyColorcodedTargetfilter();
     }
     
 }

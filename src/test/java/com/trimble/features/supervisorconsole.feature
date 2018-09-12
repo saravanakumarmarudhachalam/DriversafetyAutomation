@@ -29,3 +29,17 @@ Feature: Supervisor Console Report
   @Regression
   Scenario: Supervisor console - Verify sorting based on any column (in Driver Ranking by Scores grid) works correctly
     Then I verified all the sorting column are working correctly in Supervisor Console
+
+  @Regression
+  Scenario: Supervisor console - Verify export of the entire report via Export (menu) -> PDF (with Details)
+    When I clicked Exporticon
+    And I clicked ExportPDF
+    Then I verified file has been exported correctly
+    When I clicked Exporticon
+    And I clicked ExportPDFdetails
+    Then I verified file has been exported correctly
+
+  @Regression
+  Scenario: Supervisor console - Verify the Score values are color coded as per the filter values set for Driver Safety Lower & Target filters (in Driver Ranking by Scores Grid)
+    And I set Driver safety lower & target filters
+    Then I verified score values are color coded as per the Filter values in supervisor console

@@ -70,4 +70,10 @@ public class SupervisorTestSteps
     {
 	driverSafetypage.verifyWOdecimalPoint();
     }
+    
+    @Then("^I verified score values are color coded as per the Filter values in supervisor console$")
+    public void verifyAllscorevalueColorcoded () throws Throwable
+    {
+	superVisorconsole.verifyColorcodedTargetfilter();
+    }
 }
