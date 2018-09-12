@@ -39,7 +39,7 @@ public class MostDangerousLocationsPage extends AbstractPage
     @FindBy(xpath = "//*[@id=\"background-color-wrapper\"]/div[2]/div[1]/ul/li/a[3]/span")
     public WebElement longitudeFilter;
     
-    @FindBy(xpath = "//div[contains(@id, 'tableChart_112')]/div/div/div[2]/div/div/div/span/a")
+    @FindBy(xpath = "//div[contains(@id, 'tableChart')]/div/div/div/div/div/div/span/a")
     public List<WebElement> AppAddress;
     
     @FindBy(id = "xpath-dashboard-canvas")
@@ -103,6 +103,7 @@ public class MostDangerousLocationsPage extends AbstractPage
 	System.out.println(latlon);
 	Assert.assertEquals(latlon, latlong);
 	
+	
     }
     
     /**
@@ -115,13 +116,18 @@ public class MostDangerousLocationsPage extends AbstractPage
 	Actions action = new Actions(driver);
 	action.sendKeys(Keys.PAGE_DOWN).build().perform();
 	checkPageIsReady();
+	
     }
     
-    public void checkNoofRecordsinTable() throws Exception
+    public int checkNoofRecordsinTable() throws Exception
     {
 	checkPageIsReady();
 	scrollVertically();
-	System.out.println(AppAddress.size());	
+	int NoofAddress = AppAddress.size();
+	System.out.println(NoofAddress);
+	return NoofAddress;
+	
+	
 	
 	
     }

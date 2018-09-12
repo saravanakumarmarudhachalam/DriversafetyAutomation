@@ -81,7 +81,10 @@ public final class Constants
     public static final String SUPERVISOR_CONSOLE_OPENED_SUCCESSFULLY = "Supervisor Console successfully opened";
     
     public static final String INCLUDE_INACTIVE_DRIVERS_DISPLAYED = "Include Inactive drivers are displayed correctly";
+    
     public static final String DRIVER_SAFETY_COLOR_CODED="Driver Safety Color coded is displayed correctly";
+    
+    public static final String TOTAL_NO_OF_ADDRESS_IN_DANGEROUS_LOCATIONS = "Most Dangerous Locations dashboard shows the top 10 dangerous locations";
 
     
 }
