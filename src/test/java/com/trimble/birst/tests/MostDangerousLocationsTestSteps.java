@@ -77,4 +77,12 @@ public class MostDangerousLocationsTestSteps
 	Reporter.log(Constants.TOTAL_NO_OF_ADDRESS_IN_DANGEROUS_LOCATIONS);
     }
     
+    @Then("^I changed the time period to last month$")
+    public void verifyTotaleventsValue() throws Throwable
+    {
+	mostDangerousLocationspage.checkTotaleventsValue();
+	Reporter.log(Constants.GRID_VALUES_BASEDON_DATEFILTER);
+	
+    }
+    
 }

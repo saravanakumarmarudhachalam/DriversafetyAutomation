@@ -36,8 +36,18 @@ public class MostDangerousLocationsPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id, 'tableChart')]/div/div/div[2]/div/div/div/span/a")
     public List<WebElement> AppAddress;
     
+    @FindBy(xpath = "//div[@id=\"tableChart_19\"]/div/div/div[2]/div[7]/div")
+    public WebElement valueOftotalEvents;
+    
     @FindBy(id = "xpath-dashboard-canvas")
     public WebElement scroll;
+    
+    @FindBy(xpath = "//*[contains(@id, 'background-color-wrapper')]/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[6]/label")
+    public WebElement LastmonthTimeperiod;
+    
+    @FindBy(xpath = "//*[contains(@id, 'xpath-apply-prompts')]")
+    public WebElement applyButton;
+    
     // *[@id="tableChart_112"]/div/div/div[2]/div[8]/div/div/span/a
     // *[@id="tableChart_112"]/div/div/div[2]/div[1]/div/div/span/a
     
@@ -149,6 +159,23 @@ public class MostDangerousLocationsPage extends AbstractPage
 	int NoofAddress = AppAddress.size();
 	System.out.println(NoofAddress);
 	return NoofAddress;
+    }
+    
+    public void checkTotaleventsValue() throws Exception
+    {
+	checkPageIsReady();
+	waitForElementPresent(valueOftotalEvents);
+	scrollVertically();
+	String tEventsValue;
+	tEventsValue = valueOftotalEvents.getText();	
+	last30Days.click();
+	LastmonthTimeperiod.click();
+	applyButton.click();
+	Thread.sleep(10000);
+	checkPageIsReady();
+	String tEventsValue1;
+	tEventsValue1 = valueOftotalEvents.getText();	
+	Assert.assertNotEquals(tEventsValue, tEventsValue1);	
     }
     
 }
