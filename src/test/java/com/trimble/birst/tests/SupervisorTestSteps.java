@@ -76,4 +76,10 @@ public class SupervisorTestSteps
     {
 	superVisorconsole.verifyColorcodedTargetfilter();
     }
+    
+    @Then("^I verified all Driver safety Events chart is displayed$")
+    public void verifyDriversafetyEventschart () throws Throwable
+    {
+	Assert.assertTrue(superVisorconsole.verifyDriversafetyChartdisplayed(),Constants.DRIVER_SAFETY_EVENTS_CHART_DISPLAYED);
+    }
 }

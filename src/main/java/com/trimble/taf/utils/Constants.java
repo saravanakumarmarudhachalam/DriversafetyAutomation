@@ -90,4 +90,22 @@ public final class Constants
     
     public static final String GRID_VALUES_BASEDON_DATEFILTER = "The grid values change appropriately as per Date Period";
     
+    public static final String DRIVER_SAFETY_EVENTS_CHART_DISPLAYED = "Driver Safety Events charts is displayed";
+    
+    public static final String DRIVERNAME_EVENTDATE_DISPLAYED = "Driver name and Event date is displayed";
+    
+    public static final String DRIVERNAME_EVENTDATE_NOT_DISPLAYED = "Driver name and Event date is not displayed";
+    
+    public static final String DRIVERNAME_DISPLAYED = "Driver name is displayed correctly both in Driver Event by location and Driver Event map";
+    
+    public static final String DRIVERADDRESS_DISPLAYED = "Driver Address is displayed correctly both in Driver Event by location and Driver Event map";
+    
+    public static final String HIGHEST_TOTAL = "Hightest Total Events at the top";
+    
+    public static final String DATE_FILTERS_MATCHES = "Date filters are same";
+    
+    public static final String CURRENT_MONTH_BYDEFAULT = "Date filter is set to current month";
+    
+    public static final String UTILIZATIONVALUE_CHANGES = "Utilization change appropriately based on the value selected in the Month filter";
+    
 }

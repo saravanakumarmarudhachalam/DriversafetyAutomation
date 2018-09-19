@@ -7,40 +7,28 @@
     <line>
       <![CDATA[Driver safety page is displayed correctly]]>
     </line>
-    <line>
-      <![CDATA[Supervisor Console successfully opened]]>
-    </line>
-    <line>
-      <![CDATA[Overallscore is displayed in ascending order correctly]]>
-    </line>
-    <line>
-      <![CDATA[PDF is exported correctly]]>
-    </line>
-    <line>
-      <![CDATA[PDF is exported correctly]]>
-    </line>
   </reporter-output>
-  <suite name="Functional Testing" duration-ms="114331" started-at="2018-09-12T11:02:01Z" finished-at="2018-09-12T11:03:55Z">
+  <suite name="Functional Testing" duration-ms="82483" started-at="2018-09-19T13:02:46Z" finished-at="2018-09-19T13:04:09Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" class="com.trimble.taf.suite.tests.base.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login Test Birst" duration-ms="114331" started-at="2018-09-12T11:02:01Z" finished-at="2018-09-12T11:03:55Z">
+    <test name="Login Test Birst" duration-ms="82483" started-at="2018-09-19T13:02:46Z" finished-at="2018-09-19T13:04:09Z">
       <class name="com.trimble.taf.suite.tests.base.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="531" started-at="2018-09-12T11:02:01Z" finished-at="2018-09-12T11:02:01Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="264" started-at="2018-09-19T13:02:46Z" finished-at="2018-09-19T13:02:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="driversetUp()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="driversetUp" is-config="true" duration-ms="8976" started-at="2018-09-12T11:02:02Z" finished-at="2018-09-12T11:02:11Z">
+        <test-method status="PASS" signature="driversetUp()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="driversetUp" is-config="true" duration-ms="6894" started-at="2018-09-19T13:02:47Z" finished-at="2018-09-19T13:02:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetUp -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" duration-ms="103583" started-at="2018-09-12T11:02:11Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-09-12T11:03:54Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" duration-ms="74019" started-at="2018-09-19T13:02:54Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-09-19T13:04:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Supervisor Console Report]]>
+                <![CDATA[Driver Events by Location Report]]>
               </value>
             </param>
           </params>
@@ -51,25 +39,13 @@
             <line>
               <![CDATA[Driver safety page is displayed correctly]]>
             </line>
-            <line>
-              <![CDATA[Supervisor Console successfully opened]]>
-            </line>
-            <line>
-              <![CDATA[Overallscore is displayed in ascending order correctly]]>
-            </line>
-            <line>
-              <![CDATA[PDF is exported correctly]]>
-            </line>
-            <line>
-              <![CDATA[PDF is exported correctly]]>
-            </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tear()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tear" is-config="true" duration-ms="739" started-at="2018-09-12T11:03:54Z" finished-at="2018-09-12T11:03:55Z">
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tear" is-config="true" duration-ms="812" started-at="2018-09-19T13:04:08Z" finished-at="2018-09-19T13:04:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="340" started-at="2018-09-12T11:03:55Z" finished-at="2018-09-12T11:03:55Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="375" started-at="2018-09-19T13:04:09Z" finished-at="2018-09-19T13:04:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

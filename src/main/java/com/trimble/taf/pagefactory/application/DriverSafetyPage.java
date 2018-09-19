@@ -99,10 +99,7 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div[1]/div/div[2]/div/div/div[2]")
     public List<WebElement> gridValues;
     
-    @FindAll({
-	    @FindBy(xpath = "//*[@id='chart25']/div[2]/div[1]/div/div/div/div[2]"),
-	    @FindBy(xpath = "//*[@id='chart10']/div[2]/div[1]/div/div/div/div[2]")
-    })
+    @FindBy(xpath= "//div[contains(@id, 'chart')]/div[2]/div[1]/div/div/div/div[2]")
     public WebElement barchartTarget;
     
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div")
@@ -181,6 +178,18 @@ public class DriverSafetyPage extends AbstractPage
     
     @FindBy(xpath = "//span[contains(text(), 'Most Dangerous Locations')]")
     public WebElement mostDangerouslocationMenu;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Driver Events by Location')]")
+    public WebElement driverEventsbyLocation;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Event Location Hotspot Map')]")
+    public WebElement eventLocationshotspotMenu;
+    
+    @FindBy (xpath = "//span[contains(text(), 'Fleet Performance')]")
+    public WebElement FleetPerformance;
+    
+    @FindBy(xpath = "//span[contains(text(), 'Vehicle Utilization')]")
+    public WebElement vehicleUtilizationMenu;
     
     public String notificationName = "TestNotification1";
     
@@ -923,6 +932,38 @@ public class DriverSafetyPage extends AbstractPage
     public void clickMostdangerouseLocations () throws Exception
     {
 	mostDangerouslocationMenu.click();
+	checkPageIsReady();
+    }
+    
+    /**
+     * Click Driver Events By Location
+     */
+    public void clickDrivereventsBylocation ()
+    {
+	driverEventsbyLocation.click();
+	checkPageIsReady();
+    }
+    
+    /**
+     * Click Event location HotspotMap
+     * @throws Exception
+     */
+    public void clickEventlocationHotspotMap() throws Exception
+    {
+	eventLocationshotspotMenu.click();
+	checkPageIsReady();
+    }
+    
+    /**
+     * Click Vehicle Utilization
+     * @throws Exception
+     */
+    public void clickvehicleUtilizationMenu() throws Exception
+    {
+	checkPageIsReady();
+	FleetPerformance.click();
+	checkPageIsReady();	
+	vehicleUtilizationMenu.click();
 	checkPageIsReady();
     }
     

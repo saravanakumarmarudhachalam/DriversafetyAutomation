@@ -37,6 +37,9 @@ public class SupervisorConsolepage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div/div/div[2]/span")
     public List<WebElement> superVisorconsoleDriverscores;
     
+    @FindBy(xpath="//div[contains(@id,'chart')]/div[1]/div/canvas")
+    public WebElement driverSafetyeventchart;
+    
     public void invokeSupervisorconsole () throws Exception
     {
 	superVisorconsoleDashboard.click();
@@ -71,6 +74,14 @@ public class SupervisorConsolepage extends AbstractPage
 	    }
 	    
 	}
+    }
+    
+    /**
+     * Verify Driver safety Event charts is displayed
+     * @return
+     */
+    public boolean verifyDriversafetyChartdisplayed(){
+	return isElementDisplayed(driverSafetyeventchart);
     }
     
 }

@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.trimble.taf.pagefactory.global.AbstractPage;
 import com.trimble.taf.utils.Constants;
@@ -195,8 +196,7 @@ public class IndividualScorecardpage extends AbstractPage
      */
     public String getTxteventPerkiloMeter () throws Exception
     {
-	waitForElementPresent(eventPerKilometerText);
-	System.out.println(getText(eventPerKilometerText));
+	waitForElementPresent(eventPerKilometerText);	
 	return getText(eventPerKilometerText);
     }
     
@@ -292,9 +292,7 @@ public class IndividualScorecardpage extends AbstractPage
 	    }
 	    catch (Exception e)
 	    {
-		ProLogger.error(
-			Constants.EVENTDATE_FILTERED_NOT_CORRECTLY,
-			e.getMessage());
+		Assert.fail(Constants.EVENTDATE_FILTERED_NOT_CORRECTLY);		
 	    }	    
 	}
     }

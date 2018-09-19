@@ -7,7 +7,7 @@ Feature: Supervisor Console Report
   Scenario: Supervisor console - Verify that a new Notification is working ok
     Given I am logged into Application
     Then I validate home page displayed correctly
-    And I clicked MySpaces & Dashboard
+    And I clicked MySpa	ces & Dashboard
     When I clicked Foldericon and Driver Safety
     And I clicked Supervisor Console
     And I created a new notification center and ran it
@@ -21,6 +21,10 @@ Feature: Supervisor Console Report
   @Regression
   Scenario: Supervisor console - Verify all Score values are shown rounded i.e. without any decimals (applicable to Overall Score, Accel, Braking, Speeding, Turning columns)
     Then I verified all the displayed without decimal point in the score grid in supervisor console
+
+  @Regression
+  Scenario: Supervisor console - Verify that Harsh Events by Vehicle Type dashlet shows distribution of Driver Safety events (Accel, Braking, Turning, Speeding) based on the type of the vehicle appropriately
+    Then I verified all Driver safety Events chart is displayed
 
   @Regression
   Scenario: Supervisor console - Verify drivers are shown in ascending order of their Overall Score in Driver Ranking by Scores grid i.e. driver having lowest Overall Score is at the top
