@@ -140,7 +140,7 @@ public class ComonTestssteps
 	
     }
     
-    @And("^I clicked Foldericon$")
+    @And("^I click the FolderIcon$")
     public void clickFoldericon () throws Throwable
     {
 	driverSafetypage.clickFoldericon();
@@ -203,6 +203,19 @@ public class ComonTestssteps
 	driverSafetypage.clickMostdangerouseLocations();
     }
     
+    @And("^I clicked Event Location Hotspot Map$")
+    public void clickEventLocationHotspotpage () throws Throwable
+    {
+	driverSafetypage.clickEventlocationHotspotMap();
+    }
+    
+    @Then("^I clicked Vehicle Utilization$")
+    public void clickVehicleUtilization() throws Throwable
+    {
+	
+	driverSafetypage.clickvehicleUtilizationMenu();
+
+    }
     public void performLoginaction () throws Exception
     {
 	loginPage = new LoginPage(driver);

@@ -90,4 +90,12 @@ public final class Constants
     
     public static final String GRID_VALUES_BASEDON_DATEFILTER = "The grid values change appropriately as per Date Period";
     
+    public static final String HIGHEST_TOTAL = "Hightest Total Events at the top";
+    
+    public static final String DATE_FILTERS_MATCHES = "Date filters are same";
+    
+    public static final String CURRENT_MONTH_BYDEFAULT = "Date filter is set to current month";
+    
+    public static final String UTILIZATIONVALUE_CHANGES = "Utilization change appropriately based on the value selected in the Month filter";
+    
 }

@@ -70,14 +70,14 @@ public class MostDangerousLocationsTestSteps
 	
     }
     
-    @Then("^I find the number of columns in the Approimate Address table$")
+    @Then("^I find the number of columns in the Approimate Address table in the Most Dangerous Locations Report$")
     public void checkNoOfrecordsInLocationtable () throws Throwable
     {
 	Assert.assertEquals(mostDangerousLocationspage.checkNoofRecordsinTable(),10);
 	Reporter.log(Constants.TOTAL_NO_OF_ADDRESS_IN_DANGEROUS_LOCATIONS);
     }
     
-    @Then("^I changed the time period to last month$")
+    @Then("^I changed the time period to last month in the Most Dangerous Locations Report$")
     public void verifyTotaleventsValue() throws Throwable
     {
 	mostDangerousLocationspage.checkTotaleventsValue();
