@@ -100,4 +100,10 @@ public class DriverEventbyLocationTestSteps
 	Assert.assertEquals(driverAddress,driverAddressdriverEventmap,Constants.DRIVERADDRESS_DISPLAYED);
     }
     
+    @Then("^I verified Map Dashlet is displayed correctly in Driver Event Map$")
+    public void verifyMapdashletDisplayeddriverEventmap () throws Throwable
+    {
+	Assert.assertTrue(driverEventmapPage.verifyMapdashletDivereventMap());
+    }
+    
 }

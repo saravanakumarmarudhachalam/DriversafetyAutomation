@@ -6,6 +6,8 @@ package com.trimble.birst.tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+
+import com.trimble.taf.pagefactory.application.DriverEventsbyLocationpage;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.EventLocationHotspotMapPage;
 import com.trimble.taf.pagefactory.application.MyspacesPage;
@@ -32,12 +34,14 @@ public class EventLocationHotspotMapTestSteps
     public DriverSafetyPage driverSafetypage;
     
     public EventLocationHotspotMapPage eventLocationhotspotMappage;
+    public DriverEventsbyLocationpage driverEventbyLocationpage;
     
     public EventLocationHotspotMapTestSteps()
     {
 	driver = TestRunner.getDriver();
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
+	driverEventbyLocationpage = new DriverEventsbyLocationpage(driver);
 	eventLocationhotspotMappage = new EventLocationHotspotMapPage(driver);
 	// TODO Auto-generated constructor stub
     }
@@ -57,8 +61,7 @@ public class EventLocationHotspotMapTestSteps
     
     @Then("^I changed the time period to last month in the Event Location Hotspot Map$")
     public void verifyTotaleventsValue () throws Throwable
-    {
-	
+    {	
 	eventLocationhotspotMappage.checkTotaleventsValue();
 	Reporter.log(Constants.GRID_VALUES_BASEDON_DATEFILTER);
     }
@@ -86,5 +89,11 @@ public class EventLocationHotspotMapTestSteps
 	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
 	eventLocationhotspotMappage.verifyDriverEventsByLocation();
 	Reporter.log(Constants.DATE_FILTERS_MATCHES);
+    }
+    
+    @Then("^I verified Map dashlet Icon is displayed in the Event Location Hotspot Map$")
+    public void verifyMapdashletIcon() throws Throwable
+    {	
+	Assert.assertTrue(driverEventbyLocationpage.verifyMapdashletDisplayed());
     }
 }

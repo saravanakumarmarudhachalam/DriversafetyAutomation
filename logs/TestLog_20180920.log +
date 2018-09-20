@@ -1,0 +1,5 @@
+20180920 12:18:38.087 |INFO | [main] [ProLogger.java:179] - Driver name and Event date is displayed
+20180920 12:18:38.087 |INFO | [main] [ProLogger.java:179] - Driver name and Event date is displayed
+20180920 12:18:38.087 |INFO | [main] [ProLogger.java:179] - Driver name and Event date is displayed
+20180920 12:18:38.087 |INFO | [main] [ProLogger.java:179] - Driver name and Event date is displayed
+20180920 16:30:59.814 |ERROR| [main] [ProLogger.java:73] - Exception Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='undefined']/div[1]/div[2]/div[2]/svg/g[1306]/path' (tried for 120 second(s) with 500 milliseconds interval)

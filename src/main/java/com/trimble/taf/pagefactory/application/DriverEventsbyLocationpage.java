@@ -146,6 +146,7 @@ public class DriverEventsbyLocationpage extends AbstractPage
      */
     public boolean verifyMapdashletDisplayed ()
     {
+	checkPageIsReady();
 	zoomOut.click();
 	checkPageIsReady();
 	return isElementDisplayed(mapDashlet);

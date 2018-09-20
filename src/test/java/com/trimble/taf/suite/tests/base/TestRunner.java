@@ -30,26 +30,25 @@ import cucumber.api.testng.TestNGCucumberRunner;
  */
 
 @CucumberOptions(
-		  features = {
-		  "src/test/java/com/trimble/features/commontests.feature",
-		  "src/test/java/com/trimble/features/executiveconsole.feature",
-		  "src/test/java/com/trimble/features/individualScorecard.feature",
-		  "src/test/java/com/trimble/features/combinedScorecard.feature",
-		  "src/test/java/com/trimble/features/seperatedScorecard.feature",
-		  "src/test/java/com/trimble/features/supervisorconsole.feature",
-		  "src/test/java/com/trimble/features/MostDangerousLocations.feature",
-		  "src/test/java/com/trimble/features/VehicleUtilization.feature",
-		  "src/test/java/com/trimble/features/EventLocationHotspotMap.feature",
-		  "src/test/java/com/trimble/features/DriverEventsbyLocation.feature"},
-//		 features = {
-//			 "src/test/java/com/trimble/features/DriverEventsbyLocation.feature" },
+		 // features = {
+		 // "src/test/java/com/trimble/features/commontests.feature",
+		 // "src/test/java/com/trimble/features/executiveconsole.feature",
+		 // "src/test/java/com/trimble/features/individualScorecard.feature",
+		 // "src/test/java/com/trimble/features/combinedScorecard.feature",
+		 // "src/test/java/com/trimble/features/seperatedScorecard.feature",
+		 // "src/test/java/com/trimble/features/supervisorconsole.feature",
+		 // "src/test/java/com/trimble/features/MostDangerousLocations.feature",
+		 // "src/test/java/com/trimble/features/VehicleUtilization.feature",
+		 // "src/test/java/com/trimble/features/EventLocationHotspotMap.feature",
+		 // "src/test/java/com/trimble/features/DriverEventsbyLocation.feature"},
+		 features = {
+			 "src/test/java/com/trimble/features/MostDangerousLocations.feature" },
 		 glue = { "com/trimble/birst/tests" },
 		 plugin = {
 			 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 		 tags = { "@Regression" })
 public class TestRunner
-{
-    
+{    
     
     public static WebDriver driver;
     

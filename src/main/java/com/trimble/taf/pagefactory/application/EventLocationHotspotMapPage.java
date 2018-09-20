@@ -23,6 +23,9 @@ public class EventLocationHotspotMapPage extends AbstractPage
     @FindBy(xpath = "//span[contains(text(), '= Last 30 days')]")
     public WebElement last30Days;
     
+    @FindBy(xpath = "//span[contains(text(), '= Last month')]")
+    public WebElement lastMonth;
+    
     @FindBy(xpath = "//div[contains(@id, 'tableChart')]/div/div/div[2]/div[7]/div/div/span")
     public WebElement valueOftotalEvents;
     
@@ -52,6 +55,9 @@ public class EventLocationHotspotMapPage extends AbstractPage
     
     @FindBy(xpath = "//div[contains(@id, 'tableChart')]/div/div/div[2]/div[21]/div/div/span")
     public WebElement thirdTotalvalue;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[11]/label")
+    public WebElement last30DaysradioBtn;
     
     public static String last30DaysValue;
     
@@ -97,6 +103,15 @@ public class EventLocationHotspotMapPage extends AbstractPage
 	checkPageIsReady();
     }
     
+    public void scrollUp ()
+    {
+	checkPageIsReady();
+	scroll.click();
+	Actions action = new Actions(driver);
+	action.sendKeys(Keys.PAGE_UP).build().perform();
+	checkPageIsReady();
+    }
+    
     public void checkTotaleventsValue () throws Exception
     {
 	
@@ -106,10 +121,11 @@ public class EventLocationHotspotMapPage extends AbstractPage
 	String tEventsValue;
 	tEventsValue = valueOftotalEvents.getText();
 	last30Days.click();
+	checkPageIsReady();
 	LastmonthTimeperiod.click();
 	applyButton.click();
-	Thread.sleep(10000);
 	checkPageIsReady();
+	scrollUp();
 	String tEventsValue1;
 	tEventsValue1 = valueOftotalEvents.getText();
 	Assert.assertNotEquals(tEventsValue, tEventsValue1);
@@ -134,24 +150,25 @@ public class EventLocationHotspotMapPage extends AbstractPage
 	Double ThirdValue = Double.parseDouble(thirdTotalvalue.getText());
 	Assert.assertTrue(FirstValue >= SecValue);
 	Assert.assertTrue(FirstValue >= ThirdValue);
-	System.out.println(Math.max(FirstValue, SecValue));
-	
     }
     
     public void clickDrivername () throws Exception
     {
 	checkPageIsReady();
+	lastMonth.click();
+	checkPageIsReady();
+	last30DaysradioBtn.click();
+	applyButton.click();
 	last30DaysValue = last30Days.getText();
-	firstAddresslink.click();
-	
+	checkPageIsReady();
+	firstAddresslink.click();	
     }
     
     public void verifyDriverEventsByLocation () throws Exception
     {
 	checkPageIsReady();
 	scrollVertically();
-	Assert.assertEquals(last30Days.getText(), last30DaysValue);
-	
+	Assert.assertEquals(last30Days.getText(), last30DaysValue);	
     }
     
 }

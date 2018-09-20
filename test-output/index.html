@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Functional_Testing">
-              <span class="suite-name border-passed">Functional Testing</span>
+              <span class="suite-name border-failed">Functional Testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Functional_Testing" class="hide-methods passed suite-Functional_Testing"> (hide)</a> <!-- hide-methods passed suite-Functional_Testing -->
-                      <a href="#" panel-name="suite-Functional_Testing" class="show-methods passed suite-Functional_Testing"> (show)</a> <!-- show-methods passed suite-Functional_Testing -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Functional_Testing" class="hide-methods failed suite-Functional_Testing"> (hide)</a> <!-- hide-methods failed suite-Functional_Testing -->
+                      <a href="#" panel-name="suite-Functional_Testing" class="show-methods failed suite-Functional_Testing"> (show)</a> <!-- show-methods failed suite-Functional_Testing -->
                     </span>
-                    <div class="method-list-content passed suite-Functional_Testing">
+                    <div class="method-list-content failed suite-Functional_Testing">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Driver Events by Location Report)">feature(Driver Events by Location Report)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Most Dangerous Locations Report)">feature(Most Dangerous Locations Report)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Functional_Testing -->
+                    </div> <!-- method-list-content failed suite-Functional_Testing -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,24 +117,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Functional_Testing" class="panel Functional_Testing">
-          <div class="suite-Functional_Testing-class-passed">
+          <div class="suite-Functional_Testing-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.trimble.taf.suite.tests.base.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Driver Events by Location Report)">
-                  </a> <!-- feature(Driver Events by Location Report) -->
+                  <a name="feature(Most Dangerous Locations Report)">
+                  </a> <!-- feature(Most Dangerous Locations Report) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Driver Events by Location Report)</span>
+                  <span class="parameters">(Most Dangerous Locations Report)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:90)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+	at com.trimble.birst.tests.MostDangerousLocationsTestSteps.verifyMapdashLet(MostDangerousLocationsTestSteps.java:90)
+	at ✽.Then I verified Map Dashlet show proper distribution of Driver events spread(src/test/java/com/trimble/features/MostDangerousLocations.feature:17)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional_Testing-class-passed -->
+          </div> <!-- suite-Functional_Testing-class-failed -->
         </div> <!-- panel Functional_Testing -->
         <div panel-name="test-xml-Functional_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -199,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.trimble.taf.suite.tests.base.TestRunner')
-data.setCell(0, 3, 74019);
+data.setCell(0, 3, 159324);
 window.suiteTableData['Functional_Testing']= { tableData: data, tableDiv: 'times-div-Functional_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Functional_Testing">
               </div> <!-- times-div-Functional_Testing -->
             </div> <!-- times-div -->
@@ -216,10 +224,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">feature(Driver Events by Location Report)</span>
+              <span class="reporter-method-name">feature(Most Dangerous Locations Report)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">My Spaces page is displayed correctly</span>
                 <span class="reporter-method-output">Driver safety page is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days Text filter is matched correctly</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,19 +254,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">driversetUp</span>
-                <span class="method-start">369 ms</span>
+                <span class="method-start">365 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">feature(Driver Events by Location Report)</span>
-                <span class="method-start">7263 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Most Dangerous Locations Report)</span>
+                <span class="method-start">6949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tear</span>
-                <span class="method-start">81284 ms</span>
+                <span class="method-start">166273 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">82098 ms</span>
+                <span class="method-start">167162 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

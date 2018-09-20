@@ -47,6 +47,7 @@ public class MostDangerousLocationsPage extends AbstractPage
     
     @FindBy(xpath = "//*[contains(@id, 'xpath-apply-prompts')]")
     public WebElement applyButton;
+   
     
     // *[@id="tableChart_112"]/div/div/div[2]/div[8]/div/div/span/a
     // *[@id="tableChart_112"]/div/div/div[2]/div[1]/div/div/span/a
@@ -176,6 +177,6 @@ public class MostDangerousLocationsPage extends AbstractPage
 	String tEventsValue1;
 	tEventsValue1 = valueOftotalEvents.getText();	
 	Assert.assertNotEquals(tEventsValue, tEventsValue1);	
-    }
-    
+    }  
+   
 }

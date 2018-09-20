@@ -81,8 +81,6 @@ public class MostDangerousLocationsTestSteps
     public void verifyTotaleventsValue() throws Throwable
     {
 	mostDangerousLocationspage.checkTotaleventsValue();
-	Reporter.log(Constants.GRID_VALUES_BASEDON_DATEFILTER);
-	
-    }
-    
+	Reporter.log(Constants.GRID_VALUES_BASEDON_DATEFILTER);	
+    }  
 }

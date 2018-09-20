@@ -9,10 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Functional Testing</th></tr>
-<tr><td><a href="#t0">Login Test Birst</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">82,483</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Login Test Birst</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">167,483</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test Birst &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1537362174214</td><td rowspan="1">74019</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Functional Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test Birst &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.trimble.taf.suite.tests.base.TestRunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1537441100497</td><td rowspan="1">159324</td></tr></tbody>
 </table>
-<h2>Login Test Birst</h2><h3 id="m0">com.trimble.taf.suite.tests.base.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Driver Events by Location Report</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Test Birst</h2><h3 id="m0">com.trimble.taf.suite.tests.base.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Most Dangerous Locations Report</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">My Spaces page is displayed correctly<br/>Driver safety page is displayed correctly<br/>Last 30Days filter is displayed correctly<br/>Last 30Days Text filter is matched correctly</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:90)
+Caused by: java.lang.AssertionError: expected [true] but found [false]
+	at com.trimble.birst.tests.MostDangerousLocationsTestSteps.verifyMapdashLet(MostDangerousLocationsTestSteps.java:90)
+	at ✽.Then I verified Map Dashlet show proper distribution of Driver events spread(src/test/java/com/trimble/features/MostDangerousLocations.feature:17)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

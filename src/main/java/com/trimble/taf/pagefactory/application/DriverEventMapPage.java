@@ -30,6 +30,13 @@ public class DriverEventMapPage extends AbstractPage
     @FindBy(xpath = "//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[4]/span")
     public WebElement driverAddressfiltered;
     
+    @FindBy(xpath="//*[@id='undefined']/div[1]/div[2]/div[3]/div/i")
+    public WebElement mapDashleticon;
+    
+    @FindBy(xpath="//*[@id='undefined']/div[2]/div[4]/div[2]/a[2]")
+    public WebElement zoomOut;
+    
+    
     /**
      * @param driver
      */
@@ -55,5 +62,16 @@ public class DriverEventMapPage extends AbstractPage
     public String getDriveraddressDrivereventMap ()
     {
 	return driverAddressfiltered.getText();
+    }
+    
+    /**
+     * Verify Map Dashlet in the Driver Event Maps
+     * @return
+     */
+    public boolean verifyMapdashletDivereventMap(){
+	zoomOut.click();
+	zoomOut.click();
+	checkPageIsReady();
+	return isElementDisplayed(mapDashleticon);
     }
 }
