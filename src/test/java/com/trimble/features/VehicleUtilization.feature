@@ -39,11 +39,11 @@ Feature: Verify Vehicle Utilization report
    Scenario: Vehicle Utilization - Verify the Utilization column values are color coded as per the filter values set for Utilization Target filter in the grid dashlet
    	Then I verify color coding of Utilization percentage
    
-   @Regression
-	Scenario:  Vehicle Utilization - Verify export of the entire report via Export (menu) -> PDF (with Details)
-	  When I clicked Exporticon
-    And I clicked ExportPDF
-    Then I verified file has been exported correctly
-    When I clicked Exporticon
-    And I clicked ExportPDFdetails
-    Then I verified file has been exported correctly 
+   #@Regression
+#	Scenario:  Vehicle Utilization - Verify export of the entire report via Export (menu) -> PDF (with Details)
+#	  When I clicked Exporticon
+    #And I clicked ExportPDF
+    #Then I verified file has been exported correctly
+    #When I clicked Exporticon
+    #And I clicked ExportPDFdetails
+    #Then I verified file has been exported correctly 
