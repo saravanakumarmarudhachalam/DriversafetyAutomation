@@ -4,10 +4,8 @@
 package com.trimble.taf.pagefactory.application;
 
 import java.util.List;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -37,7 +35,7 @@ public class VehicleUtilizationReportpage extends AbstractPage
     @FindBy(xpath = "//*[contains(@id,'tableChart')]/div/div/div[2]/div/div")
     public List<WebElement> utilTablevalues;
     
-    @FindBy(xpath = "//*[@id=\"tableChart_130\"]/div/div/div[2]/div[16]/div/div[2]/span")
+    @FindBy(xpath = "//*[contains(@id,'tableChart')]/div/div/div[2]/div/div/div[2]/span")
     public List<WebElement> utilTablecolor;
     
     /**
@@ -73,26 +71,18 @@ public class VehicleUtilizationReportpage extends AbstractPage
     {
 	checkPageIsReady();
 	for (int i = 0; i < utilTablecolor.size(); i++)
-	{
-	    
-	    String rgbColor = utilTablecolor.get(i).getCssValue("style");
+	{	    
 	    String rgb = utilTablecolor.get(i).getAttribute("style");
-	    // String rgbColor = utilTablevalues.get(i)
-	    // .getCssValue("style");
-	    System.out.println(rgbColor);
-	    System.out.println(rgb);
-	    /*
-	     * if (rgbColor.equals("rgba(255, 255, 255, 1)") || rgbColor.equals(
-	     * "rgba(0, 0, 0, 0)") || rgbColor.equals("rgba(0, 0, 0, 1)") ||
-	     * rgbColor.equals("rgba(230, 230, 230, 1)") || rgbColor.equals(
-	     * "rgba(204, 255, 204, 1)") || rgbColor.equals(
-	     * "rgba(255, 255, 0, 1)") || rgbColor.equals("rgba(255, 0, 0, 1)"))
-	     */
-	    /*
-	     * { ProLogger.info(Constants.DRIVER_SAFETY_COLOR_CODED); // } //
-	     * else // { // Assert.fail( //
-	     * "Driver safety Color coded is not displayed correctly"); // }
-	     */
+	    if (rgb.equals("color: rgb(255, 255, 255, 1);")
+		    || rgb.equals("color: rgb(245, 42, 51);"))
+	    {
+		ProLogger.info(Constants.VEHICLE_UTILIZATION_COLOR_CODED);
+	    }
+	    else
+	    {
+		Assert.fail(
+			"Vehicle Utilization Color coded is not displayed correctly");
+	    }
 	    
 	}
 	

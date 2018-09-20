@@ -108,4 +108,6 @@ public final class Constants
     
     public static final String UTILIZATIONVALUE_CHANGES = "Utilization change appropriately based on the value selected in the Month filter";
     
+    public static final String VEHICLE_UTILIZATION_COLOR_CODED = "Vehicle Utilization Color code is displayed correctly";
+    
 }

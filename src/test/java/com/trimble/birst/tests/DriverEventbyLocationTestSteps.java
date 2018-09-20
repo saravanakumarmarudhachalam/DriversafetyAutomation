@@ -5,8 +5,6 @@ package com.trimble.birst.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.Reporter;
-
 import com.trimble.taf.pagefactory.application.DriverEventMapPage;
 import com.trimble.taf.pagefactory.application.DriverEventsbyLocationpage;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
