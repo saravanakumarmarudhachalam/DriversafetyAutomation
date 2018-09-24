@@ -21,8 +21,7 @@ import cucumber.api.java.en.Then;
  * @author smarudh
  */
 public class DriverEventbyLocationTestSteps
-{
-    
+{   
     
     String lastThirtdaystxt;
     

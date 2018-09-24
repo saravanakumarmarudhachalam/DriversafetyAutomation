@@ -8,7 +8,7 @@ Feature: Verify Vehicle Utilization report
     Given I am logged into Application
     Then I validate home page displayed correctly
     And I clicked MySpaces & Dashboard
-    And I clicked Foldericon 
+    And I clicked Foldericon
     Then I clicked Vehicle Utilization
 
   @Regression

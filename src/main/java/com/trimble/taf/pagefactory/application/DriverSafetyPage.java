@@ -191,6 +191,15 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//span[contains(text(), 'Vehicle Utilization')]")
     public WebElement vehicleUtilizationMenu;
     
+    @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[6]/label")
+    public WebElement lastMonth; 
+    
+    @FindBy(id="xpath-apply-prompts")
+    public WebElement applyBtn;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[5]/div/h1")
+    public WebElement timePeriodbtn;
+    
     public String notificationName = "TestNotification1";
     
     public String emailId = "testingpurpose@test.com";
@@ -444,6 +453,7 @@ public class DriverSafetyPage extends AbstractPage
 	return isElementDisplayed(overallScoreasc);
 	
     }
+    
     
     /**
      * Get Text of Default Organization
@@ -967,4 +977,17 @@ public class DriverSafetyPage extends AbstractPage
 	checkPageIsReady();
     }
     
+    /**
+     * Select Last month days
+     * @throws Exception
+     */
+    public void selectLastmonth() throws Exception{
+	waitForElementPresent(last30daysFilter);
+	last30daysFilter.click();
+	timePeriodbtn.click();
+	checkPageIsReady();
+	lastMonth.click();
+	applyBtn.click();	
+	checkPageIsReady();
+    }
 }

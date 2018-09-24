@@ -71,6 +71,8 @@ public class CombinedScorecardsteps
     @Then("^Verify Export of the Report on combined groups$")
     public void verifyExportDatatoExcel () throws Throwable
     {
+//	String s=combinedScorecardpage.getTextexportMessage();
+//	System.out.println("Data:"+s);
 	Reporter.log(Constants.DATA_TO_EXCEL_IS_SUCCESS);
     }
     

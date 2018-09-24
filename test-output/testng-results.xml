@@ -8,44 +8,57 @@
       <![CDATA[Driver safety page is displayed correctly]]>
     </line>
     <line>
-      <![CDATA[Last 30Days filter is displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Last 30Days Text filter is matched correctly]]>
+      <![CDATA[Supervisor Console successfully opened]]>
     </line>
   </reporter-output>
-  <suite name="Functional Testing" duration-ms="167483" started-at="2018-09-20T10:58:13Z" finished-at="2018-09-20T11:01:01Z">
+  <suite name="Functional Testing" duration-ms="64357" started-at="2018-09-21T11:28:41Z" finished-at="2018-09-21T11:29:45Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" class="com.trimble.taf.suite.tests.base.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Login Test Birst" duration-ms="167483" started-at="2018-09-20T10:58:13Z" finished-at="2018-09-20T11:01:01Z">
+    <test name="Login Test Birst" duration-ms="64357" started-at="2018-09-21T11:28:41Z" finished-at="2018-09-21T11:29:45Z">
       <class name="com.trimble.taf.suite.tests.base.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="264" started-at="2018-09-20T10:58:13Z" finished-at="2018-09-20T10:58:13Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="264" started-at="2018-09-21T11:28:41Z" finished-at="2018-09-21T11:28:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="driversetUp()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="driversetUp" is-config="true" duration-ms="6584" started-at="2018-09-20T10:58:13Z" finished-at="2018-09-20T10:58:20Z">
+        <test-method status="PASS" signature="driversetUp()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="driversetUp" is-config="true" duration-ms="6589" started-at="2018-09-21T11:28:41Z" finished-at="2018-09-21T11:28:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driversetUp -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" duration-ms="159324" started-at="2018-09-20T10:58:20Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-09-20T11:00:59Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="feature" duration-ms="54322" started-at="2018-09-21T11:28:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-09-21T11:29:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Most Dangerous Locations Report]]>
+                <![CDATA[Supervisor Console Report]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]]]>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button role="button" id="xpath-notifications-save" type="button" class="btn btn-primary ng-binding" ng-disabled="notificationForm.$invalid" ng-click="$ctrl.saveNotification()" disabled="disabled">...</button> is not clickable at point (1068, 526). Other element would receive the click: <div class="panel-footer ng-scope" ng-if="$ctrl.editMode">...</div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: d66d3240e08a9f71d7c4421c3195e686]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: unknown error: Element <button role="button" id="xpath-notifications-save" type="button" class="btn btn-primary ng-binding" ng-disabled="notificationForm.$invalid" ng-click="$ctrl.saveNotification()" disabled="disabled">...</button> is not clickable at point (1068, 526). Other element would receive the click: <div class="panel-footer ng-scope" ng-if="$ctrl.editMode">...</div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: d66d3240e08a9f71d7c4421c3195e686
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:90)
+at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:92)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,13 +84,38 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.trimble.birst.tests.MostDangerousLocationsTestSteps.verifyMapdashLet(MostDangerousLocationsTestSteps.java:90)
-at ✽.Then I verified Map Dashlet show proper distribution of Driver events spread(src/test/java/com/trimble/features/MostDangerousLocations.feature:17)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: Element <button role="button" id="xpath-notifications-save" type="button" class="btn btn-primary ng-binding" ng-disabled="notificationForm.$invalid" ng-click="$ctrl.saveNotification()" disabled="disabled">...</button> is not clickable at point (1068, 526). Other element would receive the click: <div class="panel-footer ng-scope" ng-if="$ctrl.editMode">...</div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: d66d3240e08a9f71d7c4421c3195e686
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy24.click(Unknown Source)
+at com.trimble.taf.pagefactory.application.DriverSafetyPage.clickSavebutton(DriverSafetyPage.java:849)
+at com.trimble.birst.tests.Exectiveconsolesteps.createNotificationmessage(Exectiveconsolesteps.java:135)
+at ✽.And I created a new notification center and ran it(src/test/java/com/trimble/features/supervisorconsole.feature:13)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
@@ -89,18 +127,15 @@ at ✽.Then I verified Map Dashlet show proper distribution of Driver events spr
               <![CDATA[Driver safety page is displayed correctly]]>
             </line>
             <line>
-              <![CDATA[Last 30Days filter is displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Last 30Days Text filter is matched correctly]]>
+              <![CDATA[Supervisor Console successfully opened]]>
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tear()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tear" is-config="true" duration-ms="889" started-at="2018-09-20T11:00:59Z" finished-at="2018-09-20T11:01:00Z">
+        <test-method status="PASS" signature="tear()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tear" is-config="true" duration-ms="2743" started-at="2018-09-21T11:29:42Z" finished-at="2018-09-21T11:29:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="306" started-at="2018-09-20T11:01:00Z" finished-at="2018-09-20T11:01:01Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.trimble.taf.suite.tests.base.TestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="315" started-at="2018-09-21T11:29:45Z" finished-at="2018-09-21T11:29:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

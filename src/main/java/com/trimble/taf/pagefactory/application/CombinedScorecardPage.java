@@ -75,6 +75,24 @@ public class CombinedScorecardPage extends AbstractPage
     @FindBy(xpath = "//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[2]")
     public WebElement driverSafetyHightarget;
     
+    @FindBy(xpath="//*[@id='info-dashletExportInProgress2355']/div/span/span[1]")
+    public WebElement reportExportvalidationMessage;
+    
+    @FindBy(xpath="//*[@id='info-dashletExportInProgress2355']/div/button/i")
+    public WebElement closeValidationmessage;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[4]/span")
+    public WebElement last30Daysfilters;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[4]/div/h1")
+    public WebElement timePeriodfilters;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[6]/label")
+    public WebElement lastMonthradioBtn;
+    
+    @FindBy(id="xpath-apply-prompts")
+    public WebElement applyBtn;
+    
     /**
      * @param driver
      */
@@ -373,5 +391,29 @@ public class CombinedScorecardPage extends AbstractPage
 		}
 	    }
 	}
+    }
+    
+    /**
+     * Get the text from the export Data to excel validation Message
+     * @return
+     * @throws Exception 
+     */
+    public String getTextexportMessage() throws Exception{
+	waitForElementPresent(reportExportvalidationMessage);
+	return reportExportvalidationMessage.getText();
+    }
+    
+    /**
+     * Select Last month days
+     * @throws Exception
+     */
+    public void selectLastmonth() throws Exception{
+	waitForElementPresent(last30Daysfilters);
+	last30Daysfilters.click();
+	timePeriodfilters.click();
+	checkPageIsReady();
+	lastMonthradioBtn.click();
+	applyBtn.click();	
+	checkPageIsReady();
     }
 }

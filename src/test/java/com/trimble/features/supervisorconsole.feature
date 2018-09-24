@@ -7,7 +7,7 @@ Feature: Supervisor Console Report
   Scenario: Supervisor console - Verify that a new Notification is working ok
     Given I am logged into Application
     Then I validate home page displayed correctly
-    And I clicked MySpa	ces & Dashboard
+    And I clicked MySpaces & Dashboard
     When I clicked Foldericon and Driver Safety
     And I clicked Supervisor Console
     And I created a new notification center and ran it

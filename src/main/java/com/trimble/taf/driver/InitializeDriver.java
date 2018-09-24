@@ -244,6 +244,7 @@ public class InitializeDriver
 		.toString())))
 	{
 	    driver.manage().deleteAllCookies();
+	    driver.close();
 	    driver.quit();
 	}
 	else

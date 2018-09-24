@@ -6,6 +6,8 @@ package com.trimble.birst.tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+
+import com.trimble.taf.pagefactory.application.CombinedScorecardPage;
 import com.trimble.taf.pagefactory.application.DriverSafetyPage;
 import com.trimble.taf.pagefactory.application.IndividualScorecardpage;
 import com.trimble.taf.pagefactory.application.LoginPage;
@@ -24,6 +26,7 @@ import cucumber.api.java.en.When;
  */
 public class ComonTestssteps
 {
+    
     
     String lastThirtdaystxt;
     
@@ -47,6 +50,8 @@ public class ComonTestssteps
     
     public IndividualScorecardpage individualScorepage;
     
+    public CombinedScorecardPage combinedScorecardPage;
+    
     /**
      * Constructor
      */
@@ -56,6 +61,7 @@ public class ComonTestssteps
 	mySpacepage = new MyspacesPage(driver);
 	driverSafetypage = new DriverSafetyPage(driver);
 	individualScorepage = new IndividualScorecardpage(driver);
+	combinedScorecardPage = new CombinedScorecardPage(driver);
 	// TODO Auto-generated constructor stub
     }
     
@@ -87,6 +93,7 @@ public class ComonTestssteps
     public void clickExecutivedriverSafetyConsole () throws Throwable
     {
 	driverSafetypage.clickExecutidriverSafetyconsole();
+	//driverSafetypage.selectLastmonth();
     }
     
     @Then("^I validate the Executive Driversafety console page is displayed correctly$")
@@ -137,7 +144,6 @@ public class ComonTestssteps
     {
 	driverSafetypage.clickFoldericon();
 	driverSafetypage.clickDriversafetyDropdown();
-	
     }
     
     @And("^I clicked Foldericon$")
@@ -150,13 +156,12 @@ public class ComonTestssteps
     public void clickCombinebscore () throws Throwable
     {
 	driverSafetypage.clickCombinedscoreCard();
-	
+	combinedScorecardPage.selectLastmonth();
     }
     
     @And("^I clicked Scorecard Report - seperated groups$")
     public void clickSeparatedgroups () throws Throwable
     {
-	
 	driverSafetypage.clickSeparatedscoreCard();
     }
     
@@ -210,11 +215,11 @@ public class ComonTestssteps
     }
     
     @Then("^I clicked Vehicle Utilization$")
-    public void clickVehicleUtilization() throws Throwable
+    public void clickVehicleUtilization () throws Throwable
     {
 	
 	driverSafetypage.clickvehicleUtilizationMenu();
-     }
+    }
     
     public void performLoginaction () throws Exception
     {

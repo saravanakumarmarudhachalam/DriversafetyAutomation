@@ -43,6 +43,7 @@ public class Exectiveconsolesteps
     @Then("^I verified overall score is displayed in ascending order$")
     public void verifyAscendingoverallScore () throws Throwable
     {
+	//driverSafetypage.selectLastmonth();
 	Assert.assertTrue(driverSafetypage.verifyOverallscoreAsc(),
 		Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);
 	Reporter.log(Constants.OVERALLSCORE_ASCENDINGORDER_DISPLAYED);

@@ -1,0 +1,278 @@
+20180921 11:23:12.146 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.180 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.210 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.239 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.271 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.301 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.339 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.377 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.409 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.441 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:23:12.472 |INFO | [main] [ProLogger.java:179] - Vehicle Utilization Color code is displayed correctly
+20180921 11:25:49.431 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c5a79d9ef29ca83840bcb57d498d56a1
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180921 12:06:19.904 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:06:19.976 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:06:20.041 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:06:20.112 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:06:20.180 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:09:40.826 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:09:40.909 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:09:40.993 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:09:41.076 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:09:41.158 |INFO | [main] [ProLogger.java:179] - All the grid score value is displayed without Decimal Point
+20180921 12:14:00.187 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.189 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.190 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.190 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.191 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.191 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.191 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.192 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 12:14:00.192 |INFO | [main] [ProLogger.java:179] - Event Date Filtered Correctly
+20180921 14:53:19.054 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.095 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.130 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.167 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.203 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.237 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.275 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.321 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.356 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.392 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.424 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.454 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.486 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.519 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.550 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:19.587 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.122 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.156 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.194 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.231 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.264 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.293 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.334 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.363 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.402 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.435 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.472 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.501 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.532 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.565 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.594 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:37.623 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:53:44.451 |INFO | [main] [ProLogger.java:179] - DUMP TRUCKS DE data's displayed correctly
+20180921 14:53:55.131 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 452ff205b3009e0ea6ca23de351aa4d8
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180921 14:56:23.426 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.470 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.513 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.559 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.590 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.621 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.659 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.690 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.722 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.825 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.915 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.949 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:23.986 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:24.024 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:24.063 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:24.099 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:40.999 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.032 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.072 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.110 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.146 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.184 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.224 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.262 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.296 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.334 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.364 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.395 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.430 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.461 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.493 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:41.523 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 14:56:47.777 |INFO | [main] [ProLogger.java:179] - DUMP TRUCKS DE data's displayed correctly
+20180921 14:56:58.484 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 471d0bb045de769f248cb97e828f90fe
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180921 16:31:17.392 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.437 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.477 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.527 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.570 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.613 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.658 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.701 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.740 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.793 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.832 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.866 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.910 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.945 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:17.981 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.014 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.048 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.083 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.117 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.152 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.185 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.222 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.263 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.312 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.345 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.378 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.423 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.524 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.556 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.588 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.622 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.655 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.692 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.725 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.759 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.792 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.825 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.857 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.891 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.925 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:18.973 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.005 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.042 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.076 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.109 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.140 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.179 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.212 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.246 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.279 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.319 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:19.356 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:36.955 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:36.992 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.027 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.062 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.099 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.137 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.172 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.211 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.247 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.289 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.325 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.360 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.393 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.431 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.469 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.507 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.543 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.580 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.671 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.706 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.738 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.770 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.802 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.838 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.870 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.903 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.944 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:37.975 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.007 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.042 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.072 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.107 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.144 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.175 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.208 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.239 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.269 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.304 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.336 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.366 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.399 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.431 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.467 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.500 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.535 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.569 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.604 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.641 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.675 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.708 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.755 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:38.789 |INFO | [main] [ProLogger.java:179] - Driver Safety Color coded is displayed correctly
+20180921 16:31:45.058 |INFO | [main] [ProLogger.java:179] - DUMP TRUCKS DE data's displayed correctly
+20180921 16:31:55.681 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 6ec89cff55343fce99c34561c728886c
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180921 16:35:59.184 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 066077549d3284e351ec879d43dfe452
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180921 16:40:02.309 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: e9d0ee7ede8b1b49e5c698f1b8362c49
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}
+20180921 17:39:56.345 |ERROR| [main] [ProLogger.java:73] - Exception in hover on element no such element: Unable to locate element: {"method":"css selector","selector":"#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'SMARUDH-IN-LE01', ip: '10.40.94.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: fd23f9a1c9645e33f98ce55a8541a77f
+*** Element info: {Using=css selector, value=#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i}

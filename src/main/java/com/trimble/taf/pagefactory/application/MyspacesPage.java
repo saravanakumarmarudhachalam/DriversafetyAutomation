@@ -125,12 +125,12 @@ public class MyspacesPage extends AbstractPage
 		break;  	    
 	    case "AutomationSpace":
 		waitForElementPresent(automationSpace);
-		//checkPageIsReady();		
+		checkPageIsReady();		
 		automationSpace.click();
 		break;
 	    case "AutomationSpace2":
 		waitForElementPresent(automationSpace2);
-		//checkPageIsReady();		
+		checkPageIsReady();		
 		automationSpace2.click();
 		break;
 	}
@@ -149,8 +149,7 @@ public class MyspacesPage extends AbstractPage
 	{
 	    case "optDashboards":
 		waitForElementPresent(optDashboards);
-		//checkPageIsReady();
-		//Thread.sleep(10000);
+		checkPageIsReady();		
 		optDashboards.click();
 		break;
 	    case "optVisualizer":
