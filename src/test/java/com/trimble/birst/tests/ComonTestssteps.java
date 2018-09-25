@@ -82,7 +82,7 @@ public class ComonTestssteps
     @And("^I clicked MySpaces & Dashboard$")
     public void clickWorkspace () throws Throwable
     {
-	mySpacepage.selectSpace("AutomationSpace2");
+	mySpacepage.selectSpace("automationSpace4");
 	mySpacepage.selectOption("optDashboards");
 	Assert.assertTrue(driverSafetypage.verifyTrimblepulseImg(),
 		Constants.TIMBLE_PULSEIMAGE_DISPLAYED);
@@ -156,7 +156,7 @@ public class ComonTestssteps
     public void clickCombinebscore () throws Throwable
     {
 	driverSafetypage.clickCombinedscoreCard();
-	combinedScorecardPage.selectLastmonth();
+	//combinedScorecardPage.selectLastmonth();
     }
     
     @And("^I clicked Scorecard Report - seperated groups$")

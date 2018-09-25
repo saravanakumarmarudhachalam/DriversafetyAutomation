@@ -35,8 +35,8 @@ public class MyspacesPage extends AbstractPage
     @FindBy(xpath = "//div[text()='Sprint 18-23 PostgreSQL QA NEW_USERS']")
     public WebElement space_Sprint18QA;
     
-    @FindBy(xpath = "//div[text()='AutomationSpace']")
-    public WebElement automationSpace;
+    @FindBy(xpath = "//div[text()='AutomationSpace4']")
+    public WebElement automationSpace4;
     
     @FindBy(xpath = "//div[text()='AutomationSpace2']")
     public WebElement automationSpace2;
@@ -118,20 +118,16 @@ public class MyspacesPage extends AbstractPage
     public void selectSpace (String spaceName) throws Exception
     {
 	switch (spaceName)
-	{
-	    case "space_NAProduction":
-		checkPageIsReady();
-		space_NAProduction.click();
-		break;  	    
-	    case "AutomationSpace":
-		waitForElementPresent(automationSpace);
-		checkPageIsReady();		
-		automationSpace.click();
-		break;
+	{	   
 	    case "AutomationSpace2":
 		waitForElementPresent(automationSpace2);
 		checkPageIsReady();		
 		automationSpace2.click();
+		break;
+	    case "AutomationSpace4":
+		waitForElementPresent(automationSpace4);
+		checkPageIsReady();		
+		automationSpace4.click();
 		break;
 	}
     }
