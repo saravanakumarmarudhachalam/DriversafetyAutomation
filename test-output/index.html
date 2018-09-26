@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Functional_Testing">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Supervisor Console Report)">feature(Supervisor Console Report)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Individual Scorecard)">feature(Individual Scorecard)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Functional_Testing -->
@@ -125,46 +125,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Supervisor Console Report)">
-                  </a> <!-- feature(Supervisor Console Report) -->
+                  <a name="feature(Individual Scorecard)">
+                  </a> <!-- feature(Individual Scorecard) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Supervisor Console Report)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: unknown error: Element &lt;button role=&quot;button&quot; id=&quot;xpath-notifications-save&quot; type=&quot;button&quot; class=&quot;btn btn-primary ng-binding&quot; ng-disabled=&quot;notificationForm.$invalid&quot; ng-click=&quot;$ctrl.saveNotification()&quot; disabled=&quot;disabled&quot;&gt;...&lt;/button&gt; is not clickable at point (1068, 526). Other element would receive the click: &lt;div class=&quot;panel-footer ng-scope&quot; ng-if=&quot;$ctrl.editMode&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;SMARUDH-IN-LE01&apos;, ip: &apos;10.40.94.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: d66d3240e08a9f71d7c4421c3195e686
+                  <span class="parameters">(Individual Scorecard)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Events Per kilometer is matched correctly expected [Events Per Kilometer] but found [Events Per Mile]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:92)
-Caused by: org.openqa.selenium.WebDriverException: unknown error: Element &lt;button role=&quot;button&quot; id=&quot;xpath-notifications-save&quot; type=&quot;button&quot; class=&quot;btn btn-primary ng-binding&quot; ng-disabled=&quot;notificationForm.$invalid&quot; ng-click=&quot;$ctrl.saveNotification()&quot; disabled=&quot;disabled&quot;&gt;...&lt;/button&gt; is not clickable at point (1068, 526). Other element would receive the click: &lt;div class=&quot;panel-footer ng-scope&quot; ng-if=&quot;$ctrl.editMode&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;SMARUDH-IN-LE01&apos;, ip: &apos;10.40.94.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\smarudh\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: d66d3240e08a9f71d7c4421c3195e686
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at com.trimble.taf.pagefactory.application.DriverSafetyPage.clickSavebutton(DriverSafetyPage.java:849)
-	at com.trimble.birst.tests.Exectiveconsolesteps.createNotificationmessage(Exectiveconsolesteps.java:135)
-	at ✽.And I created a new notification center and ran it(src/test/java/com/trimble/features/supervisorconsole.feature:13)
-... Removed 33 stack frames
+Caused by: java.lang.AssertionError: Events Per kilometer is matched correctly expected [Events Per Kilometer] but found [Events Per Mile]
+	at com.trimble.birst.tests.IndividualSafetyScorecardsteps.verifyKilometerchanged(IndividualSafetyScorecardsteps.java:163)
+	at ✽.Then I verified Kilometer Text has been changed(src/test/java/com/trimble/features/individualScorecard.feature:56)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -236,12 +207,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.trimble.taf.suite.tests.base.TestRunner')
-data.setCell(0, 3, 54322);
+data.setCell(0, 3, 232946);
 window.suiteTableData['Functional_Testing']= { tableData: data, tableDiv: 'times-div-Functional_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Functional_Testing">
               </div> <!-- times-div-Functional_Testing -->
             </div> <!-- times-div -->
@@ -253,11 +224,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">feature(Supervisor Console Report)</span>
+              <span class="reporter-method-name">feature(Individual Scorecard)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">My Spaces page is displayed correctly</span>
                 <span class="reporter-method-output">Driver safety page is displayed correctly</span>
-                <span class="reporter-method-output">Supervisor Console successfully opened</span>
+                <span class="reporter-method-output">Individual Scorecard page is displayed correctly</span>
+                <span class="reporter-method-output">Driver name in Executive console and Individual scorecard matches</span>
+                <span class="reporter-method-output">Last 30Days Text filter is matched correctly</span>
+                <span class="reporter-method-output">Start Date text is displayed correctly</span>
+                <span class="reporter-method-output">END Date text is displayed correctly</span>
+                <span class="reporter-method-output">Overall Score displayed dashlet is correctly</span>
+                <span class="reporter-method-output">Total distance KPI value is matched correctly</span>
+                <span class="reporter-method-output">Idling Duration value is matched correctly</span>
+                <span class="reporter-method-output">PDF is exported correctly</span>
+                <span class="reporter-method-output">PDF is exported correctly</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -282,21 +262,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">driversetUp</span>
-                <span class="method-start">372 ms</span>
+                <span class="method-start">496 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(Supervisor Console Report)</span>
-                <span class="method-start">6962 ms</span>
+                <span class="method-name">feature(Individual Scorecard)</span>
+                <span class="method-start">7975 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tear</span>
-                <span class="method-start">61288 ms</span>
+                <span class="method-start">240931 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">64031 ms</span>
+                <span class="method-start">246949 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

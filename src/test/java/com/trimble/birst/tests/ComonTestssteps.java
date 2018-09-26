@@ -82,7 +82,7 @@ public class ComonTestssteps
     @And("^I clicked MySpaces & Dashboard$")
     public void clickWorkspace () throws Throwable
     {
-	mySpacepage.selectSpace("automationSpace4");
+	mySpacepage.selectSpace("AutomationSpace4");
 	mySpacepage.selectOption("optDashboards");
 	Assert.assertTrue(driverSafetypage.verifyTrimblepulseImg(),
 		Constants.TIMBLE_PULSEIMAGE_DISPLAYED);

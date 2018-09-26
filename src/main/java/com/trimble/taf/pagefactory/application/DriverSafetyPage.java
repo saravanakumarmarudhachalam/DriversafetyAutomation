@@ -762,8 +762,8 @@ public class DriverSafetyPage extends AbstractPage
      * @throws Exception
      */
     public String getTextidleDuration () throws Exception
-    {
-	if (idleDurationexecConsole.getAttribute("value") != null)
+    {	
+	if (idleDurationexecConsole.getText() != "N/A")
 	{
 	    waitForElementPresent(idleDurationexecConsole);
 	    return getText(idleDurationexecConsole);

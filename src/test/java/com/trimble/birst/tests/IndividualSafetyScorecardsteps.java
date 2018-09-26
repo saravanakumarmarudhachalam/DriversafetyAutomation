@@ -141,7 +141,7 @@ public class IndividualSafetyScorecardsteps
     {
 	driverSafetypage.switchTofirstWindow(driver);	
 	idleDuration = driverSafetypage.getTextidleDuration();	
-	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);
+	driverSafetypage.waitFornewWindowandSwitchtoIt(driver);	
 	Assert.assertEquals(
 		individualScorepage.getTextidlingDurationindividualScorecard(),
 		idleDuration,
