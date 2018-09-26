@@ -14,6 +14,8 @@ import com.trimble.taf.pagefactory.application.MyspacesPage;
 import com.trimble.taf.suite.tests.base.TestRunner;
 import com.trimble.taf.utils.Constants;
 import com.trimble.taf.utils.PropertyUtils;
+
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 
 /**
@@ -95,5 +97,6 @@ public class EventLocationHotspotMapTestSteps
     public void verifyMapdashletIcon() throws Throwable
     {	
 	Assert.assertTrue(driverEventbyLocationpage.verifyMapdashletDisplayed());
+	
     }
 }

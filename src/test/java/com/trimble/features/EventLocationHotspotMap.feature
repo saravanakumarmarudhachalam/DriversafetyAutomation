@@ -12,6 +12,10 @@ Feature: Event Location Hotspot Map
     And I clicked Event Location Hotspot Map
     Then I verified Last 30 days is displayed in Date filter in Event Location Hotspot Map
 
+	@Regression
+  Scenario: Event Location Hotspot Map - Verify that when you click on a driver to drill down to 'Driver Events By Location' report then Date Period filter settings are maintained
+    Then I click the driver opens the Driver Events By Location report with Date Period filter settings are maintained
+
   @Regression
   Scenario: Event Location Hotspot Map - Verify Map dashlet shows Driver event(s) located at the correct Lat/Long values specified in the filter
     Then I verified Map dashlet Icon is displayed in the Event Location Hotspot Map

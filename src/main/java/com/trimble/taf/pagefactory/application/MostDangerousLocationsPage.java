@@ -36,7 +36,7 @@ public class MostDangerousLocationsPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id, 'tableChart')]/div/div/div[2]/div/div/div/span/a")
     public List<WebElement> AppAddress;
     
-    @FindBy(xpath = "//div[@id=\"tableChart_19\"]/div/div/div[2]/div[7]/div")
+    @FindBy(xpath = "//div[contains(@id, 'tableChart')]/div/div/div[2]/div[7]/div")
     public WebElement valueOftotalEvents;
     
     @FindBy(id = "xpath-dashboard-canvas")

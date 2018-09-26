@@ -164,7 +164,7 @@ public class DriverSafetyPage extends AbstractPage
     
     // @FindBy(css = "li[ng-repeat='notification in $ctrl.nCtrl.notifications |
     // filterNotifications:$ctrl.searchQuery']")
-    @FindBy(css = "#background-color-wrapper > notifications > aside.side-drawer.side-drawer-right.ng-untouched.ng-valid.ng-animate-enabled.ng-scope.ng-not-empty.ng-dirty.sd-open > notifications-list > div.panel.panel-default > ul > li > a > i")
+    @FindBy(xpath = "//*[@id=\"background-color-wrapper\"]/notifications/aside[1]/notifications-list/div[1]/ul/li/a/span")
     public WebElement createdNotificationname;
     
     @FindBy(xpath = "//*[@id='info-dashboardExportInProgress']/div/button/i")
@@ -819,6 +819,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public void enterNotification () throws Exception
     {
+	checkPageIsReady();
 	waitForElementPresent(notificationNametext);
 	notificationNametext.click();
 	notificationNametext.clear();
@@ -832,6 +833,7 @@ public class DriverSafetyPage extends AbstractPage
      */
     public void enterEmail () throws Exception
     {
+	checkPageIsReady();
 	waitForElementPresent(emailNotificationtext);
 	emailNotificationtext.click();
 	emailNotificationtext.clear();

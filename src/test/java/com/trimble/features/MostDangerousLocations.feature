@@ -17,10 +17,6 @@ Feature: Most Dangerous Locations Report
     Then I verified Map Dashlet show proper distribution of Driver events spread
 
   @Regression
-  Scenario: Most Dangerous Locations Report - Verify sorting based on any column (in the grid section) works correctly
-    Then I verified all the sorting column are working correctly
-
-  @Regression
   Scenario: Most Dangerous Locations Report - Verify the grid values change appropriately as per Date Period filter set for the dashboard
     Then I changed the time period to last month in the Most Dangerous Locations Report
 
@@ -35,3 +31,7 @@ Feature: Most Dangerous Locations Report
   @Regression
   Scenario: Most Dangerous Locations Report - Verify that the 'Event Location Hotspot Map' is opened for the correct Lat/Longs as specified in the approx address location in Most Dangeous Locations report
     Then I find the number of columns in the Approimate Address table in the Most Dangerous Locations Report
+    
+  @Regression
+  Scenario: Most Dangerous Locations Report - Verify sorting based on any column (in the grid section) works correctly
+    Then I verified all the sorting column are working correctly
