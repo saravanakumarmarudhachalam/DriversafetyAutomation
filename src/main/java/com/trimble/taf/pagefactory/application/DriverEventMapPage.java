@@ -22,7 +22,7 @@ public class DriverEventMapPage extends AbstractPage
     public WebElement driverAddressfiltered;
     
     @FindBy(xpath="//*[@id='undefined']/div[1]/div[2]/div[3]/div/i")
-    public WebElement mapDashleticon;
+    public WebElement mapDashleticon;    
     
     @FindBy(xpath="//*[@id='undefined']/div[2]/div[4]/div[2]/a[2]")
     public WebElement zoomOut;
@@ -52,6 +52,7 @@ public class DriverEventMapPage extends AbstractPage
      */
     public String getDriveraddressDrivereventMap ()
     {
+	checkPageIsReady();
 	return driverAddressfiltered.getText();
     }
     
@@ -60,8 +61,10 @@ public class DriverEventMapPage extends AbstractPage
      * @return
      */
     public boolean verifyMapdashletDivereventMap(){
+	checkPageIsReady();
+	checkPageIsReady();
 	zoomOut.click();
-	zoomOut.click();
+	zoomOut.click();		
 	checkPageIsReady();
 	return isElementDisplayed(mapDashleticon);
     }

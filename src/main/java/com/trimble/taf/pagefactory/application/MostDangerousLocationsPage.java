@@ -107,14 +107,14 @@ public class MostDangerousLocationsPage extends AbstractPage
 	waitForElementPresent(approxAddress);
 	String ApproximateAddress;
 	ApproximateAddress = approxAddress.getText();
+	System.out.println("Testing:"+ApproximateAddress);
 	
 	String[] arrSplit_3 = ApproximateAddress.split("\\s");
 	for (int i = 0; i < arrSplit_3.length; i++)
 	{
 	    System.out.println(arrSplit_3[i]);
-	}
-	
-	return arrSplit_3[2];
+	}	
+	return arrSplit_3[1];
 	
     }
     

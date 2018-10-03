@@ -112,8 +112,7 @@ public class IndividualSafetyScorecardsteps
     @Then("^I clicked the Target in individual Scorecard$")
     public void clickTargetinBarchart () throws Throwable
     {
-	driverSafetypage.clickBarcharttarget();
-	
+	driverSafetypage.clickBarcharttarget();	
     }
     
     @Then("^I verify Target is disabled in the bar chart in individual Scorecard$")

@@ -128,6 +128,8 @@ public class EventLocationHotspotMapPage extends AbstractPage
 	scrollUp();
 	String tEventsValue1;
 	tEventsValue1 = valueOftotalEvents.getText();
+	System.out.println("tEventsValue:"+tEventsValue);
+	System.out.println("tEventsValue1:"+tEventsValue1);
 	Assert.assertNotEquals(tEventsValue, tEventsValue1);
     }
     
@@ -154,11 +156,11 @@ public class EventLocationHotspotMapPage extends AbstractPage
     
     public void clickDrivername () throws Exception
     {
-	checkPageIsReady();
-	lastMonth.click();
-	checkPageIsReady();
-	last30DaysradioBtn.click();
-	applyButton.click();
+//	checkPageIsReady();
+//	lastMonth.click();
+//	checkPageIsReady();
+//	last30DaysradioBtn.click();
+//	applyButton.click();
 	last30DaysValue = last30Days.getText();
 	checkPageIsReady();
 	firstAddresslink.click();	
