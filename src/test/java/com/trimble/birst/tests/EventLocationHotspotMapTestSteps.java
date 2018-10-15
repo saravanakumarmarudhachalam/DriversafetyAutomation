@@ -61,7 +61,7 @@ public class EventLocationHotspotMapTestSteps
 	Reporter.log(Constants.LAST30DAYS_FILTER_TEXT_DISPLAYED);
     }
     
-    @Then("^I changed the time period to last month in the Event Location Hotspot Map$")
+    @Then("^I changed the time period to last quater in the Event Location Hotspot Map$")
     public void verifyTotaleventsValue () throws Throwable
     {	
 	eventLocationhotspotMappage.checkTotaleventsValue();

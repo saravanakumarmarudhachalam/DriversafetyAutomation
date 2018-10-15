@@ -55,4 +55,4 @@ Feature: Executive Console
     When I clicked Exporticon
     And I clicked ExportPDFdetails
     Then I verified file has been exported correctly
-  #########Then I validated PDF has been exported corretly - Not to use this method
+

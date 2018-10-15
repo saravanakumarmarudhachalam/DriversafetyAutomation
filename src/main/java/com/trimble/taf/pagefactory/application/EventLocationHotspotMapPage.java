@@ -59,6 +59,12 @@ public class EventLocationHotspotMapPage extends AbstractPage
     @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[11]/label")
     public WebElement last30DaysradioBtn;
     
+    @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[4]/label")
+    public WebElement lastQuarterradioBtn;
+    
+    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[2]/span")
+    public WebElement lastQuarterValue;
+    
     public static String last30DaysValue;
     
     /**
@@ -122,14 +128,12 @@ public class EventLocationHotspotMapPage extends AbstractPage
 	tEventsValue = valueOftotalEvents.getText();
 	last30Days.click();
 	checkPageIsReady();
-	LastmonthTimeperiod.click();
+	lastQuarterradioBtn.click();
 	applyButton.click();
 	checkPageIsReady();
 	scrollUp();
 	String tEventsValue1;
-	tEventsValue1 = valueOftotalEvents.getText();
-	System.out.println("tEventsValue:"+tEventsValue);
-	System.out.println("tEventsValue1:"+tEventsValue1);
+	tEventsValue1 = valueOftotalEvents.getText();	
 	Assert.assertNotEquals(tEventsValue, tEventsValue1);
     }
     
@@ -140,8 +144,7 @@ public class EventLocationHotspotMapPage extends AbstractPage
      */
     public int checkNoofRecordsinTable () throws Exception
     {
-	int NoofAddress = AppAddress.size();
-	System.out.println(NoofAddress);
+	int NoofAddress = AppAddress.size();	
 	return NoofAddress;
     }
     
@@ -156,11 +159,11 @@ public class EventLocationHotspotMapPage extends AbstractPage
     
     public void clickDrivername () throws Exception
     {
-//	checkPageIsReady();
-//	lastMonth.click();
-//	checkPageIsReady();
-//	last30DaysradioBtn.click();
-//	applyButton.click();
+	checkPageIsReady();
+	lastQuarterValue.click();
+	checkPageIsReady();
+	last30DaysradioBtn.click();
+	applyButton.click();
 	last30DaysValue = last30Days.getText();
 	checkPageIsReady();
 	firstAddresslink.click();	
@@ -168,6 +171,7 @@ public class EventLocationHotspotMapPage extends AbstractPage
     
     public void verifyDriverEventsByLocation () throws Exception
     {
+	checkPageIsReady();
 	checkPageIsReady();
 	scrollVertically();
 	Assert.assertEquals(last30Days.getText(), last30DaysValue);	

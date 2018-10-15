@@ -99,7 +99,7 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div[1]/div/div[2]/div/div/div[2]")
     public List<WebElement> gridValues;
     
-    @FindBy(xpath= "//div[contains(@id, 'chart')]/div[2]/div[1]/div/div/div/div[2]")
+    @FindBy(xpath = "//div[contains(@id, 'chart')]/div[2]/div[1]/div/div/div/div[2]")
     public WebElement barchartTarget;
     
     @FindBy(xpath = "//div[contains(@id,'tableChart')]/div/div/div[2]/div[1]/div")
@@ -185,22 +185,22 @@ public class DriverSafetyPage extends AbstractPage
     @FindBy(xpath = "//span[contains(text(), 'Event Location Hotspot Map')]")
     public WebElement eventLocationshotspotMenu;
     
-    @FindBy (xpath = "//span[contains(text(), 'Fleet Performance')]")
+    @FindBy(xpath = "//span[contains(text(), 'Fleet Performance')]")
     public WebElement FleetPerformance;
     
     @FindBy(xpath = "//span[contains(text(), 'Vehicle Utilization')]")
     public WebElement vehicleUtilizationMenu;
     
-    @FindBy(xpath="//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[6]/label")
-    public WebElement lastMonth; 
+    @FindBy(xpath = "//*[@id='background-color-wrapper']/aside[1]/prompt-drawer/div/div[2]/prompt-selection/form/div/div/div[6]/label")
+    public WebElement lastMonth;
     
-    @FindBy(id="xpath-apply-prompts")
+    @FindBy(id = "xpath-apply-prompts")
     public WebElement applyBtn;
     
-    @FindBy(xpath="//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[5]/div/h1")
+    @FindBy(xpath = "//*[@id='background-color-wrapper']/div[2]/div[1]/ul/li/a[5]/div/h1")
     public WebElement timePeriodbtn;
     
-    public String notificationName = "TestNotification1";
+    public String notificationName = "TestNotification"+System.currentTimeMillis();
     
     public String emailId = "testingpurpose@test.com";
     
@@ -453,7 +453,6 @@ public class DriverSafetyPage extends AbstractPage
 	return isElementDisplayed(overallScoreasc);
 	
     }
-    
     
     /**
      * Get Text of Default Organization
@@ -762,7 +761,7 @@ public class DriverSafetyPage extends AbstractPage
      * @throws Exception
      */
     public String getTextidleDuration () throws Exception
-    {	
+    {
 	if (idleDurationexecConsole.getText() != "N/A")
 	{
 	    waitForElementPresent(idleDurationexecConsole);
@@ -899,6 +898,20 @@ public class DriverSafetyPage extends AbstractPage
 	return notificationMessage.getText();
     }
     
+    public void verifyNotificationMessage ()
+    {
+	checkPageIsReady();
+	if (notificationMessage.getText()
+		.contains(Constants.VERIFICATION_CONFIRMATION_MESSAGE_EMAILID)
+		&& notificationMessage.getText()
+			.contains(Constants.VERIFICATION_CONFIRMATION_MESSAGE))
+	{
+	    ProLogger.info("Test Notification message is displayed correctly");
+	}
+	else{
+	    Assert.fail("Message is not displayed correctly");
+	}
+    }
     /*
      * Delete Notification
      * @throws Exception
@@ -958,9 +971,10 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Click Event location HotspotMap
+     * 
      * @throws Exception
      */
-    public void clickEventlocationHotspotMap() throws Exception
+    public void clickEventlocationHotspotMap () throws Exception
     {
 	eventLocationshotspotMenu.click();
 	checkPageIsReady();
@@ -968,28 +982,31 @@ public class DriverSafetyPage extends AbstractPage
     
     /**
      * Click Vehicle Utilization
+     * 
      * @throws Exception
      */
-    public void clickvehicleUtilizationMenu() throws Exception
+    public void clickvehicleUtilizationMenu () throws Exception
     {
 	checkPageIsReady();
 	FleetPerformance.click();
-	checkPageIsReady();	
+	checkPageIsReady();
 	vehicleUtilizationMenu.click();
 	checkPageIsReady();
     }
     
     /**
      * Select Last month days
+     * 
      * @throws Exception
      */
-    public void selectLastmonth() throws Exception{
+    public void selectLastmonth () throws Exception
+    {
 	waitForElementPresent(last30daysFilter);
 	last30daysFilter.click();
 	timePeriodbtn.click();
 	checkPageIsReady();
 	lastMonth.click();
-	applyBtn.click();	
+	applyBtn.click();
 	checkPageIsReady();
     }
 }

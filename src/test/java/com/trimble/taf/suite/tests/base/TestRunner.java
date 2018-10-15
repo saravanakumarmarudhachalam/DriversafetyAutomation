@@ -42,7 +42,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 //			 "src/test/java/com/trimble/features/EventLocationHotspotMap.feature",
 //			 "src/test/java/com/trimble/features/DriverEventsbyLocation.feature" },
 		  features = {
-		  "src/test/java/com/trimble/features/MostDangerousLocations.feature"
+		  "src/test/java/com/trimble/features/commontests.feature","src/test/java/com/trimble/features/executiveconsole.feature"
 		  },
 		 glue = { "com/trimble/birst/tests" },
 		 plugin = {

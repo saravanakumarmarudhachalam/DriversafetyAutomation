@@ -231,6 +231,7 @@ public class CombinedScorecardPage extends AbstractPage
     public void selectDumpTrucksDE () throws Exception
     {
 	waitForElementPresent(dumpTrucksDEoptions);
+	checkPageIsReady();
 	dumpTrucksDEoptions.click();
     }
     

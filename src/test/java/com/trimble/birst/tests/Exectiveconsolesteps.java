@@ -141,9 +141,7 @@ public class Exectiveconsolesteps
     @Then("^I verified notification send successsfully$")
     public void veirfyEmailsuccessfulMessage () throws Throwable
     {
-	Assert.assertEquals(driverSafetypage.getTextverificationMessage(),
-		Constants.VERIFICATION_CONFIRMATION_MESSAGE,
-		Constants.VERIFICATED_SUCCESSFULLY);
+	driverSafetypage.verifyNotificationMessage();
     }
     
     @And("^I open the Notification and ran an existing one$")

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Functional_Testing">
-              <span class="suite-name border-failed">Functional Testing</span>
+              <span class="suite-name border-passed">Functional Testing</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Functional_Testing" class="hide-methods failed suite-Functional_Testing"> (hide)</a> <!-- hide-methods failed suite-Functional_Testing -->
-                      <a href="#" panel-name="suite-Functional_Testing" class="show-methods failed suite-Functional_Testing"> (show)</a> <!-- show-methods failed suite-Functional_Testing -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Functional_Testing" class="hide-methods passed suite-Functional_Testing"> (hide)</a> <!-- hide-methods passed suite-Functional_Testing -->
+                      <a href="#" panel-name="suite-Functional_Testing" class="show-methods passed suite-Functional_Testing"> (show)</a> <!-- show-methods passed suite-Functional_Testing -->
                     </span>
-                    <div class="method-list-content failed suite-Functional_Testing">
+                    <div class="method-list-content passed suite-Functional_Testing">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Most Dangerous Locations Report)">feature(Most Dangerous Locations Report)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Common Tests)">feature(Common Tests)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Functional_Testing -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Testing" title="com.trimble.taf.suite.tests.base.TestRunner" hash-for-method="feature(Executive Console)">feature(Executive Console)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Functional_Testing -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,33 +122,34 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Functional_Testing" class="panel Functional_Testing">
-          <div class="suite-Functional_Testing-class-failed">
+          <div class="suite-Functional_Testing-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.trimble.taf.suite.tests.base.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Most Dangerous Locations Report)">
-                  </a> <!-- feature(Most Dangerous Locations Report) -->
+                  <a name="feature(Common Tests)">
+                  </a> <!-- feature(Common Tests) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Most Dangerous Locations Report)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: null
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.trimble.taf.suite.tests.base.TestRunner.feature(TestRunner.java:92)
-Caused by: java.lang.AssertionError: null
-	at com.trimble.taf.pagefactory.application.MostDangerousLocationsPage.checkTotaleventsValue(MostDangerousLocationsPage.java:179)
-	at com.trimble.birst.tests.MostDangerousLocationsTestSteps.verifyTotaleventsValue(MostDangerousLocationsTestSteps.java:83)
-	at ✽.Then I changed the time period to last month in the Most Dangerous Locations Report(src/test/java/com/trimble/features/MostDangerousLocations.feature:17)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Common Tests)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Executive Console)">
+                  </a> <!-- feature(Executive Console) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Executive Console)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional_Testing-class-failed -->
+          </div> <!-- suite-Functional_Testing-class-passed -->
         </div> <!-- panel Functional_Testing -->
         <div panel-name="test-xml-Functional_Testing" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -204,16 +210,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.trimble.taf.suite.tests.base.TestRunner')
-data.setCell(0, 3, 142966);
+data.setCell(0, 3, 180737);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'com.trimble.taf.suite.tests.base.TestRunner')
+data.setCell(1, 3, 133869);
 window.suiteTableData['Functional_Testing']= { tableData: data, tableDiv: 'times-div-Functional_Testing'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Functional_Testing">
               </div> <!-- times-div-Functional_Testing -->
             </div> <!-- times-div -->
@@ -225,13 +235,55 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">feature(Most Dangerous Locations Report)</span>
+              <span class="reporter-method-name">feature(Common Tests)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">My Spaces page is displayed correctly</span>
                 <span class="reporter-method-output">Driver safety page is displayed correctly</span>
                 <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
                 <span class="reporter-method-output">Last 30Days Text filter is matched correctly</span>
-                <span class="reporter-method-output">Both the text are same and verified successfully</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
+                <span class="reporter-method-output">Start Date filter is displayed correctly</span>
+                <span class="reporter-method-output">End Date filter is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
+                <span class="reporter-method-output">Start Date filter is displayed correctly</span>
+                <span class="reporter-method-output">End Date filter is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
+                <span class="reporter-method-output">Start Date filter is displayed correctly</span>
+                <span class="reporter-method-output">End Date filter is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
+                <span class="reporter-method-output">Start Date filter is displayed correctly</span>
+                <span class="reporter-method-output">End Date filter is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Trimble logo & Banner is displayed correctly</span>
+                <span class="reporter-method-output">Trimble logo & Banner is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days filter is displayed correctly</span>
+                <span class="reporter-method-output">Start Date filter is displayed correctly</span>
+                <span class="reporter-method-output">End Date filter is displayed correctly</span>
+                <span class="reporter-method-output">Last 30Days Text filter is matched correctly</span>
+                <span class="reporter-method-output">Start Date text is displayed correctly</span>
+                <span class="reporter-method-output">END Date text is displayed correctly</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(Executive Console)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">My Spaces page is displayed correctly</span>
+                <span class="reporter-method-output">Driver safety page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Overallscore is displayed in ascending order correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Default Organization Allen Myers is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">Exective Console Page is displayed correctly</span>
+                <span class="reporter-method-output">PDF is exported correctly</span>
+                <span class="reporter-method-output">PDF is exported correctly</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,21 +308,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">driversetUp</span>
-                <span class="method-start">373 ms</span>
+                <span class="method-start">472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">feature(Most Dangerous Locations Report)</span>
-                <span class="method-start">7751 ms</span>
+                <span class="method-name">feature(Common Tests)</span>
+                <span class="method-start">9113 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tear</span>
-                <span class="method-start">150722 ms</span>
+                <span class="method-start">142984 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">driversetUp</span>
+                <span class="method-start">145951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">feature(Executive Console)</span>
+                <span class="method-start">152539 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tear</span>
+                <span class="method-start">333277 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">151608 ms</span>
+                <span class="method-start">336228 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -157,8 +157,8 @@ public class MostDangerousLocationsPage extends AbstractPage
      */
     public int checkNoofRecordsinTable () throws Exception
     {
-	int NoofAddress = AppAddress.size();
-	System.out.println(NoofAddress);
+	checkPageIsReady();
+	int NoofAddress = AppAddress.size();	
 	return NoofAddress;
     }
     

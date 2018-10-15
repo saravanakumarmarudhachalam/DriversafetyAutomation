@@ -73,7 +73,7 @@ public class MostDangerousLocationsTestSteps
     @Then("^I find the number of columns in the Approimate Address table in the Most Dangerous Locations Report$")
     public void checkNoOfrecordsInLocationtable () throws Throwable
     {
-	Assert.assertEquals(mostDangerousLocationspage.checkNoofRecordsinTable(),10);
+	Assert.assertEquals(mostDangerousLocationspage.checkNoofRecordsinTable(),13);
 	Reporter.log(Constants.TOTAL_NO_OF_ADDRESS_IN_DANGEROUS_LOCATIONS);
     }
     
